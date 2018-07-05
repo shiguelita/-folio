@@ -1,12 +1,12 @@
 # Site settings
-title: *folio
-email: you@example.com
+title: Talita Shiguemoto
+email: talita.shiguemoto@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A simple, whitespace, helvetica based portfolio theme.
-baseurl: https://shiguelita.github.io/
+baseurl: https://shiguelita.github.io
 url:  # the base hostname & protocol for your site
-twitter_username: twitter_username
-github_username:  github_username
+twitter_username: twitter_shiguelita
+github_username:  github_shiguelita
 
 # Build settings
 markdown: kramdown
@@ -15,7 +15,7 @@ highlighter: rouge
 
 # Pagination
 paginate: 15
-paginate_path: "/blog/page:num/"
+paginate_path: "/home/page:num/"
 
 
 collections:
