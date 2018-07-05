@@ -9,8 +9,11 @@ permalink: /about/
 <br/>
 Hello, I'm Talita Shiguemoto and welcome to my blog!
 <br/>
-I'm from São Paulo, Brazil and currently pursuing Big Data analysis graduate studies in FIA University and I work at Elanco as a data analyst.
+<br/>
+I'm from São Paulo, Brazil, I work at Elanco as a data analyst and currently pursuing Big Data analysis graduate studies in FIA University.
+<br/>
 In this blog you will find some of my thoughts and analysis about my interests in data science, machine learning and artificial intelligence. 
+<br/>
 <br/>
 I hope you enjoy as much I do. Feel free to contact me for any doubts. ^^
 <br/>
