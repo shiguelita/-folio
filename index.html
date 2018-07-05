@@ -1,31 +1,24 @@
 ---
-layout: page
-title: about
-permalink: /about/
+layout: default
 ---
 
-<img class="col one right" src="/img/prof_pic2.jpg">
-
-<br/>
-Hello, I'm Talita Shiguemoto and welcome to my blog!
-<br/>
-<br/>
-I'm from São Paulo, Brazil, I work at Elanco as a data analyst and currently pursuing Big Data analysis graduate studies in FIA University.
-<br/>
-In this blog you will find some of my thoughts and analysis about my interests in data science, machine learning and artificial intelligence. 
-<br/>
-<br/>
-I hope you enjoy as much I do. Feel free to contact me for any doubts. ^^
-<br/>
-<hr/>
-<br/>
-<span class="contacticon center">
-	<a href="mailto:talita.shiguemoto@gmail.=.com"><i class="fa fa-envelope-square"></i></a>
-	<a href="https://github.com/shiguelita" target="_blank"><i class="fa fa-github-square"></i></a>
-	<a href="https://www.linkedin.com/in/talita-shiguemoto-80831728" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-
-
-<div class="col three caption">
-	If you have urgency, please contact me by e-mail
+<div class="header-bar">
+  <h1>Talita Shiguemoto</h1>
+  <h2>welcome to my blog</h2>
+  <br/>
+  <hr>
+  <br/>
 </div>
 
+
+<ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
+        <p>{{ post.description }}</p>
+        <br/>
+        <hr/>
+      </li>
+    {% endfor %}
+</ul>

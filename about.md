@@ -23,7 +23,7 @@ I hope you enjoy as much I do. Feel free to contact me for any doubts. ^^
 	<a href="mailto:talita.shiguemoto@gmail.=.com"><i class="fa fa-envelope-square"></i></a>
 	<a href="https://github.com/shiguelita" target="_blank"><i class="fa fa-github-square"></i></a>
 	<a href="https://www.linkedin.com/in/talita-shiguemoto-80831728" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-
+</span>
 
 <div class="col three caption">
 	If you have urgency, please contact me by e-mail
