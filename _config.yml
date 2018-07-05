@@ -19,9 +19,9 @@ paginate_path: "/home/page:num/"
 
 
 collections:
-  portfolio:
+  project:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /project/:path/
   poetry:
     output: true
     permalink: /poetry/:path/

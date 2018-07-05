@@ -58,14 +58,14 @@ display: line;
     opacity: 0.75;
     width: 100%;
     text-align: center;
-    padding-top: 1px;
+    padding-top: 25px;
     line-height: 3em;
     z-index: 25;
-    h1{
+    h2{
         color: $theme-color;
         font-size:50px;
     }
-    h2{
+    h3{
         font-size:25px;
     }
 }
