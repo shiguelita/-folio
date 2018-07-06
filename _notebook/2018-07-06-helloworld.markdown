@@ -16,9 +16,25 @@ Some of my interests are: data science, machine learning, artificial intelligenc
 That's it, time to start!
 
 
-######_**Talita Shiguemoto | Blog Comment Policy**    
-Plase be respectful, be chill, and use <pre> tags for code blocks._
 
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url = 'https://shiguelita.github.io/notebook/2018-07-06-helloworld/';
+this.page.identifier = P'https://shiguelita.github.io/notebook/2018-07-06-helloworld/';
+};
+*/
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://shiguelita.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
 
 
     
