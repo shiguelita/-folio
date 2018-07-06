@@ -19,9 +19,9 @@ paginate_path: "/home/page:num/"
 
 
 collections:
-  project:
+  projects:
     output: true
-    permalink: /project/:path/
+    permalink: /projects/:path/
   notebook:
     output: true
     permalink: /notebook/:path/
