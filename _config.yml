@@ -22,8 +22,8 @@ collections:
   project:
     output: true
     permalink: /project/:path/
-  poetry:
+  notebook:
     output: true
-    permalink: /poetry/:path/
+    permalink: /notebook/:path/
 
 
