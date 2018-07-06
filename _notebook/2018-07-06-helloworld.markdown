@@ -15,12 +15,12 @@ Some of my interests are: data science, machine learning, artificial intelligenc
 
 That's it, time to start!
 
-```
-**Talita Shiguemoto | Blog Comment Policy**
 
-Plase be respectful, be chill, and use <pre> tags for code blocks.
+>**Talita Shiguemoto | Blog Comment Policy**
+>
+>Plase be respectful, be chill, and use <pre> tags for code blocks.
 
-```
+
 
     
 
