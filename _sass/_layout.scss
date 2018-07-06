@@ -72,7 +72,7 @@ display: line;
 
 .about{
 	text-align:justify;
-	padding-bottom: 10px;
+	padding-bottom: 50px;
 }
 
 /**
@@ -88,7 +88,7 @@ position:fixed;
 left:0px;
 bottom:0px;
 height:25px;
-width:50%;
+width:100%;
 }
 /**
  * Pagination   **********************************************************
@@ -126,6 +126,7 @@ margin-bottom: $vertical-spacing-unit;
 font-size: 60px;
 display:block;
 margin: 10px;
+padding-top:100px;
 }
 .center{
 text-align: center;
