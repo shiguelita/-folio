@@ -70,6 +70,10 @@ display: line;
     }
 }
 
+.about{
+	text-align:justify;
+}
+
 /**
  * Site footer  **********************************************************
  */
@@ -118,6 +122,7 @@ margin-bottom: $vertical-spacing-unit;
     }
 }
 .contacticon {
+padding-top: 100px;
 font-size: 60px;
 display:block;
 margin: 10px;
