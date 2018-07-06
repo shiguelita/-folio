@@ -1,0 +1,31 @@
+---
+layout: post
+title: Hello World!
+date: 2018-07-06 11:00:00
+---
+
+Eu me chamo Talita Shiguemoto e bem vindo ao  meu blog!
+
+O objetivo deste blog é essencialmente **aprender**, ainda há muitas coisas que preciso conhecer, então decidi escrever o processo dos meus estudos e assim acompanhar meu desenvolmento.
+Espero que com isso eu possa ajudar algumas pessoas que estão buscando desenvolver seus conhecimentos em Ciência de Dados e também que eu consiga aprender com vocês!
+
+Um pouco a mais sobre mim: Sou formada em Matemática na Univerdidade Metodista, trabalho com análise de dados desde 2015 e atualmente estou cursando pós-graduação em Análise de Big Data na FIA.
+
+Alguns dos meus interesses são: ciência de dados, machine learning, inteligência artificial, games, livros, chá e viagens. 
+
+É isso, hora de começar!
+
+```
+**Talita Shiguemoto | Política de comentários do blog**
+
+Por favor, seja respeitoso, seja tranquilo e use <pre> tags para blocos de código.
+
+```
+ 
+
+
+
+
+
+    
+
