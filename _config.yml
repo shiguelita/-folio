@@ -3,10 +3,10 @@ title: Talita Shiguemoto
 email: talita.shiguemoto@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A simple, whitespace, helvetica based portfolio theme.
-baseurl: https://shiguelita.github.io
-url:  # the base hostname & protocol for your site
-twitter_username: twitter_shiguelita
-github_username:  github_shiguelita
+baseurl: 
+url:  https://shiguelita.github.io
+twitter_username: 
+github_username:  shiguelita
 
 # Build settings
 markdown: kramdown
