@@ -2,6 +2,8 @@
 layout: post
 title: Hello World!
 date: 2018-07-06 11:00:00
+comments: true
+author: Talita Shiguemoto"
 ---
 
 I am Talita Shiguemoto and welcome to my blog!
