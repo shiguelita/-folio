@@ -24,7 +24,7 @@ social_sites:
 
 # Build settings
 markdown: kramdown
-theme: folio
+
 highlighter: rouge
 
 # Pagination
