@@ -2,7 +2,7 @@
 layout: page
 permalink: /notebook/
 title: notebook
-description: Showcase your writing, short stories, or poems. Replace this text with your description.
+description: A few ideas, data, and discussions about what I am doing
 ---
 
 <ul class="post-list">
