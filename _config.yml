@@ -32,8 +32,7 @@ paginate: 15
 paginate_path: "/home/page:num/"
 
 # Disqus
-disqus:
-  shortname: shiguelita
+disqus_shortname: shiguelita
 
 
 collections:
