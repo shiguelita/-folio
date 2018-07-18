@@ -6,7 +6,8 @@ comments: true
 author: Talita Shiguemoto
 ---
 
-## Data visualization analysis of Pokémon Types
+Data visualization analysis of Pokémon Types
+======
 
 
 For my first study I would like to start with something I really like: Pokémon!
@@ -68,7 +69,7 @@ The result of my dataframe was:
         text-align: center;
     }
 </style>
-<table border="0.5" class="dataframe">
+<table border="0.9" class="dataframe">
   <thead>
     <tr style="text-align: center; font-size: 12px">
       <th></th>
