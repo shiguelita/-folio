@@ -67,11 +67,7 @@ The result of my dataframe was:
 <br/>
 The first chart tells us how many Pokémon are there for each type, here are considered all evolutions and also, if a Pokémon has two types, it is count twice. In this chart we can see the type amount per order, as an example we have Bulbasaur, it is primarily Grass and yours secondary type is Poison. For this chart I've used Bokeh and we can mousehouver the chart to get the numbers for it order and type, check it out:
 
-
-
 {% include bokeh_post02_types_count_by_order.html %}
-
-
 #### Script
 
 ```python
@@ -92,7 +88,6 @@ hover=HoverTool(
     ]
 )
 
-
 p = figure(x_range=types, plot_height=400, title="Types Counts by Order",
            toolbar_location=None, tools=[hover])
 
@@ -112,3 +107,90 @@ p.legend.spacing = 10
 p.legend.padding = 20
 p.legend.margin = 20
 ```
+
+Looking to this chart, I must say, I've been quite impressed with tiny number of primary type of flying, it is the thirdy bigger group of Pokémon, we have a lot of them in the skies, but only 4 is primary! That makes me think: How many Flying Pokémon is pure(one-type)?
+To know that I've plotted this second chart:
+
+{% include bokeh_post02_one_type_pokemon_count.html %}
+
+To make it, I had to localize all blanks rows in column **Type 2** and put them in a *Series* of Pandas.
+
+```python
+indexNull = df[df['Type 2'].isnull()].index.tolist()
+df2 = df.loc[indexNull,['Type 1']]
+pureType = df2['Type 1'].value_counts().sort_index(ascending=True)
+```
+
+Then I've also used Bokeh to make this chart:
+
+
+```python
+#creating a Bar chart with Bokeh
+source = ColumnDataSource(data={
+        'Types' : list(pureType.keys()),
+        'Primary':list(pureType),
+})
+
+
+hover=HoverTool(
+     tooltips = [
+        ('Count', '@Primary'),
+        ('Type', '@Types'),
+    ]
+)
+
+p = figure(x_range=list(pureType.keys()), plot_height=400, 
+title="One-Type Pokémon Count", toolbar_location=None, 
+tools=[hover])
+
+p.y_range.start = 0
+p.x_range.range_padding = 0.1
+p.xgrid.grid_line_color = None
+p.outline_line_color = None
+p.xaxis.major_label_orientation = pi/2
+p.background_fill_color = '#fdfdfd'
+p.border_fill_color = "#fdfdfd"
+
+p.vbar(x='Types', width=0.9, top='Primary',color="#3182bd", source=source)
+```
+
+## Charts: Heatmap
+
+<br/>
+Lastly, I've wanted to find out how is the cross-interaction between the primary and secondary types, so I've chosen a heatmap to vizualize this information.
+
+Using the function `.crosstab` I've manipulated the dataframe to cross all Types 1 and 2, then I've created two totals with sum of columns and rows.
+```python
+#making new Dataframe crossing Type 1 and 2
+crosstab_df = pd.crosstab(df['Type 1'], df['Type 2'])
+#adding a total column
+crosstab_df['Total'] = crosstab_df.sum(axis=1)
+#adding a total row
+finaltable = crosstab_df.append(pd.DataFrame(crosstab_df.sum(),
+columns=['Total']).T, ignore_index=False)
+#checking if worked
+finaltable.tail()
+```
+
+My resulted table is:
+
+|Type 2|BUG|DARK|DRAGON|ELECTRIC|FAIRY|FIGHTING|FIRE|FLYING|GHOST|GRASS|GROUND|ICE|NORMAL|POISON|PSYCHIC|ROCK|STEEL|WATER|Total|
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+|BUG|0|0|0|4|2|4|2|14|1|6|2|0|0|12|0|3|7|3|60|
+|DARK|0|0|4|0|0|2|3|5|2|0|0|2|0|0|2|0|2|0|22|
+
+With my data organized, I've used Matplotlib and Seaborn to plot the last chart. We can notice that the largest group of Pokémon with the same two-types are Flying with Normal. It is kind of expected, once Flying has a bigger number of secondary Type, Water has about half number Pokémon with just one type and Normal being the second biggest group of Type, with most of your Pokémon being primary.
+
+```python
+#creating heatmap
+sns.set(font_scale=1)
+plt.figure(figsize=(20,10), facecolor='#fdfdfd')
+sns.heatmap(finaltable, cmap="Blues", annot=True, vmax=finaltable.loc[:'WATER', :'WATER'].values.max(),
+vmin=finaltable.loc[:,  :'WATER'].values.min(), fmt='d')
+plt.xlabel('Secondary type')
+plt.ylabel('Primary type')
+plt.title('Pokémon amount per primary and secondary type')
+```
+![png](output_12_0.png)(/img/notebook/post002_whos_that_pokemon.png)
+
+Awesome right? I hope you enjoyed it! 
