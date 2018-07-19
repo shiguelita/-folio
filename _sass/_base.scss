@@ -152,7 +152,7 @@ article a {
 
 
  blockquote {
-   color: $grey-color;
+   color: $grey-color-dark: ;
    border-left: 4px solid $grey-color-light;
    padding-left: $spacing-unit / 2;
    font-size: 18px;
@@ -172,7 +172,6 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #d5d2db;
 }
 
 code {
