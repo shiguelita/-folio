@@ -179,12 +179,15 @@ With my data organized, I've used Matplotlib and Seaborn to plot the last chart.
 ```python
 #creating heatmap
 sns.set(font_scale=1)
-plt.figure(figsize=(20,10), facecolor='#fdfdfd')
-sns.heatmap(finaltable, cmap="Blues", annot=True, vmax=finaltable.loc[:'WATER', :'WATER'].values.max(),
-vmin=finaltable.loc[:,  :'WATER'].values.min(), fmt='d')
+plt.figure(figsize=(14,7))
+sns.heatmap(finaltable, cmap="Blues", annot=True, 
+            vmax=finaltable.loc[:'WATER', :'WATER'].values.max(),
+            vmin=finaltable.loc[:,  :'WATER'].values.min(), fmt='d')
 plt.xlabel('Secondary type')
 plt.ylabel('Primary type')
 plt.title('Pokémon amount per primary and secondary type')
+plt.savefig('post002_whos_that_pokemon.png', dpi=1000, 
+            transparent=True, bbox_inches='tight', edgecolor=None)
 ```
 ![png](/img/notebook/post002_whos_that_pokemon.png){:width="700px", :height="350px"}  
 
