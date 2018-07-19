@@ -153,7 +153,6 @@ article a {
 
  blockquote {
    color: $grey-color-dark ;
-   background-color:#bcbcbc;
    border-left: 4px solid $grey-color-light;
    padding-left: $spacing-unit / 2;
    font-size: 18px;
@@ -226,4 +225,28 @@ pre {
     }
 }
 
- 
+ /**
+  * Tables
+  */
+ table {
+   margin-bottom: $spacing-unit;
+   width: 100%;
+   text-align: left;
+   color: lighten($text-color, 18%);
+   border-collapse: collapse;
+   border: 1px solid $grey-color-light;
+   tr {
+     &:nth-child(even) {
+       background-color: lighten($grey-color-light, 6%);
+     }
+   }
+   th {
+     background-color: lighten($grey-color-light, 3%);
+     border: 1px solid darken($grey-color-light, 4%);
+     border-bottom-color: darken($grey-color-light, 12%);
+   }
+   td {
+     border: 1px solid $grey-color-light;
+   }
+ }
+
