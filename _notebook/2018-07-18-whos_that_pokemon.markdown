@@ -184,7 +184,7 @@ plt.xlabel('Secondary type')
 plt.ylabel('Primary type')
 plt.title('Pokémon amount per primary and secondary type')
 ```
-![Diagram](output_12_0.png)(/img/notebook/post002_whos_that_pokemon.png)
+![png](/img/notebook/post002_whos_that_pokemon.png)
 
 Awesome right? I hope you enjoyed it! 
 
