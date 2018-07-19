@@ -191,6 +191,8 @@ plt.xlabel('Secondary type')
 plt.ylabel('Primary type')
 plt.title('Pokémon amount per primary and secondary type')
 ```
-![png](output_12_0.png)(/img/notebook/post002_whos_that_pokemon.png)
+![Diagram](output_12_0.png)(/img/notebook/post002_whos_that_pokemon.png)
 
 Awesome right? I hope you enjoyed it! 
+
+You can check all analysis in my github [here.](https://github.com/shiguelita/whos_that_pokemon)
