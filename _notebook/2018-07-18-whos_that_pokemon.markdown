@@ -172,13 +172,6 @@ columns=['Total']).T, ignore_index=False)
 finaltable.tail()
 ```
 
-My resulted table is:
-
-|Type 2|BUG|DARK|DRAGON|ELECTRIC|FAIRY|FIGHTING|FIRE|FLYING|GHOST|GRASS|GROUND|ICE|NORMAL|POISON|PSYCHIC|ROCK|STEEL|WATER|Total|
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|BUG|0|0|0|4|2|4|2|14|1|6|2|0|0|12|0|3|7|3|60|
-|DARK|0|0|4|0|0|2|3|5|2|0|0|2|0|0|2|0|2|0|22|
-
 With my data organized, I've used Matplotlib and Seaborn to plot the last chart. We can notice that the largest group of Pokémon with the same two-types are Flying with Normal. It is kind of expected, once Flying has a bigger number of secondary Type, Water has about half number Pokémon with just one type and Normal being the second biggest group of Type, with most of your Pokémon being primary.
 
 ```python
