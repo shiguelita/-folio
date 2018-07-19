@@ -10,7 +10,7 @@ author: Talita Shiguemoto
 
 <br/>
 For my first study I would like to start with something I really like: Pokémon!
-If you are a Pokémon enthusiast as I am, you already thought: "I'd have a *choose your favorite type*-gym!". And in my case, it would be a Fighting or Fire type.
+If you are a Pokémon enthusiast as I am, you already thought: "I'd have a *[insert your favorite type]*-gym!". And in my case, it would be a Fighting or Fire type.
 I was wordering, how many Pokémon of each type are there? Are the Fire options smaller than Fighter?
 To answer these questions I have chosen this brief analysis. 
 
