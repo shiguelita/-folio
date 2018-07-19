@@ -186,7 +186,7 @@ plt.xlabel('Secondary type')
 plt.ylabel('Primary type')
 plt.title('Pokémon amount per primary and secondary type')
 ```
-![png](/img/notebook/post002_whos_that_pokemon.png)
+![png](/img/notebook/post002_whos_that_pokemon.png){:width="700px", :height="350px"}  
 
 Awesome right? I hope you enjoyed it! 
 
