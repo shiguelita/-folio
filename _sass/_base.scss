@@ -241,6 +241,9 @@ pre {
        background-color: lighten($grey-color-light, 6%);
      }
    }
+    th, td {
+     padding: ($spacing-unit / 4) ($spacing-unit / 4);
+   }
    th {
      background-color: lighten($grey-color-light, 3%);
      border: 1px solid darken($grey-color-light, 4%);
