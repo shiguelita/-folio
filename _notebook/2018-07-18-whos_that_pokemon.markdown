@@ -161,7 +161,7 @@ p.vbar(x='Types', width=0.9, top='Primary',color="#3182bd", source=source)
 <br/>
 Lastly, I've wanted to find out how is the cross-interaction between the primary and secondary types, so I've chosen a heatmap to vizualize this information.
 
-Using the function `.crosstab` I've manipulated the dataframe to cross all Types 1 and 2, then I've created two totals with sum of columns and rows.
+Using the method `.crosstab` I've manipulated the dataframe to cross all Types 1 and 2, then I've created two totals with sum of columns and rows.
 ```python
 #making new Dataframe crossing Type 1 and 2
 crosstab_df = pd.crosstab(df['Type 1'], df['Type 2'])
