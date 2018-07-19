@@ -16,7 +16,7 @@ To answer these questions I have chosen this brief analysis.
 
 ## Dataset
 
-
+<br/>
 The dataset is from Gurarako and you can get it [here.](https://www.kaggle.com/gurarako/basic-pandas-pokemon-dataset-part-1/data)
 This dataset is complete, with all 807 Pokémon (7 generations). Here are included all evolutions as well as Mega Evolutions.
 My first step was to prepare the data, using Python in Jupyter Notebook. I've imported Panda library to prepare the dataframes and for data visualization I've used Bokeh, Matplotlib and Seaborn libraries.
@@ -35,7 +35,6 @@ from math import pi
 #make charts visibles in jupyter notebook
 %matplotlib inline 
 output_notebook() 
-
 ```
 
 Once database imported, it was necessary to makes some changes due typos. The columns **Type 1** and **Type 2** had capitalize or lowercase strings. I've convert all letter to uppercase and sorted them to ascending.
@@ -65,7 +64,7 @@ The result of my dataframe was:
 
 ## Charts: Bar
 
-
+<br/>
 The first chart tells us how many Pokémon are there for each type, here are considered all evolutions and also, if a Pokémon has two types, it is count twice. In this chart we can see the type amount per order, as an example we have Bulbasaur, it is primarily Grass and yours secondary type is Poison. For this chart I've used Bokeh and we can mousehouver the chart to get the numbers for it order and type, check it out:
 
 
@@ -112,5 +111,4 @@ p.legend.orientation = "vertical"
 p.legend.spacing = 10
 p.legend.padding = 20
 p.legend.margin = 20
-
 ```

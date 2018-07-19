@@ -152,7 +152,7 @@ article a {
 
 
  blockquote {
-   background: $grey-color-light;
+   background: #999797;
    border-left: 4px solid $grey-color-light;
    padding-left: $spacing-unit / 2;
    font-size: 18px;
@@ -231,7 +231,7 @@ pre {
  table {
    margin-bottom: $spacing-unit;
    width: 70%;
-   font-size: 15px;
+   font-size: 80px;
    text-align: left;
    color: lighten($text-color, 18%);
    border-collapse: collapse;
