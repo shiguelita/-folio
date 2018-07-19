@@ -8,6 +8,7 @@ author: Talita Shiguemoto
 
 # A data visualization analysis of Pokémon Types
 
+<br/><br/>
 For my first study I would like to start with something I really like: Pokémon!
 If you are a Pokémon enthusiast as I am, you already thought: "I'd have a *choose your favorite type*-gym!". And in my case, it would be a Fighting or Fire type.
 I was wordering, how many Pokémon of each type are there? Are the Fire options smaller than Fighter?

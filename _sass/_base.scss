@@ -153,6 +153,7 @@ article a {
 
  blockquote {
    color: $grey-color-dark ;
+   background-color:#bcbcbc;
    border-left: 4px solid $grey-color-light;
    padding-left: $spacing-unit / 2;
    font-size: 18px;
@@ -239,9 +240,6 @@ pre {
      &:nth-child(even) {
        background-color: lighten($grey-color-light, 6%);
      }
-   }
-   th, td {
-     padding: ($spacing-unit / 3) ($spacing-unit / 2);
    }
    th {
      background-color: lighten($grey-color-light, 3%);
