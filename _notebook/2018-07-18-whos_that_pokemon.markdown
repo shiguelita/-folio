@@ -10,15 +10,19 @@ author: Talita Shiguemoto
 
 
 For my first study I would like to start with something I really like: Pokémon!
+
 If you are a Pokémon enthusiast as I am, you already thought: "I'd have a *choose your favorite type*-gym!". And in my case, it would be a Fighting or Fire type.
+
 I was wordering, how many Pokémon of each type are there? Are the Fire options smaller than Fighter?
+
 To answer these questions I have chosen this brief analysis. 
 
 ## Dataset
 
 
-The dataset is from Gurarako and you can get it [here](https://www.kaggle.com/gurarako/basic-pandas-pokemon-dataset-part-1/data)
-This dataset is complete, with all Pokémon until number 807 (7th Generation). Here are included all evolutions as well as Mega Evolutions.
+The dataset is from Gurarako and you can get it [here.](https://www.kaggle.com/gurarako/basic-pandas-pokemon-dataset-part-1/data)
+This dataset is complete, with all 807 Pokémon (7 generations). Here are included all evolutions as well as Mega Evolutions.
+
 My first step was to prepare the data, using Python in Jupyter Notebook. I've imported Panda library to prepare the dataframes and for data visualization I've used Bokeh, Matplotlib and Seaborn libraries.
 
 ```python
@@ -105,6 +109,7 @@ p.xgrid.grid_line_color = None
 p.axis.minor_tick_line_color = None
 p.outline_line_color = None
 p.xaxis.major_label_orientation = pi/2
+p.background_fill_color = None
 p.legend.location = "top_left"
 p.legend.orientation = "vertical"
 p.legend.spacing = 10
