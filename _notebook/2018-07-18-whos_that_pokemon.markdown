@@ -68,6 +68,7 @@ The result of my dataframe was:
 The first chart tells us how many Pokémon are there for each type, here are considered all evolutions and also, if a Pokémon has two types, it is count twice. In this chart we can see the type amount per order, as an example we have Bulbasaur, it is primarily Grass and yours secondary type is Poison. For this chart I've used Bokeh and we can mousehouver the chart to get the numbers for it order and type, check it out:
 
 {% include bokeh_post02_types_count_by_order.html %}
+<br/>
 #### Script
 
 ```python
@@ -112,6 +113,7 @@ Looking to this chart, I must say, I've been quite impressed with tiny number of
 To know that I've plotted this second chart:
 
 {% include bokeh_post02_one_type_pokemon_count.html %}
+<br/>
 
 To make it, I had to localize all blanks rows in column **Type 2** and put them in a *Series* of Pandas.
 
