@@ -65,7 +65,7 @@ The result of my dataframe was:
 ## Charts: Bar
 
 <br/>
-The first chart tells us how many Pokémon are there for each type, here are considered all evolutions and also, if a Pokémon has two types, it is count twice. In this chart we can see the type amount per order, as an example we have Bulbasaur, it is primarily Grass and yours secondary type is Poison. For this chart I've used Bokeh and we can mousehouver the chart to get the numbers for it order and type, check it out:
+The first chart tells us how many Pokémon are there for each type, here are considered all evolutions and also, if a Pokémon has two types, it is count twice. In this chart we can see the type amount per order, as an example we have Bulbasaur, it is primarily Grass and its secondary type is Poison. For this chart I've used Bokeh and we can mousehouver the chart to get the numbers for it order and type, check it out:
 
 {% include bokeh_post02_types_count_by_order.html %}
 <br/>
@@ -109,7 +109,7 @@ p.legend.padding = 20
 p.legend.margin = 20
 ```
 
-Looking to this chart, I must say, I've been quite impressed with tiny number of primary type of flying, it is the thirdy bigger group of Pokémon, we have a lot of them in the skies, but only 4 is primary! That makes me think: How many Flying Pokémon is pure(one-type)?
+Looking to this chart, I must say, I've been quite impressed with tiny number of primary type of flying, it is the third largest group of Pokémon, we have a lot of them in the skies, but only 4 is primary! That makes me think: How many Flying Pokémon is pure(one-type)?
 To know that I've plotted this second chart:
 
 {% include bokeh_post02_one_type_pokemon_count.html %}
