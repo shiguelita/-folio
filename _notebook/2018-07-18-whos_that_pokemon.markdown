@@ -21,7 +21,7 @@ The dataset is from Gurarako and you can get it [here.](https://www.kaggle.com/g
 This dataset is complete, with all 807 Pokémon (7 generations). Here are included all evolutions as well as Mega Evolutions.
 My first step was to prepare the data, using Python in Jupyter Notebook. I've imported Panda library to prepare the dataframes and for data visualization I've used Bokeh, Matplotlib and Seaborn libraries.
 
-```python
+```
 #all imports
 import pandas as pd #dataframes
 from bokeh.io import show,output_notebook, output_file #bar chart
