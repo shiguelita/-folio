@@ -94,5 +94,4 @@ permalink: /projects/
 
 {% endif %}
 
->>>>>>> 0cf6550f92c81bc19936480de0b04c1affd2b7e7
 {% endfor %}
