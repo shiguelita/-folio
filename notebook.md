@@ -2,7 +2,7 @@
 layout: page
 permalink: /notebook/
 title: notebook
-description: A few ideas, data and discussions about what I am doing
+description: A few ideas, data, code and discussions about what I am doing
 ---
 
 <ul class="post-list">

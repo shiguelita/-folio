@@ -14,7 +14,9 @@ permalink: /projects/
         {% if project.img %}
         <img class="thumbnail" src="{{ project.img }}"/>
         {% else %}
-        <div class="thumbnail blankbox"></div>
+        <div class="thumbnail blankbox">
+            <h1>{{ project.title }}</h1>
+        </div>
         {% endif %}    
         <span>
             <h1>{{ project.title }}</h1>
@@ -32,7 +34,9 @@ permalink: /projects/
         {% if project.img %}
         <img class="thumbnail" src="{{ project.img }}"/>
         {% else %}
-        <div class="thumbnail blankbox"></div>
+        <div class="thumbnail blankbox">
+            <h1>{{ project.title }}</h1>
+        </div>
         {% endif %}    
         <span>
             <h1>{{ project.title }}</h1>
