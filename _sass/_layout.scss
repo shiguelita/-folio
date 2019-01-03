@@ -266,6 +266,16 @@ display: block;
 */
 .blankbox{
 background: $theme-color;
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(0,0,0,0.4);
+color: $grey-color-light;
+padding: 40px;
+text-align: center;
 }
 .img_row{
 height: $img_height;
