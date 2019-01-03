@@ -85,7 +85,7 @@ The dataset refers to transactions of European card users in September 2013, obt
 There are no missing values in the dataset, however the data are unbalanced as we can see in Figure 4, where the target class variable has binary values, 0 for normal transactions and 1 for fraudulent, in which the second represents 0.17% of the data.
 
 <div style="display: flex; justify-content: center;">
-<img src="/img/projects/project001_04.jpg" alt="" title="Figure 4 - Unbalanced data"/>
+<img src="/img/projects/project001_04.png" alt="" title="Figure 4 - Unbalanced data"/>
 </div>
 <div class="col three caption">
 	Figure 4 - Unbalanced data
@@ -95,7 +95,7 @@ There are no missing values in the dataset, however the data are unbalanced as w
 We verified how the Amount variable distribution behaves, in which we can see in Figure 5 that it has an asymmetric distribution on the right (positive skewed)
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_05.jpg" alt="" title="Figure 5 - Amount Asymmetric Distribution"/>
+<img  src="/img/projects/project001_05.png" alt="" title="Figure 5 - Amount Asymmetric Distribution"/>
 </div>
 <div class="col three caption">
 	Figure 5 - Amount Asymmetric Distribution
@@ -108,14 +108,14 @@ We verified how the Amount variable distribution behaves, in which we can see in
 Our dataset has 28 variables transformed via PCA without being with their true labels, because of this the creation of hypotheses about them becomes a little bigger challenge. The assumption is, due to this transformation, they do not have correlation with each other, since PCA creates an orthogonality between these features, this fact is proven in the HeatMap in Figure 6. The variables that we know are Amount, Time in seconds (Time) and Class (Class), in Figure 7 we can evaluate how these three features behave among themselves, not being possible to notice any pattern.
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_06.jpg" alt="" title="Figure 6 - Heatmap: Correlation between variables"/>
+<img  src="/img/projects/project001_06.png" alt="" title="Figure 6 - Heatmap: Correlation between variables"/>
 </div>
 <div class="col three caption">
 	Figure 6 - Heatmap: Correlation between variables
 </div>
 <br/>
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_07.jpg" alt="" title="Figure 7 - Amount vs. Time per Class"/>
+<img  src="/img/projects/project001_07.png" alt="" title="Figure 7 - Amount vs. Time per Class"/>
 </div>
 <div class="col three caption">
 	Figure 7 - Amount vs. Time per Class
@@ -225,7 +225,7 @@ RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini'
 ```
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_09.jpg" alt="" title="Figure 9 - ROC AUC optimized model"/>
+<img  src="/img/projects/project001_09.png" alt="" title="Figure 9 - ROC AUC optimized model"/>
 </div>
 <div class="col three caption">
 	Figure 9 - ROC AUC optimized model
@@ -235,7 +235,7 @@ RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini'
 Checking the relevance of each feature in the model the result was that 5 attributes accumulated 70% of the importance of the data, as we can see in Figure 10. However, when using the same model with only 5 features the ROC AUC dropped to 0.9182, due to the great difference of the metric of both models, the optimized model was chosen with all the features.
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_10.jpg" alt="" title="Figure 10 - Features Importance"/>
+<img  src="/img/projects/project001_10.png" alt="" title="Figure 10 - Features Importance"/>
 </div>
 <div class="col three caption">
 	Figure 10 - Features Importance
@@ -248,7 +248,7 @@ I believe that the project was successful in analyzing fraud detection by credit
 For a next step it would be ideal to try to improve the prediction of the model for the False Positives, without worsening the performance of the True Positives, since in this study we had 72 cases of False Positive, seen in Figure 11.
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_11.jpg" alt="" title="Figure 11 - Confusion Matrix"/>
+<img  src="/img/projects/project001_11.png" alt="" title="Figure 11 - Confusion Matrix"/>
 </div>
 <div class="col three caption">
 	Figure 11 - Confusion Matrix
