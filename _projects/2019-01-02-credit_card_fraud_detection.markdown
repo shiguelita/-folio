@@ -31,7 +31,7 @@ To understand the AUC it is necessary to first understand the ***Receiver Operat
 A ROC curve traces TPR vs. FPR at different classification thresholds. Decreasing the classification threshold classifies more items as positive, thus increasing both false positives and true positives. In other words, a model predicts the probability of a class being 1 or 0, using these probabilities it is possible to plot a distribution graph as in Figure 1, with the red curve representing 0 and the green curve for 1, with 0.5 being the limit between two classes
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_01.jpg" alt="" title="Figure 1 - ROC"/>
+<img  class="img-responsive" src="/img/projects/project001_01.jpg" alt="" title="Figure 1 - ROC"/>
 </div>
 <div class="col three caption">
 	Figure 1 - ROC
@@ -86,7 +86,7 @@ The dataset refers to transactions of European card users in September 2013, obt
 There are no missing values in the dataset, however the data are unbalanced as we can see in Figure 4, where the target class variable has binary values, 0 for normal transactions and 1 for fraudulent, in which the second represents 0.17% of the data.
 
 <div style="display: flex; justify-content: center;">
-<img src="/img/projects/project001_04.png" alt="" title="Figure 4 - Unbalanced data"/>
+<img src="/img/projects/project001_04.png" alt="" width="403 height="261" " title="Figure 4 - Unbalanced data"/>
 </div>
 <div class="col three caption">
 	Figure 4 - Unbalanced data
@@ -96,7 +96,7 @@ There are no missing values in the dataset, however the data are unbalanced as w
 We verified how the Amount variable distribution behaves, in which we can see in Figure 5 that it has an asymmetric distribution on the right (positive skewed)
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_05.png" alt="" title="Figure 5 - Amount Asymmetric Distribution"/>
+<img  src="/img/projects/project001_05.png" alt="" width="693" height="463" title="Figure 5 - Amount Asymmetric Distribution"/>
 </div>
 <div class="col three caption">
 	Figure 5 - Amount Asymmetric Distribution
@@ -109,14 +109,14 @@ We verified how the Amount variable distribution behaves, in which we can see in
 Our dataset has 28 variables transformed via PCA without being with their true labels, because of this the creation of hypotheses about them becomes a little bigger challenge. The assumption is, due to this transformation, they do not have correlation with each other, since PCA creates an orthogonality between these features, this fact is proven in the HeatMap in Figure 6. The variables that we know are Amount, Time in seconds (Time) and Class (Class), in Figure 7 we can evaluate how these three features behave among themselves, not being possible to notice any pattern.
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_06.png" alt="" title="Figure 6 - Heatmap: Correlation between variables"/>
+<img  src="/img/projects/project001_06.png" alt="" width="799" height="509" title="Figure 6 - Heatmap: Correlation between variables"/>
 </div>
 <div class="col three caption">
 	Figure 6 - Heatmap: Correlation between variables
 </div>
 <br/>
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_07.png" alt="" title="Figure 7 - Amount vs. Time per Class"/>
+<img  src="/img/projects/project001_07.png" alt="" width="464" height="434" title="Figure 7 - Amount vs. Time per Class"/>
 </div>
 <div class="col three caption">
 	Figure 7 - Amount vs. Time per Class
