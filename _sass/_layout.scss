@@ -266,6 +266,9 @@ display: block;
 */
 .blankbox{
 background: $theme-color;
+}
+.blankbox h1{
+background: $theme-color;
 color: $background-color;
 position: absolute;
 top: 0;
