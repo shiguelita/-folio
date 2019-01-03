@@ -266,13 +266,7 @@ display: block;
 */
 .blankbox{
 background: $theme-color;
-display: none;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-padding: 40px;
+color: $background-color;
 text-align: center;
 }
 .img_row{

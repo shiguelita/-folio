@@ -2,6 +2,7 @@
 layout: post
 title: Fraud Detection
 date: 2019-01-03 13:00:00
+author: Talita Shiguemoto
 description: Project that detects fraudulent credit card transactions
 comments: true
 ---
