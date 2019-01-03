@@ -243,7 +243,7 @@ position: relative;
 width: 100%;
 height: 230px;
 }
-.thumbnail a p span {
+.thumbnail a span {
 display: none;
 position: absolute;
 top: 0;
@@ -253,6 +253,9 @@ right: 0;
 background: rgba(0,0,0,0.4);
 color: $grey-color-light;
 padding: 40px;
+text-align: center;
+}
+.thumbnail p{
 text-align: center;
 }
 .thumbnail a:hover span {
