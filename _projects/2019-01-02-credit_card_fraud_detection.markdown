@@ -112,7 +112,7 @@ Our dataset has 28 variables transformed via PCA without being with their true l
 <div class="col three caption">
 	Figure 6 - Heatmap: Correlation between variables
 </div>
-
+<br/>
 <div style="display: flex; justify-content: center;">
 <img  src="/img/projects/project001_07.jpg" alt="" title="Figure 7 - Amount vs. Time per Class"/>
 </div>
