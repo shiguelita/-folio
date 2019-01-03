@@ -12,13 +12,20 @@ Many credit card transactions are fraudulent, the purpose of this project is to 
 
 The first step will be pre-processing the data to deal with the imbalance, which in other words, is the fact that in credit card transactions the fraud rate is much lower than the true rate. Therefore, we will use a sub-sampling technique to solve this impasse. Then, we will test some algorithms as Ensemble Methods (Random Forest, XGBoost), Support Vector Machines and Logistic Regression, verifying which one will have better performance and results. The final model will be chosen based on some metrics (see Evaluation metrics) and will have its hyperparameters optimized by GridSearch.
 
- ### Evaluation metrics
+<h3>Evaluation metrics</h3>
 
 Because our set is unbalanced, accuracy is not the best metric to use for model evaluation. For this study we will mainly use the AUC ROC to verify the quality of the algorithm.
 
 The recall, also called ***True Positive Rate (TPR)***, is the ratio of True Positives to all positives correctly classified and false negatives. Mathematically represented by:
 
-$$ Recall = \frac{TP}{TP+FN}  $$
+
+
+<math>
+	Recall =  <box>TP<over>TP + FN</box>
+
+</math>
+
+
 
 To understand the AUC it is necessary to first understand the ***Receiver Operating Characteristic (ROC) *** curve, which is a graph that shows the performance of a classification model in all classification limits. This curve shows two parameters: the TPR and the False Positive Rate (FPR).
 
@@ -28,7 +35,7 @@ A ROC curve traces TPR vs. FPR at different classification thresholds. Decreasin
 
 
 
-<img  src="{{ site.baseurl }}/img/projects/project001_01.jpg" alt="" title="Figure 1 - ROC"/>
+<img  src="/img/projects/project001_01.jpg" alt="" title="Figure 1 - ROC"/>
 
 <div class="col three caption">
 	Figure 1 - ROC
@@ -36,9 +43,9 @@ A ROC curve traces TPR vs. FPR at different classification thresholds. Decreasin
 
 All positive values above the limit (greater than 0.5) will be True Positives (TP), and all negative values above the limit will be False Positives (FP), since they were incorrectly classified as positive values. Below the limit, all negative values will be True Negatives (TN) and positive False Negatives (FN), since they were incorrectly classified as negative. This concept is best demonstrated in Figure 2.
 
-<div class="img_row">
-	<img class="col three" src="{{ site.baseurl }}/img/projects/project001_02.jpg" alt="" title="Figure 2 - TN, TP, FN, FP"/>
-</div>
+
+<img src="/img/projects/project001_02.jpg" alt="" title="Figure 2 - TN, TP, FN, FP"/>
+
 <div class="col three caption">
 	Figure 2 - TN, TP, FN, FP
 </div>
@@ -46,9 +53,8 @@ All positive values above the limit (greater than 0.5) will be True Positives (T
 The AUC measures the entire two-dimensional area under any ROC curve. AUC provides an aggregate measure of performance in all possible classification limits. One way to interpret AUC is as the probability of the model classifying a random positive example more than a random negative example. A model whose predictions are 100% wrong has an AUC of 0.0; while one whose predictions are 100% correct has an AUC of 1.0. According to Figure 3
 
 
-<div class="img_row">
-	<img class="col three" src="{{ site.baseurl }}/img/projects/project001_03.jpg" alt="" title="Figure 3 - ROC AUC"/>
-</div>
+<img src="/img/projects/project001_03.jpg" alt="" title="Figure 3 - ROC AUC"/>
+
 <div class="col three caption">
 	Figure 3 - ROC AUC
 </div>
@@ -79,18 +85,16 @@ $$ f1 score = 2 \cdot \frac{precision \cdot recall}{precision + recall} $$
 
 There are no missing values in the dataset, however the data are unbalanced as we can see in Figure 4, where the target class variable has binary values, 0 for normal transactions and 1 for fraudulent, in which the second represents 0.17% of the data.
 
-<div class="img_row">
-	<img class="col three" src="{{ site.baseurl }}/img/projects/project001_04.jpg" alt="" title="Figure 4 - Unbalanced data"/>
-</div>
+<img src="/img/projects/project001_04.jpg" alt="" title="Figure 4 - Unbalanced data"/>
+
 <div class="col three caption">
 	Figure 4 - Unbalanced data
 </div>
 
 We verified how the Amount variable distribution behaves, in which we can see in Figure 5 that it has an asymmetric distribution on the right (positive skewed)
 
-<div class="img_row">
-	<img class="col three" src="{{ site.baseurl }}/img/projects/project001_05.jpg" alt="" title="Figure 5 - Amount Asymmetric Distribution"/>
-</div>
+<img  src="/img/projects/project001_05.jpg" alt="" title="Figure 5 - Amount Asymmetric Distribution"/>
+
 <div class="col three caption">
 	Figure 5 - Amount Asymmetric Distribution
 =======
