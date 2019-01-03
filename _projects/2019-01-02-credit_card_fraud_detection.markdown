@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 ---
 layout: post
-title: Credit Card Fraud Detection
+title: Fraud Detection
 date: 2019-01-02 20:00:00
 description: 
 img: 
