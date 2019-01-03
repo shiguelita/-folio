@@ -1,7 +1,7 @@
 ---
 layout: page
 title: projects
-description: Work in progress
+description: Analysis from start to finish
 permalink: /projects/
 ---
 
