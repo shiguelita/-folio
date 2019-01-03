@@ -44,3 +44,5 @@ permalink: /projects/
 </div>
 
 {% endif %}
+
+{% endfor %}
