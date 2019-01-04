@@ -41,7 +41,7 @@ A ROC curve traces TPR vs. FPR at different classification thresholds. Decreasin
 All positive values above the limit (greater than 0.5) will be True Positives (TP), and all negative values above the limit will be False Positives (FP), since they were incorrectly classified as positive values. Below the limit, all negative values will be True Negatives (TN) and positive False Negatives (FN), since they were incorrectly classified as negative. This concept is best demonstrated in Figure 2.
 
 <div style="display: flex; justify-content: center;">
-<img src="/img/projects/project001_02.jpg" alt="" align="center" title="Figure 2 - TN, TP, FN, FP"/>
+<img class="img-responsive" src="/img/projects/project001_02.jpg" alt="" align="center" title="Figure 2 - TN, TP, FN, FP"/>
 </div>
 <div class="col three caption">
 	Figure 2 - TN, TP, FN, FP
@@ -51,7 +51,7 @@ All positive values above the limit (greater than 0.5) will be True Positives (T
 The AUC measures the entire two-dimensional area under any ROC curve. AUC provides an aggregate measure of performance in all possible classification limits. One way to interpret AUC is as the probability of the model classifying a random positive example more than a random negative example. A model whose predictions are 100% wrong has an AUC of 0.0; while one whose predictions are 100% correct has an AUC of 1.0. According to Figure 3
 
 <div style="display: flex; justify-content: center;">
-<img src="/img/projects/project001_03.jpg" alt="" title="Figure 3 - ROC AUC"/>
+<img class="img-responsive" src="/img/projects/project001_03.jpg" alt="" title="Figure 3 - ROC AUC"/>
 </div>
 <div class="col three caption">
 	Figure 3 - ROC AUC
@@ -76,7 +76,7 @@ The f1_score is the harmonic mean that considers both: precision and recall, its
 The dataset refers to transactions of European card users in September 2013, obtained from Kaggle. Possessing 284,807 lines and 31 features, of which 28 are dependent variables that due to confidentiality are the results of PCA transformations. We can check each feature in detail in Table 1
 
 <div style="display: flex; justify-content: center;">
-<img src="/img/projects/project001_12.jpg" alt="" title="Table 1 - Description of the Dataset"/>
+<img class="img-responsive" src="/img/projects/project001_12.jpg" alt="" title="Table 1 - Description of the Dataset"/>
 </div>
 <div class="col three caption">
 	Table 1 - Description of the Dataset
@@ -86,7 +86,7 @@ The dataset refers to transactions of European card users in September 2013, obt
 There are no missing values in the dataset, however the data are unbalanced as we can see in Figure 4, where the target class variable has binary values, 0 for normal transactions and 1 for fraudulent, in which the second represents 0.17% of the data.
 
 <div style="display: flex; justify-content: center;">
-<img src="/img/projects/project001_04.png" alt="" width="403 height="261" " title="Figure 4 - Unbalanced data"/>
+<img class="img-responsive" src="/img/projects/project001_04.png" alt="" title="Figure 4 - Unbalanced data"/>
 </div>
 <div class="col three caption">
 	Figure 4 - Unbalanced data
@@ -96,7 +96,7 @@ There are no missing values in the dataset, however the data are unbalanced as w
 We verified how the Amount variable distribution behaves, in which we can see in Figure 5 that it has an asymmetric distribution on the right (positive skewed)
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_05.png" alt="" width="693" height="463" title="Figure 5 - Amount Asymmetric Distribution"/>
+<img  class="img-responsive" src="/img/projects/project001_05.png" alt=""  title="Figure 5 - Amount Asymmetric Distribution"/>
 </div>
 <div class="col three caption">
 	Figure 5 - Amount Asymmetric Distribution
@@ -109,14 +109,14 @@ We verified how the Amount variable distribution behaves, in which we can see in
 Our dataset has 28 variables transformed via PCA without being with their true labels, because of this the creation of hypotheses about them becomes a little bigger challenge. The assumption is, due to this transformation, they do not have correlation with each other, since PCA creates an orthogonality between these features, this fact is proven in the HeatMap in Figure 6. The variables that we know are Amount, Time in seconds (Time) and Class (Class), in Figure 7 we can evaluate how these three features behave among themselves, not being possible to notice any pattern.
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_06.png" alt="" width="799" height="509" title="Figure 6 - Heatmap: Correlation between variables"/>
+<img  class="img-responsive" src="/img/projects/project001_06.png" alt="" title="Figure 6 - Heatmap: Correlation between variables"/>
 </div>
 <div class="col three caption">
 	Figure 6 - Heatmap: Correlation between variables
 </div>
 <br/>
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_07.png" alt="" width="464" height="434" title="Figure 7 - Amount vs. Time per Class"/>
+<img  class="img-responsive" src="/img/projects/project001_07.png" alt="" title="Figure 7 - Amount vs. Time per Class"/>
 </div>
 <div class="col three caption">
 	Figure 7 - Amount vs. Time per Class
@@ -154,7 +154,7 @@ The techniques used in this project are:
 Using the same dataset in the most voted study in Kaggle, the author used a Logistic Regression to create the model that obtained an accuracy and recall about to 93% and, according to Figure 8, obtained the ROC AUC at about 0.95. 
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_08.jpg" alt="" title="Figure 8 - Benchmark"/>
+<img  class="img-responsive" src="/img/projects/project001_08.jpg" alt="" title="Figure 8 - Benchmark"/>
 </div>
 <div class="col three caption">
 	Figure 8 - Benchmark
@@ -168,7 +168,7 @@ Due the asymmetric distribution of Amount, with some data being 0, we have to pe
 Once we have the data ready to analyze, it is necessary to divide the data between training and test sets, here we use a proportion of 70% for training and 30% for test. Finally, to treat the data imbalance, it was necessary to resample them, using only the training data, in this step six new datasets with different resampling techniques were created, as can be seen in Table 2.
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_13.jpg" alt="" title="Table 2 - Resampling Techniques"/>
+<img  class="img-responsive" src="/img/projects/project001_13.jpg" alt="" title="Table 2 - Resampling Techniques"/>
 </div>
 <div class="col three caption">
 	Table 2 - Resampling Techniques
@@ -184,7 +184,7 @@ In Table 3 are all algorithms separated by resampling techniques, showing the pe
 We can conclude by observing Table 3 that the RL algorithm with the Smote with Tomek Links technique with equal class balancing obtained the best ROC AUC score (0.947), however the f1_score for class 1 was very low, being 0.110, so the algorithm chosen was the one that performed the best balanced results between the two metrics, being the RF algorithm with the same resampling technique of the above model, obtaining ROC AUC at 0.905 and f1_score at 0.850.	
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_14.jpg" alt="" title="Table 3 - Models Performance"/>
+<img  class="img-responsive" src="/img/projects/project001_14.jpg" alt="" title="Table 3 - Models Performance"/>
 </div>
 <div class="col three caption">
 	Table 3 - Models Performance
@@ -208,7 +208,7 @@ RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini'
 
 To improve the performance of the model GridSearch was used to optimize the hyperparameters according to Table 4.
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_15.jpg" alt="" title="Table 4 - Description of Hyperparameters"/>
+<img  class="img-responsive" src="/img/projects/project001_15.jpg" alt="" title="Table 4 - Description of Hyperparameters"/>
 </div>
 <div class="col three caption">
 	Table 4 - Description of Hyperparameters
@@ -226,7 +226,7 @@ RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini'
 ```
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_09.png" alt="" title="Figure 9 - ROC AUC optimized model"/>
+<img  class="img-responsive" src="/img/projects/project001_09.png" alt="" title="Figure 9 - ROC AUC optimized model"/>
 </div>
 <div class="col three caption">
 	Figure 9 - ROC AUC optimized model
@@ -236,7 +236,7 @@ RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini'
 Checking the relevance of each feature in the model the result was that 5 attributes accumulated 70% of the importance of the data, as we can see in Figure 10. However, when using the same model with only 5 features the ROC AUC dropped to 0.9182, due to the great difference of the metric of both models, the optimized model was chosen with all the features.
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_10.png" alt="" title="Figure 10 - Features Importance"/>
+<img  class="img-responsive" src="/img/projects/project001_10.png" alt="" title="Figure 10 - Features Importance"/>
 </div>
 <div class="col three caption">
 	Figure 10 - Features Importance
@@ -249,7 +249,7 @@ I believe that the project was successful in analyzing fraud detection by credit
 For a next step it would be ideal to try to improve the prediction of the model for the False Positives, without worsening the performance of the True Positives, since in this study we had 72 cases of False Positive, seen in Figure 11.
 
 <div style="display: flex; justify-content: center;">
-<img  src="/img/projects/project001_11.png" alt="" title="Figure 11 - Confusion Matrix"/>
+<img class="img-responsive" src="/img/projects/project001_11.png" alt="" title="Figure 11 - Confusion Matrix"/>
 </div>
 <div class="col three caption">
 	Figure 11 - Confusion Matrix
