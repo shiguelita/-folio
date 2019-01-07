@@ -189,7 +189,11 @@ plt.title('Pokémon amount per primary and secondary type')
 plt.savefig('post002_whos_that_pokemon.png', dpi=1000, 
             transparent=True, bbox_inches='tight', edgecolor=None)
 ```
-![png](/img/notebook/post002_whos_that_pokemon.png){:width="700px", :height="350px"}  
+
+<div style="display: flex; justify-content: center;">
+<img  class="img-responsive" src="/img/notebook/post002_whos_that_pokemon.png" alt="" title="Pokémon amount per primary and secondary type"/>
+</div>
+<br/>
 
 Awesome right? I hope you enjoyed it! 
 

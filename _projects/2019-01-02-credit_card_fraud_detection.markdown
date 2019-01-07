@@ -31,7 +31,7 @@ To understand the AUC it is necessary to first understand the ***Receiver Operat
 A ROC curve traces TPR vs. FPR at different classification thresholds. Decreasing the classification threshold classifies more items as positive, thus increasing both false positives and true positives. In other words, a model predicts the probability of a class being 1 or 0, using these probabilities it is possible to plot a distribution graph as in Figure 1, with the red curve representing 0 and the green curve for 1, with 0.5 being the limit between two classes
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_01.jpg" alt="" title="Figure 1 - ROC"/>
+<img  class="img-responsive" src="/img/projects/project001_01.png" alt="" title="Figure 1 - ROC"/>
 </div>
 <div class="col three caption">
 	Figure 1 - ROC
@@ -41,7 +41,7 @@ A ROC curve traces TPR vs. FPR at different classification thresholds. Decreasin
 All positive values above the limit (greater than 0.5) will be True Positives (TP), and all negative values above the limit will be False Positives (FP), since they were incorrectly classified as positive values. Below the limit, all negative values will be True Negatives (TN) and positive False Negatives (FN), since they were incorrectly classified as negative. This concept is best demonstrated in Figure 2.
 
 <div style="display: flex; justify-content: center;">
-<img class="img-responsive" src="/img/projects/project001_02.jpg" alt="" align="center" title="Figure 2 - TN, TP, FN, FP"/>
+<img class="img-responsive" src="/img/projects/project001_02.png" alt="" align="center" title="Figure 2 - TN, TP, FN, FP"/>
 </div>
 <div class="col three caption">
 	Figure 2 - TN, TP, FN, FP
@@ -51,7 +51,7 @@ All positive values above the limit (greater than 0.5) will be True Positives (T
 The AUC measures the entire two-dimensional area under any ROC curve. AUC provides an aggregate measure of performance in all possible classification limits. One way to interpret AUC is as the probability of the model classifying a random positive example more than a random negative example. A model whose predictions are 100% wrong has an AUC of 0.0; while one whose predictions are 100% correct has an AUC of 1.0. According to Figure 3
 
 <div style="display: flex; justify-content: center;">
-<img class="img-responsive" src="/img/projects/project001_03.jpg" alt="" title="Figure 3 - ROC AUC"/>
+<img class="img-responsive" src="/img/projects/project001_03.png" alt="" title="Figure 3 - ROC AUC"/>
 </div>
 <div class="col three caption">
 	Figure 3 - ROC AUC
@@ -154,7 +154,7 @@ The techniques used in this project are:
 Using the same dataset in the most voted study in Kaggle, the author used a Logistic Regression to create the model that obtained an accuracy and recall about to 93% and, according to Figure 8, obtained the ROC AUC at about 0.95. 
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_08.jpg" alt="" title="Figure 8 - Benchmark"/>
+<img  class="img-responsive" src="/img/projects/project001_08.png" alt="" title="Figure 8 - Benchmark"/>
 </div>
 <div class="col three caption">
 	Figure 8 - Benchmark
@@ -198,11 +198,11 @@ Having the model and the resampling technique defined, the next step was to opti
 The result of the ROC AUC with predict_proba in the model without refinement was 0.9439, with the following hyperparameters:
 
 ```python
-RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini'
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
             max_depth=None, max_features='auto', max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
             min_samples_leaf=1, min_samples_split=2,
-            min_weight_fraction_leaf=0.0, n_estimators='warn', n_jobs=None
+            min_weight_fraction_leaf=0.0, n_estimators='warn', n_jobs=None,
             oob_score=False, random_state=96, verbose=0, warm_start=False)
 ```
 
@@ -215,14 +215,14 @@ To improve the performance of the model GridSearch was used to optimize the hype
 </div>
 <br/>
 
-The final result of the AUC ROC with predict_proba in the optimized model was 0.9823, which can be verified in Figure 10, with the following hyperparametres:
+The final result of the AUC ROC with predict_proba in the optimized model was 0.9820, which can be verified in Figure 10, with the following hyperparametres:
 ```python
-RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini'
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
             max_depth=10, max_features='auto', max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_impurity_split=None,
             min_samples_leaf=5, min_samples_split=2,
-            min_weight_fraction_leaf=0.0, n_estimators=822, n_jobs=None,
-            oob_score=False, random_state=None, verbose=0, warm_start=False)
+            min_weight_fraction_leaf=0.0, n_estimators=911, n_jobs=None,
+            oob_score=False, random_state=96, verbose=0, warm_start=False)
 ```
 
 <div style="display: flex; justify-content: center;">
@@ -246,7 +246,7 @@ Checking the relevance of each feature in the model the result was that 5 attrib
 ### **Conclusion**
 <br/>
 I believe that the project was successful in analyzing fraud detection by credit card, and managed to improve the result demonstrated in the benchmark. An important point was the need to find a model that had a good balance in the prediction of both classes, because of the four algorithms selected only the RF performed well (above 0.8) in both classes.
-For a next step it would be ideal to try to improve the prediction of the model for the False Positives, without worsening the performance of the True Positives, since in this study we had 72 cases of False Positive, seen in Figure 11.
+For a next step it would be ideal to try to improve the prediction of the model for the False Positives, without worsening the performance of the True Positives, since in this study we had 70 cases of False Positive, seen in Figure 11.
 
 <div style="display: flex; justify-content: center;">
 <img class="img-responsive" src="/img/projects/project001_11.png" alt="" title="Figure 11 - Confusion Matrix"/>
