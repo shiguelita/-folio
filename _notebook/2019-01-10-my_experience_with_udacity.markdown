@@ -28,7 +28,7 @@ The course for anyone interested was Data Science Academy's [Python Fundamentals
 
 ### **The Nanodegree**
 <br/>
-The program has 3 modules, a final project plus a few extras. The deadline for doing it is 6 months, being possible to complete before, if you have time to dedicate during the week. Você tem direito a um suporte semanal com algum instrutor e também utilizar o *Slack* como plataforma para tirar dúvidas com outros alunos e monitores.
+The program has 3 modules, a final project plus a few extras. The deadline for doing it is 6 months, being possible to complete before, if you have time to dedicate during the week. You have the right to a weekly support with some instructor and also to use Slack as platform to ask questions with other students and monitors.
 
 **Term 1 - Supervised Learning**
 
