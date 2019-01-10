@@ -16,18 +16,18 @@ If you know the items below, **yes**, it's worth it!
 * Basic statistics concepts
 * Discipline to learn with online course (reserving time for video lessons, exercises, research and extra reading)
 
-### Backgound
-
+### **Backgound**
+<br/>
 Over the past 3 years, I worked as Data Analyst in a pharmaceutical industry, having as main activity the statistical analysis, using a software called JMP. My statistics level was already intermediate and I could code well in JMP Scripting Language (JSL). I wanted to take an online course because I definitely work better at home than in a classroom, my learning curve is a lot better if I study alone, in my time rather than a pre-set.
 I researched the best courses in Data Science and found Udacity, with a good name on the market and good student comments. In choosing the courses, I was between Data Science or Machine Learning Engineer. I sent an e-mail requesting telephone contact, in which I was quickly answered and explaining what I already knew and my gaps, I decided to start the Machine Learning.
 
-### Impasses
-
+### **Impasses**
+<br/>
 An impasse was the price, Udacity courses are a bit more expensive compared to other online courses, however I believed that due to the review read plus the course content, it would be worth it. The other obstacle was that I did not know Python, so I took an online course in Portuguese in a week, which gave me enough subsidy to start Nanodegree.
 The course for anyone interested was Data Science Academy's [Python Fundamentals for Data Analysis](https://www.datascienceacademy.com.br/course?courseid=python-funds). The course is great for beginners and you can understand very fast doing the exercises.
 
-### The Nanodegree
-
+### **The Nanodegree**
+<br/>
 The program has 3 modules, a final project plus a few extras. The deadline for doing it is 6 months, being possible to complete before, if you have time to dedicate during the week. Você tem direito a um suporte semanal com algum instrutor e também utilizar o *Slack* como plataforma para tirar dúvidas com outros alunos e monitores.
 
 **Term 1 - Supervised Learning**
@@ -53,7 +53,8 @@ Os módulos acimas são obrigatórios para conseguir o certificado, porém a Uda
 * **Evaluation and validation of models**: you'll learn model concepts, how to train them, some evaluation metrics, and how to select a model
 * **Deep Learning**: this is the first module of [Nanodegree in Deep Learning](https://www.udacity.com/course/deep-learning-nanodegree--nd101), following the same concept of Term 1 and 2 of Machine Learning. Very good module! You learn about neural networks with Keras. The project of this module was *Dog-Breed Classifier*.
 
-### Tips
+### **Tips**
+<br/>
 Here are some tips to follow during the course:
 * Reserve some time each week, do not watch classes with large time spacing  between them
 * When learning about a new algorithm, summarize the advantages, disadvantages, when to use it and use cases. Believe you will need this! I will post mu cheat sheet in this blog.
