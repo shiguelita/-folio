@@ -11,14 +11,10 @@ I recently graduated from [Udacity Machine Learning Engineer Nanodegree](https:/
 **Is it worth?**
 
 If you know the items below, **yes**, it's worth it!
-
-	* Know Python with the Pandas, Numpy and Matplotlib libraries
-
-	* Know linear algebra or do not mind to understand in depth how algorithms work mathematically
-
-	* Basic statistics concepts
-
-	* Discipline to learn with online course (reserving time for video lessons, exercises, research and extra reading)
+* Know Python with the Pandas, Numpy and Matplotlib libraries
+* Know linear algebra or do not mind to understand in depth how algorithms work mathematically
+* Basic statistics concepts
+* Discipline to learn with online course (reserving time for video lessons, exercises, research and extra reading)
 
 ### Backgound
 
@@ -53,23 +49,16 @@ The final project is a free theme, Udacity requests a proposal with some data to
 **Extra Modules**
 
 Os módulos acimas são obrigatórios para conseguir o certificado, porém a Udacity disponibiliza alguns conteúdos extras como:
-
-	* **Support material**: here are classes on basic statistics, libraries Pandas, Numpy and scikit-learn (my tip is to complete this module first)
-
-	* **Evaluation and validation of models**: you'll learn model concepts, how to train them, some evaluation metrics, and how to select a model
-
-	* **Deep Learning**: this is the first module of [Nanodegree in Deep Learning](https://www.udacity.com/course/deep-learning-nanodegree--nd101), following the same concept of Term 1 and 2 of Machine Learning. Very good module! You learn about neural networks with Keras. The project of this module was *Dog-Breed Classifier*.
+* **Support material**: here are classes on basic statistics, libraries Pandas, Numpy and scikit-learn (my tip is to complete this module first)
+* **Evaluation and validation of models**: you'll learn model concepts, how to train them, some evaluation metrics, and how to select a model
+* **Deep Learning**: this is the first module of [Nanodegree in Deep Learning](https://www.udacity.com/course/deep-learning-nanodegree--nd101), following the same concept of Term 1 and 2 of Machine Learning. Very good module! You learn about neural networks with Keras. The project of this module was *Dog-Breed Classifier*.
 
 ### Tips
 Here are some tips to follow during the course:
-
-	* Reserve some time each week, do not watch classes with large time spacing  between them
-
-	* When learning about a new algorithm, summarize the advantages, disadvantages, when to use it and use cases. Believe you will need this! I will post mu cheat sheet in this blog.
-
-	* Whenever you are in doubt about any content, research for more, read articles, blogs, see examples or schedule a monitoring.
-	
-	* In projects try to do it alone, even if you are having difficulties do not look at the codes of other students. You can set up monitoring to ask for help, but try to do as much as you can, this will bring you more learning.
+* Reserve some time each week, do not watch classes with large time spacing  between them
+* When learning about a new algorithm, summarize the advantages, disadvantages, when to use it and use cases. Believe you will need this! I will post mu cheat sheet in this blog.
+* Whenever you are in doubt about any content, research for more, read articles, blogs, see examples or schedule a monitoring.
+* In projects try to do it alone, even if you are having difficulties do not look at the codes of other students. You can set up monitoring to ask for help, but try to do as much as you can, this will bring you more learning.
 
 
 
