@@ -26,7 +26,8 @@ color: $theme-color;
 }
 .site-nav {
 .language{
-    float: left;
+    position:absolute;
+    left: auto;
 }
 float: right;
 line-height: $nav-height;
