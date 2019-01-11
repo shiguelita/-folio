@@ -1,10 +1,10 @@
 # Site settings
 title: Talita Shiguemoto
 email: talita.shiguemoto@gmail.com
-description:  # this means to ignore newlines until "baseurl:"
+description: 
   en: Some of my thoughts and analysis about my interests in data science, machine learning and artificial intelligence
   pt: Alguns dos meus pensamentos e análises sobre meus interesses em ciência de dados, aprendizado de máquina e inteligência artificial
-index:
+index: 
   en:
   pt: index_pt.html
 
