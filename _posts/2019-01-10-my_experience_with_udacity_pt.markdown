@@ -25,10 +25,10 @@ Pesquisei os melhores cursos em Ciência de Dados e encontrei a Udacity, com um 
 
 ### **Impasses**
 <br/>
-An impasse was the price, Udacity courses are a bit more expensive compared to other online courses, however I believed that due to the review read plus the course content, it would be worth it. The other obstacle was that I did not know Python, so I took an online course in Portuguese in a week, which gave me enough subsidy to start Nanodegree.
-The course for anyone interested was Data Science Academy's [Python Fundamentals for Data Analysis](https://www.datascienceacademy.com.br/course?courseid=python-funds). The course is great for beginners and you can understand very fast doing the exercises.
+Um impasse foi o preço, os cursos de Udacity são um pouco mais caros se comparados a outros cursos online, aqui na época paguei R$ 1999,00, porém eu acreditei que devido as opiniões do curso que li mais o conteúdo do curso, valeria a pena. O outro obstáculo era que eu não conhecia Python, então fiz um curso on-line em português em uma semana, o que me deu subsídio suficiente para começar o Nanodegree.
+O curso para qualquer pessoa interessada era o da Data Science Academy [Python Fundamentos para Análise de Dados](https://www.datascienceacademy.com.br/course?courseid=python-fundamentos). O curso é ótimo para iniciantes e você aprende muito rápido fazendo os exercícios.
 
-### **The Nanodegree**
+### **O Nanodegree**
 <br/>
 The program has 3 modules, a final project plus a few extras. The deadline for doing it is 6 months, being possible to complete before, if you have time to dedicate during the week. You have the right to a weekly support with some instructor and also to use Slack as platform to ask questions with other students and monitors.
 

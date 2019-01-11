@@ -26,7 +26,7 @@ I researched the best courses in Data Science and found Udacity, with a good nam
 ### **Impasses**
 <br/>
 An impasse was the price, Udacity courses are a bit more expensive compared to other online courses, however I believed that due to the review read plus the course content, it would be worth it. The other obstacle was that I did not know Python, so I took an online course in Portuguese in a week, which gave me enough subsidy to start Nanodegree.
-The course for anyone interested was Data Science Academy's [Python Fundamentals for Data Analysis](https://www.datascienceacademy.com.br/course?courseid=python-funds). The course is great for beginners and you can understand very fast doing the exercises.
+The course for anyone interested was Data Science Academy's [Python Fundamentals for Data Analysis](https://www.datascienceacademy.com.br/course?courseid=python-fundamentos). The course is great for beginners and you can understand very fast doing the exercises.
 
 ### **The Nanodegree**
 <br/>
