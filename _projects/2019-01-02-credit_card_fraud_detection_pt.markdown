@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Fraud Detection
+title: Detecção de Fraude
 date: 2019-01-03 13:00:00
 author: Talita Shiguemoto
-description: Project that detects fraudulent credit card transactions
+description: Projeto que detecta transações fraudulentas de cartão de crédito 
 comments: true
 ref: fraudDetection
-lang: en
+lang: pt
 ---
 
 Many credit card transactions are fraudulent, the purpose of this project is to detect them based on a set of historical data that already has such a classification (whether it was fraud or not). Each transaction has some variables and based on them we can identify which attributes have the greatest influence to find out which are frauds or not. The model will be based on a Machine Learning technique called supervised learning and can be used for future fraud detection.
