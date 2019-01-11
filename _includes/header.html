@@ -6,6 +6,11 @@
 
       <div class="trigger">
         <!-- {{ site.title }} instead of blog -->
+        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+        {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
+
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %}
         <a class="page-link" href="{{ site.baseurl }}/">home</a>
         {% assign pages=site.pages | where:"lang", page.lang %}
         {% for page in site.pages %}
@@ -15,14 +20,8 @@
         {% endfor %}
 
       </div>
-      
-<div class="wrapper" style="text-align: left; position: absolute; line-height: 1.5em ">
-  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-  {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
 
-  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %}
-</div>
+
     </nav>
 
   </div>
