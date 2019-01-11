@@ -21,7 +21,7 @@
 
 </header>
 
-<div class="language">
+<div class="wrapper" tyle="float: left; text-align: left; line-height: 1.5em" >
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
 
