@@ -7,7 +7,7 @@ ref: projects
 lang: en
 ---
 {% assign projects=site.projects | where:"lang", page.lang %}
-{% for project in site.projects %}
+{% for project in projects %}
 
 {% if project.redirect %}
 <div class="project">

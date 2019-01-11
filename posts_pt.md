@@ -9,7 +9,7 @@ lang: pt
 
 <ul class="post-list">
 {% assign posts=site.posts | where:"lang", page.lang %}
-{% for poem in site.posts reversed %}
+{% for post in posts reversed %}
     <li>
         <h2><a class="poem-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
