@@ -9,195 +9,198 @@ ref: fraudDetection
 lang: pt
 ---
 
-Many credit card transactions are fraudulent, the purpose of this project is to detect them based on a set of historical data that already has such a classification (whether it was fraud or not). Each transaction has some variables and based on them we can identify which attributes have the greatest influence to find out which are frauds or not. The model will be based on a Machine Learning technique called supervised learning and can be used for future fraud detection.
+Muitas transações por cartão de crédito são fraudulentas, o objetivo deste projeto é detectá-las baseado em um conjunto de dados histórico que já possui tal classificação (se foi fraude ou não). Cada transação possui algumas variáveis e com base nelas poderemos identificar quais atributos possuem maior influência para desvendar quais são fraudes ou não. Devido esse histórico com características o modelo criado será baseado em uma técnica de Machine Learning chamada aprendizagem supervisionada e poderá ser utilizado para futuras detecções de fraudes.
 
-The first step will be pre-processing the data to deal with the imbalance, which in other words, is the fact that in credit card transactions the fraud rate is much lower than the true rate. Therefore, we will use a sub-sampling technique to solve this impasse. Then, we will test some algorithms as Ensemble Methods (Random Forest, XGBoost), Support Vector Machines and Logistic Regression, verifying which one will have better performance and results. The final model will be chosen based on some metrics (see in **Evaluation metrics**) and will have its hyperparameters optimized by GridSearch.
+O primeiro passo será pré-processar os dados para lidarmos com o desbalanceamento que, em outras palavras, é o fato de que normalmente em transações por cartão de crédito a taxa de fraudes é muito menor que a taxa de transações verdadeiras. Portanto, iremos utilizar uma técnica de subamostragem para resolver este impasse. Feito isso, será testado os algoritmos de Métodos de Ensemble (Random Forest, Gradient Boosting, XGBoost),Support Vector Machines e K-Nearest Neighbors, verificando qual deles terá melhor performance e resultados. O modelo final será escolhido embasado por algumas métricas (veja em **Métricas de avaliação**) e terá seus hiperparâmetros otimizados pelo *GridSearch*.
 
 ### **Evaluation metrics**
 <br/>
-Because our set is unbalanced, accuracy is not the best metric to use for model evaluation. For this study we will mainly use the AUC ROC to verify the quality of the algorithm.
+Devido nosso conjunto ser desbalanceado a acurácia não é a melhor métrica para ser usada na avaliação do modelo. Para este estudo utilizaremos principalmente o AUC ROC para verificar a qualidade do algoritmo.
 
-The recall, also called ***True Positive Rate (TPR)***, is the ratio of True Positives to all positives correctly classified and false negatives. Mathematically represented by:
+O *recall*, também chamado de ***True Positive Rate (TPR)***, é a proporção entre os Verdadeiros Positivos sobre todas os positivos classificados corretamente e os falsos negativos. Matematicamente representado por:
 
 \begin{align}
 \dot{Recall} & = 	\frac{TP}{TP+FN} 
 \end{align}
 
-
-To understand the AUC it is necessary to first understand the ***Receiver Operating Characteristic (ROC) *** curve, which is a graph that shows the performance of a classification model in all classification limits. This curve shows two parameters: the TPR and the False Positive Rate (FPR).
+Para entender o AUC é necessário compreender primeiro a curva do ***Receiver Operating Characteristic (ROC)***, que é um gráfico que mostra o desempenho de um modelo de classificação em todos os limites de classificação. Esta curva mostra dois parâmetros: o TPR e o False Positive Rate (FPR).
 
 \begin{align}
 \dot{FRP} & = 	\frac{FP}{TP+TN} 
 \end{align}
 
-A ROC curve traces TPR vs. FPR at different classification thresholds. Decreasing the classification threshold classifies more items as positive, thus increasing both false positives and true positives. In other words, a model predicts the probability of a class being 1 or 0, using these probabilities it is possible to plot a distribution graph as in Figure 1, with the red curve representing 0 and the green curve for 1, with 0.5 being the limit between two classes
+Uma curva ROC traça TPR vs. FPR em diferentes limiares de classificação. Diminuir o limiar de classificação classifica mais itens como positivos, aumentando assim tanto os falsos positivos quanto os verdadeiros positivos. Em outras palavras, um modelo prediz a probabilidade de uma classe ser 1 ou 0, usando essas probabilidades é possível plotar um gráfico de distribuição como na figura abaixo, sendo a curva vermelha representando 0 e a verde para 1 , sendo 0,5 o limite entre as duas classes.
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_01.png" alt="" title="Figure 1 - ROC"/>
+<img  class="img-responsive" src="/img/projects/project001_01.png" alt="" title="Figura 1 - ROC"/>
 </div>
 <div class="col three caption">
-	Figure 1 - ROC
+	Figura 1 - ROC
 </div>
 <br/>
 
-All positive values above the limit (greater than 0.5) will be True Positives (TP), and all negative values above the limit will be False Positives (FP), since they were incorrectly classified as positive values. Below the limit, all negative values will be True Negatives (TN) and positive False Negatives (FN), since they were incorrectly classified as negative. This concept is best demonstrated in Figure 2.
+Todos os valores positivos acima do limite (maiores que 0.5) serão True Positives (TP), e todos os valores negativos acima do limite serão False Positives (FP), uma vez que foram classificados incorretamente como positivos. Abaixo do limite, todos os valores negativos serão True Negatives (TN) e os positivos False Negatives (FN), uma vez que foram classificados incorretamente como negativos. Esse conceito é melhor demonstrado na figura a seguir.
 
 <div style="display: flex; justify-content: center;">
-<img class="img-responsive" src="/img/projects/project001_02.png" alt="" align="center" title="Figure 2 - TN, TP, FN, FP"/>
+<img class="img-responsive" src="/img/projects/project001_02.png" alt="" align="center" title="Figura 2 - TN, TP, FN, FP"/>
 </div>
 <div class="col three caption">
-	Figure 2 - TN, TP, FN, FP
+	Figura 2 - TN, TP, FN, FP
 </div>
 <br/>
 
-The AUC measures the entire two-dimensional area under any ROC curve. AUC provides an aggregate measure of performance in all possible classification limits. One way to interpret AUC is as the probability of the model classifying a random positive example more than a random negative example. A model whose predictions are 100% wrong has an AUC of 0.0; while one whose predictions are 100% correct has an AUC of 1.0. According to Figure 3
+A curva AUC mede toda a área bidimensional por baixo de toda curva ROC. AUC fornece uma medida agregada de desempenho em todos os possíveis limites de classificação. Uma maneira de interpretar AUC é como a probabilidade de o modelo classificar um exemplo positivo aleatório mais do que um exemplo negativo aleatório. Um modelo cujas previsões são 100% erradas tem uma AUC de 0,0; enquanto um cujas previsões são 100% corretas tem uma AUC de 1,0. Conforme Figura 3.
 
 <div style="display: flex; justify-content: center;">
-<img class="img-responsive" src="/img/projects/project001_03.png" alt="" title="Figure 3 - ROC AUC"/>
+<img class="img-responsive" src="/img/projects/project001_03.png" alt="" title="Figura 3 - ROC AUC"/>
 </div>
 <div class="col three caption">
-	Figure 3 - ROC AUC
+	Figura 3 - ROC AUC
 </div>
 <br/>
 
-Another metric used to choose the best model will be the use of the Classification Report of sklearn, it is a report table with the main evaluation metrics for each class, being: recall, precision and f1_score.
-Precision is the ratio of the True Positives to all positive ones, whether they are classified correctly or not. Mathematically represented by:
+Outra métrica utilizada para escolha do melhor modelo será a utilização do *Classification Report* do sklearn, trata-se de uma tabela de reporte com as principais métricas de avaliação para cada classe, sendo elas: recall, precision e *f1_score*.
+O *precision* é a proporção entre os Verdadeiros Positivos sobre todas os positivos, sendo eles classificados corretamente ou não. Matematicamente representado por:
 
 \begin{align}
 \dot{Precision} & = 	\frac{TP}{TP+FP} 
 \end{align}
 
-The f1_score is the harmonic mean that considers both: precision and recall, its formula being expressed by:
+O f1_score é uma medida que considera ambos: precision e recall, sendo sua fórmula expressada por:
 
 \begin{align}
 \dot{f1 score} & = 2 \cdot	\frac{precision \cdot recall}{precision + recall} 
 \end{align}
 
-### **Data Exploration**
+### **Exploração dos Dados**
 <br/>
-The dataset refers to transactions of European card users in September 2013, obtained from Kaggle. Possessing 284,807 lines and 31 features, of which 28 are dependent variables that due to confidentiality are the results of PCA transformations. We can check each feature in detail in Table 1
+O conjunto de dados é referente a transações de usuários de cartões europeus em setembro de 2013, obtidos no Kaggle. Possuindo 284.807 linhas e 31 features, das quais 28 delas são variáveis dependentes que devido a confidencialidade são resultados de transformações de PCA. Podemos verificar em detalhes cada feature na Tabela 1.
 
 <div style="display: flex; justify-content: center;">
-<img class="img-responsive" src="/img/projects/project001_12.jpg" alt="" title="Table 1 - Description of the Dataset"/>
+<img class="img-responsive" src="/img/projects/project001_12_pt.jpg" alt="" title="Tabela 1 - Descrição do Conjunto de Dados"/>
 </div>
 <div class="col three caption">
-	Table 1 - Description of the Dataset
+	Tabela 1 - Descrição do Conjunto de Dados
 </div>
 <br/>
 
-There are no missing values in the dataset, however the data are unbalanced as we can see in Figure 4, where the target class variable has binary values, 0 for normal transactions and 1 for fraudulent, in which the second represents 0.17% of the data.
+Não há nenhum *missing values* no conjunto de dados, contudo os dados estão desbalanceados como podemos observar na Figura 4, sendo que a variável *target Class* possui valores binários, 0 para transações normais e 1 para fraudulentas, na qual a segunda representa 0,17% dos dados.
 
 <div style="display: flex; justify-content: center;">
-<img class="img-responsive" src="/img/projects/project001_04.png" alt="" title="Figure 4 - Unbalanced data"/>
+<img class="img-responsive" src="/img/projects/project001_04.png" alt="" title="Figura 4 - Dados desbalanceados"/>
 </div>
 <div class="col three caption">
-	Figure 4 - Unbalanced data
+	Figura 4 - Dados desbalanceados
 </div>
 <br/>
 
-We verified how the Amount variable distribution behaves, in which we can see in Figure 5 that it has an asymmetric distribution on the right (positive skewed)
+Foi verificado como se comporta a distribuição da variável *Amount*, na qual podemos ver na Figura 5 que ela possui uma distribuição assimétrica à direita (*positive skewed*).
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_05.png" alt=""  title="Figure 5 - Amount Asymmetric Distribution"/>
+<img  class="img-responsive" src="/img/projects/project001_05.png" alt=""  title="Figura 5 - Distribuição Assimétrica de Amount"/>
 </div>
 <div class="col three caption">
-	Figure 5 - Amount Asymmetric Distribution
+	Figura 5 - Distribuição Assimétrica de Amount
 </div>
 <br/>
 
-### **Data Visualization**
+### **Visualização Exploratória**
 <br/>
 
-Our dataset has 28 variables transformed via PCA without being with their true labels, because of this the creation of hypotheses about them becomes a little bigger challenge. The assumption is, due to this transformation, they do not have correlation with each other, since PCA creates an orthogonality between these features, this fact is proven in the HeatMap in Figure 6. The variables that we know are Amount, Time in seconds (Time) and Class (Class), in Figure 7 we can evaluate how these three features behave among themselves, not being possible to notice any pattern.
+Nosso conjunto de dados para preservar a confidencialidade possui 28 variáveis transformadas via PCA, sem estarem com seus verdadeiros rótulos, devido a isso a criação de hipóteses sobre elas torna-se um desafio um pouco maior. A suposição é que devido esta transformação elas não possuam correlação entre si, uma vez que PCA cria uma ortogonalidade entre essas features, tal fato é comprovado no Mapa de Calor na Figura 6. As variáveis que conhecemos são o Montante (Amount), Tempo em segundos (Time) e a Classe (Class). Na Figura 7 podemos avaliar como se comportam essas três features entre si, não sendo possível notar nenhum padrão.
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_06.png" alt="" title="Figure 6 - Heatmap: Correlation between variables"/>
+<img  class="img-responsive" src="/img/projects/project001_06.png" alt="" title="Figura 6 - Mapa de Calor: Correlação entre as variáveis"/>
 </div>
 <div class="col three caption">
-	Figure 6 - Heatmap: Correlation between variables
+	Figura 6 - Mapa de Calor: Correlação entre as variáveis
 </div>
 <br/>
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_07.png" alt="" title="Figure 7 - Amount vs. Time per Class"/>
+<img  class="img-responsive" src="/img/projects/project001_07.png" alt="" title="Figura 7 - Montante vs Tempo por Classe"/>
 </div>
 <div class="col three caption">
-	Figure 7 - Amount vs. Time per Class
+	Figura 7 - Montante vs Tempo por Classe
 </div>
 <br/>
 
-### **Algorithms and Techniques**
+### **Algoritmos e Técnicas**
 <br/>
-In this project we will test four algorithms of the sklearn library, in the intention to choose for the one that obtains a better result in the analyzes. The models used in this study are:
+Neste projeto testaremos uma série de algoritmos da biblioteca do sklearn, na intenção de optar pelo o que obtiver um melhor resultado nas análises. Os modelos utilizados neste estudo são:
 
-* **Support Vector Machines (SVM)**: uses a technique called kernel to transform data and finds an optimal boundary between possible outputs. It has a high accuracy, is not sensitive to data non-linearity, low risk of overfitting using correct kernels, works well with high dimensional data.
+* **Support Vector Machines (SVM)**: utiliza uma técnica chamada de kernel para transformar os dados e encontra um limite ideal entre as saídas possíveis. Possui uma alta acuracidade, não é sensível a não linearidade dos dados, baixo risco de overfitting usando kernels corretos, trabalha bem com dados dimensionais elevados.
 
-* **Logistic Regression (RL)**: estimates the probability associated with the occurrence of a given event due to some features. It has a high degree of reliability and it is not necessary to assume normality and multicollinearity.
+* **Regressão Logística (RL)**:estima a probabilidade associada à ocorrência de um determinado evento devido algumas features. Possui alto grau de confiabilidade e não é necessário supor normalidade multicolinearidade.
 
-* **Random Forest (RF)**: an ensemble method used to construct a model based on multiple Decision Trees during the training phase. It has a low risk of overfitting, it is usually quick to train, however slow to predict. Better scalability when the dataset is smaller.
+* **Random Forest (RF)**: um método ensemble utilizado para construir um modelo baseado em múltiplas Decision Trees durante a fase de treino. Possui baixo risco de overfitting, ele costuma ser rápido para treinar.
 
-* **XGBoost (XGB)**: is an advanced implementation of Gradient Boosting, faster and with high predictive power. It has a variety of regularizations that reduce overfitting and improve overall performance.
+* **XGBoost (XGB)**: é uma implementação avançada do Gradient Boosting,  mais rápido e com alto poder preditivo. Possui uma variedade de regularizações que reduzem o *overfitting* e melhoram o desempenho geral.
 
-The techniques used in this project are:
+As técnicas utilizadas neste projeto são:
 
-* **GridSearch**: Optimizes hyperparameters to find the most optimized model possible.
+* **GridSearch**: : otimiza os hiperparametros dos modelos para encontrar o modelo mais otimizado possível.
 
-* **Under-sampling**: Removes majority class lines from modeling to avoid unbalance.
+* **Under-sampling**: retira da modelagem linhas da classe majoritária, para evitar desbalanceamento.
 
-* **Over-sampling**: Replicates minority class rows or generates synthetic data to avoid unbalance.
+* **Over-sampling**: replica linhas da classe minoritária ou gera dados sintéticos, para evitar desbalanceamento.
 
-* **Synthetic Minority Over-Sampling Technique (SMOTE)**: Used to synthesize data in over-sampling.
+* **Synthetic Minority Over-Sampling Technique (SMOTE)**: Utilizado para sintetizar os dados no *oversampling*.  Tal técnica será implementada junto com *Tomek links* para evitar o aumento de variância causada por algumas técnicas de geração de dados sintéticos.
 
-* **Log Transformation**: used to normalize data with asymmetric distribution.
+* **Log Transformation**: utilizado para normalizar os dados com distribuição assimétrica.
 
-* **MinMaxScaler**: standardizes features on the same scale.
+* **MinMaxScaler**: padroniza as *features* na mesma escala.
 
 ### **Benchmark**
 <br/>
-Using the same dataset in the most voted study in Kaggle, the author used a Logistic Regression to create the model that obtained an accuracy and recall about to 93% and, according to Figure 8, obtained the ROC AUC at about 0.95. 
+Utilizando o mesmo conjunto de dados no estudo  mais votado no Kaggle, o autor utilizou uma Regressão Logística para criar o modelo que obteve uma acurácia e recall próximo de 93% e, conforme a Figura 8, obtendo o 0,95 de ROC AUC.
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_08.png" alt="" title="Figure 8 - Benchmark"/>
+<img  class="img-responsive" src="/img/projects/project001_08.png" alt="" title="Figura 8 - Benchmark"/>
 </div>
 <div class="col three caption">
-	Figure 8 - Benchmark
+	Figura 8 - Benchmark
 </div>
 <br/>
 
-### **Preprocessing**
+### **Pré-Processamento**
 <br/>
-Due the asymmetric distribution of Amount, with some data being 0, we have to perform a log transformation(x + 1), then moved on to Feature Scaling, which consists of rescaling the data to obtain a distribution with average 0 and standard deviation 1. The technique used for this step was MinMaxScaler from sklearn, in the feature column transformed by log, making the data on a scale of 0 to 1. A new dataset was created to store the original data plus the transformed one and the features Time and Amount original.
 
-Once we have the data ready to analyze, it is necessary to divide the data between training and test sets, here we use a proportion of 70% for training and 30% for test. Finally, to treat the data imbalance, it was necessary to resample them, using only the training data, in this step six new datasets with different resampling techniques were created, as can be seen in Table 2.
+Devido a feature Amount ter uma distribuição assimétrica, com alguns dados sendo 0, efetuei uma transformação em log(x+1) e então passei para o ***Feature Scaling***, que consiste em reescalonar os dados para obter uma distribuição com média de zero e desvio padrão de um. A técnica utilizada para esta etapa foi o ***MinMaxScaler*** do *sklearn*, na coluna feature pelo log, tornando os dados em uma escala de 0 a 1. Foi criado um novo dataset para armazenar os dados originais mais o transformado e foi retirado as features *Time* e *Amount* original.
+
+Uma vez que temos os dados prontos para analisar, faz-se necessário dividir os dados entre conjuntos de treinamento e de teste, em uma proporção de 70% para treinamento e 30% para teste. Por fim, para tratar o desbalanceamento dos dados foi necessário reamostrá-los, utiliznado somente os dados de treinamento, nesta etapa foi criada seis novos conjuntos de dados com diferentes técnicas de reamostragem, como podemos observar na Tabela 2. 
+
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_13.jpg" alt="" title="Table 2 - Resampling Techniques"/>
+<img  class="img-responsive" src="/img/projects/project001_13_pt.jpg" alt="" title="Tabela 2 - Técnicas de Reamostragem"/>
 </div>
 <div class="col three caption">
-	Table 2 - Resampling Techniques
+	Tabela 2 - Técnicas de Reamostragem
 </div>
 <br/>
 
-### **Implementation**
+### **Implementação**
 <br/>
-In this step, a function was created to apply a classifier algorithm without any optimized parameters, showing the results of the metrics mentioned in the chapter **Evaluation metrics** and the time that the algorithm uses to train and predict the data, based on the resulting datasets of resampling. The purpose of this step was to verify which algorithm and resampling technique has the best performance in training and test data to find the best model.
 
-In Table 3 are all algorithms separated by resampling techniques, showing the performance of each model ordered by the highest value in ROC AUC, the metric being the main influencer in the choice of the model, followed by f1_score for class 1 and then class 0.
+Nesta etapa foi criada uma função para aplicar um algoritmo classificador sem nenhum parâmetro otimizado e já mostrar os resultados das métricas citadas no capítulo **Métricas de avaliação** e o tempo que o algoritmo usa para treinar e prever os dados, baseados nos datasets resultantes de reamostragem. O intuito desta etapa foi verificar qual o algoritmo e técnica de reamostragem que tem melhor performance nos dados de treinamento e teste para encontrarmos o melhor modelo. 
 
-We can conclude by observing Table 3 that the RL algorithm with the Smote with Tomek Links technique with equal class balancing obtained the best ROC AUC score (0.947), however the f1_score for class 1 was very low, being 0.110, so the algorithm chosen was the one that performed the best balanced results between the two metrics, being the RF algorithm with the same resampling technique of the above model, obtaining ROC AUC at 0.905 and f1_score at 0.850.	
+Na Tabela 3 estão todos os algoritmos separados por técnicas de reamostragem, mostrando o desempenho de cada modelo ordenado pelo valor mais alto em ROC AUC, sendo a métrica como principal influenciadora na decisão da escolha do modelo, seguido por f1_score para classe 1 e depois classe 0.
+
+Podemos concluir observando a Tabela 3 que o algoritmo RL unido com a técnica de reamostragem Smote with Tomek Links com balanceamento de classes iguais, obteve a melhor pontuação de ROC AUC (0,947), contudo o f1_score para classe 1 foi muito baixo, sendo 0,110, portanto o algoritmo escolhido foi o que desempenhou os melhores resultados balanceados entre as duas métricas, sendo o algoritmo RF com a mesma técnica de reamostragem do modelo acima, obtendo o ROC AUC em 0,905 e f1_score em 0,850. 	
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_14.jpg" alt="" title="Table 3 - Models Performance"/>
+<img  class="img-responsive" src="/img/projects/project001_14.jpg" alt="" title="Tabela 3 - Performance dos Modelos"/>
 </div>
 <div class="col three caption">
-	Table 3 - Models Performance
+	Tabela 3 - Performance dos Modelos
 </div>
 <br/>
 
-### **Refinement**
+### **Refinamento**
 <br/>
-Having the model and the resampling technique defined, the next step was to optimize the algorithm, using the GridSearch library of sklearn. Here it is important to note that since our evaluation metric will be ROC AUC, having a chosen algorithm, we will use its prediction with probability, which in the case of RF is predict_proba, because, as explained in the chapter on **Evaluation metrics**, the curve ROC AUC is made by varying the threshold to find the false positive / negative rates by calculating the probabilities for each class.
 
-The result of the ROC AUC with predict_proba in the model without refinement was 0.9439, with the following hyperparameters:
+Tendo o modelo e técnica de reamostragem definidas o passo seguinte foi a otimização do algoritmo, para isso foi utilizado a biblioteca GridSearch do sklearn. Aqui se faz importante ressaltar que uma vez que nossa métrica de avaliação será ROC AUC, tendo um algoritmo escolhido, utilizaremos a predição dele com probabilidade, que no caso do RF é predict_proba, isso porque como explicado no capítulo de **Métricas de avaliação**, a curva ROC AUC é feita variando o threshold (limite) para encontrar as taxas de falso positivo/negativo, calculando as probabilidades para cada classe
+
+O resultado da ROC AUC com predict_proba no modelo sem refinamento foi 0.9439, com os seguintes hiperparametros:
 
 ```python
 RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
@@ -210,14 +213,15 @@ RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
 
 To improve the performance of the model GridSearch was used to optimize the hyperparameters according to Table 4.
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_15.jpg" alt="" title="Table 4 - Description of Hyperparameters"/>
+<img  class="img-responsive" src="/img/projects/project001_15_pt.jpg" alt="" title="Tabela 4 - Descrição de Hiperparâmetros"/>
 </div>
 <div class="col three caption">
-	Table 4 - Description of Hyperparameters
+	Tabela 4 - Descrição de Hiperparâmetros
 </div>
 <br/>
 
-The final result of the AUC ROC with predict_proba in the optimized model was 0.9820, which can be verified in Figure 10, with the following hyperparametres:
+Com a otimização do modelo feito no passo anterior, o resultado final da ROC AUC com predict_proba no modelo otimizado foi 0.9820, podendo ser verificado na Figura 9, com os seguintes hiperparametros:
+
 ```python
 RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
             max_depth=10, max_features='auto', max_leaf_nodes=None,
@@ -228,27 +232,28 @@ RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
 ```
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_09.png" alt="" title="Figure 9 - ROC AUC optimized model"/>
+<img  class="img-responsive" src="/img/projects/project001_09.png" alt="" title="Figura 9 - ROC AUC modelo otimizado"/>
 </div>
 <div class="col three caption">
-	Figure 9 - ROC AUC optimized model
+	Figura 9 - ROC AUC modelo otimizado
 </div>
 <br/>
 
-Checking the relevance of each feature in the model the result was that 5 attributes accumulated 70% of the importance of the data, as we can see in Figure 10. However, when using the same model with only 5 features the ROC AUC dropped to 0.9182, due to the great difference of the metric of both models, the optimized model was chosen with all the features.
+Ao verificar a relevância de cada feature no modelo o resultado foi que 5 atributos acumulavam 70% da importância dos dados, como podemos ver na Figura 10. Contudo ao utilizar o mesmo modelo com apenas as 5 features o ROC AUC caiu para 0.9182, devido a grande diferença da métrica de ambos modelos, foi escolhido o modelo otimizado com todas as features.
+
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_10.png" alt="" title="Figure 10 - Features Importance"/>
+<img  class="img-responsive" src="/img/projects/project001_10.png" alt="" title="Figura 10 - Importância das Features"/>
 </div>
 <div class="col three caption">
-	Figure 10 - Features Importance
+	Figura 10 - Importância das Features
 </div>
 <br/>
 
-### **Conclusion**
+### **Conclusão**
 <br/>
-I believe that the project was successful in analyzing fraud detection by credit card, and managed to improve the result demonstrated in the benchmark. An important point was the need to find a model that had a good balance in the prediction of both classes, because of the four algorithms selected only the RF performed well (above 0.8) in both classes.
-For a next step it would be ideal to try to improve the prediction of the model for the False Positives, without worsening the performance of the True Positives, since in this study we had 70 cases of False Positive, seen in Figure 11.
+
+Acredito que o projeto obteve sucesso na análise de detecção de fraudes por cartão de crédito, conseguindo melhorar um pouco o resultado demonstrado no benchmark. Foram utilizadas várias técnicas na qual necessitaram muita pesquisa para seu entendimento e utilização. Outro ponto importante foi a necessidade de encontrar um modelo que tivesse um bom balanceamento na predição de ambas as classes, pois dos quatro algoritmos selecionados apenas o RF teve um bom desempenho (acima de 0,8) nas duas classes. Para um próximo passo seria ideal tentar melhorar a predição do modelo para os Falsos Positivos, sem piorar o desempenho dos Verdadeiros Positivos, uma vez que neste estudo tivemos 72 casos de Falsos positivos, vistos na Figura 11
 
 <div style="display: flex; justify-content: center;">
 <img class="img-responsive" src="/img/projects/project001_11.png" alt="" title="Figure 11 - Confusion Matrix"/>
@@ -259,7 +264,7 @@ For a next step it would be ideal to try to improve the prediction of the model 
 <br/>
 
 
-### **Bibliography**
+### **Bibliografia**
 <br/>
 
 Braga, Antonio Padua & Castro, Cristiano Leite de. 2011. Aprendizado Supervisionado com conjunto de dados desbalanceados
@@ -289,6 +294,6 @@ Singh, Aishwarya. 2018. A Comprehensive Guide to Ensemble Learning
 Souza, Jocelyn D’. 2018.  Let’s learn about AUC ROC Curve! 
 
 ### **PS:**
-This is my conclusion project to Nanodegree in Machine Learning Engineer from Udacity, please, let me know with you have any doubts or sugestion. All code you can find in my Github [here.](https://github.com/shiguelita/credit_card_fraud_detection). 
+Este é o meu projeto de conclusão para Nanodegree em Engenheiro de Aprendizado de Máquina da Udacity, por favor me avise se tiver alguma dúvida ou sugestão. Todo o código que você encontrá no meu Github [aqui.](https://github.com/shiguelita/credit_card_fraud_detection). 
 
-Thanks for reading! See ya! ^^
+Obrigada! Até! ^^

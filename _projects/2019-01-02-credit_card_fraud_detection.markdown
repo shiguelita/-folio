@@ -145,7 +145,7 @@ The techniques used in this project are:
 
 * **Over-sampling**: Replicates minority class rows or generates synthetic data to avoid unbalance.
 
-* **Synthetic Minority Over-Sampling Technique (SMOTE)**: Used to synthesize data in over-sampling.
+* **Synthetic Minority Over-Sampling Technique (SMOTE)**: Used to synthesize data in over-sampling. Such a technique will be implemented along with Tomek links to avoid the increase in variance caused by some synthetic data generation techniques.
 
 * **Log Transformation**: used to normalize data with asymmetric distribution.
 
