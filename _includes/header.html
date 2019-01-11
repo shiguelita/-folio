@@ -12,7 +12,6 @@
             <li><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
           {% endfor %}
         </ul>
-
         {% assign pages=site.pages | where:"lang", page.lang %}
         {% for page in site.pages %}
           {% if page.title %}
@@ -34,6 +33,3 @@
   </div>
 
 </header>
-
-
-
