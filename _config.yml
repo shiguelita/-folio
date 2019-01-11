@@ -44,9 +44,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  notebook:
+  posts:
     output: true
-    permalink: /notebook/:path/
+    permalink: /posts/:path/
 
 t:
   en:
