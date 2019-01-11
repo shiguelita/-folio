@@ -40,8 +40,6 @@ disqus_shortname: shiguelita
 # Google analytics
 google_analytics: UA-121973887-1
 
-
-
 collections:
   projects:
     output: true
