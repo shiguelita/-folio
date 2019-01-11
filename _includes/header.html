@@ -21,7 +21,7 @@
 
 </header>
 
-<div class="wrapper">
+<div class="language">
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
 
