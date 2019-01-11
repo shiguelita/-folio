@@ -8,20 +8,20 @@ lang: pt
 ref: nanodegreeUdacity
 ---
 
-I recently graduated from [Udacity Machine Learning Engineer Nanodegree](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t) and I would like to share my experience I had with the program.
+Eu me formei recentemente no [Nanodegree Engenheiro de Aprendizado de Máquina da Udacity](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t) e gostaria de compartilhar minha experiência com o programa.
 
-**Is it worth?**
+**Vale a pena?**
 
-If you know the items below, **yes**, it's worth it!
-* Know Python with the Pandas, Numpy and Matplotlib libraries
-* Know linear algebra or do not mind to understand in depth how algorithms work mathematically
-* Basic statistics concepts
-* Discipline to learn with online course (reserving time for video lessons, exercises, research and extra reading)
+Se você se encaixa nos items abaixo, **sim**, vale a pena!
+* Conhecer Python com as bibliotecas Pandas, Numpy e Matplotlib
+* Saber álgebra linear ou não se importar em não entender com profundidade como os algoritmos funcionam matematicamente
+* Conhecer conceitos básicos de estatística
+* Ter disciplina para aprender com o curso online (reservando tempo para vídeo aulas, exercícios, pesquisa e leitura extra)
 
 ### **Backgound**
 <br/>
-Over the past 3 years, I worked as Data Analyst in a pharmaceutical industry, having as main activity the statistical analysis, using a software called JMP. My statistics level was already intermediate and I could code well in JMP Scripting Language (JSL). I wanted to take an online course because I definitely work better at home than in a classroom, my learning curve is a lot better if I study alone, in my time rather than a pre-set.
-I researched the best courses in Data Science and found Udacity, with a good name on the market and good student comments. In choosing the courses, I was between Data Science or Machine Learning Engineer. I sent an e-mail requesting telephone contact, in which I was quickly answered and explaining what I already knew and my gaps, I decided to start the Machine Learning.
+Nos últimos 3 anos, trabalhei como Analista de Dados em uma indústria farmacêutica, tendo como atividade principal a análise estatística, utilizando um software chamado JMP. Meu nível de estatístico já era intermediário e eu programava bem em JMP Scripting Language (JSL). Eu queria fazer um curso online porque eu definitivamente trabalho melhor em casa do que em uma sala de aula, minha curva de aprendizado é muito melhor se eu estudar sozinha, no meu tempo ao invés de um pré determinado.
+Pesquisei os melhores cursos em Ciência de Dados e encontrei a Udacity, com um bom nome no mercado e bons comentários dos alunos. Ao escolher os cursos, eu estava entre Ciência de Dados ou Engenheiro de Aprendizado de Máquina. Enviei um e-mail solicitando contato telefônico, no qual fui rapidamente atendida e explicanda o que eu já sabia e minhas lacunas, resolvi iniciar o de Aprendizado de Máquina.
 
 ### **Impasses**
 <br/>

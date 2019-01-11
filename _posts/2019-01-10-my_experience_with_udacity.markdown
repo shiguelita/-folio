@@ -14,7 +14,7 @@ I recently graduated from [Udacity Machine Learning Engineer Nanodegree](https:/
 
 If you know the items below, **yes**, it's worth it!
 * Know Python with the Pandas, Numpy and Matplotlib libraries
-* Know linear algebra or do not mind to understand in depth how algorithms work mathematically
+* Know linear algebra or do not mind to do not understand in depth how algorithms work mathematically
 * Basic statistics concepts
 * Discipline to learn with online course (reserving time for video lessons, exercises, research and extra reading)
 
