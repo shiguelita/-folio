@@ -30,13 +30,13 @@ O curso para qualquer pessoa interessada era o da Data Science Academy [Python F
 
 ### **O Nanodegree**
 <br/>
-The program has 3 modules, a final project plus a few extras. The deadline for doing it is 6 months, being possible to complete before, if you have time to dedicate during the week. You have the right to a weekly support with some instructor and also to use Slack as platform to ask questions with other students and monitors.
+O programa tem 3 módulos, um projeto final e alguns extras. O prazo para fazer isso é de 6 meses, sendo possível concluir antes se você tiver tempo para dedicar durante a semana. Você tem direito a uma monitoria semanal com algum instrutor e também a usar o Slack como plataforma para fazer perguntas com os outros alunos e monitores.
 
-**Term 1 - Supervised Learning**
+**Módulo 1 - Aprendizagem Supervisionada**
 
 It was the term that I liked the most, it teaches several algorithms of Supervised Learning, like Decision Tree, SVM, Naives Bayes, Emsemble Methods. The classes are very descriptive, shows the advantages, desvatangens and real cases, with examples of easy understanding and you can train with many exercises. There is a final project in each module, which consists of a Jupyter Noteebok in which you follow the guidelines and implement the codes. The project for this term was *Find Donors for CharityML*, in which we must predict whether a person earns more than $ 50,000 or not, for a NGO to get donors. This project makes you reflect a lot and moreover shows more or less how an analysis should be started and finalized. Once the project is submited, in 24 hours it is reviewed showing what you did right or wrong, if something is missing to make it possible to resubmit and they also give you tips on how to improve.	
 
-**Term 2 - Unsupervised Learning**
+**Módulo 2 - Aprendizagem Não Supervisionada**
 
 Here classes are also amazing as the first module, following the same principle. It also covers the concept of **Feature Selection** that I did not have much knowledge of, I learned a lot from this term. The project here was the *Creating Customer Segments*, again using the Jupyter Notebook with the steps it was necessary to separate the customers by segments. It was a little confusing for me because in this case you need to think a lot about Business, however this is essential for anyone doing data analysis, so it was a very useful training.
 
