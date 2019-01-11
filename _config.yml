@@ -40,13 +40,27 @@ disqus_shortname: shiguelita
 # Google analytics
 google_analytics: UA-121973887-1
 
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-  notebook:
-    output: true
-    permalink: /notebook/:path/
+t:
+  en:
+    home:
+      name: "home"
+      url: "/"
+    projects:
+      name: "projects"
+      url: "/projects/"
+    post:
+      name: "notebook"
+      url: "/notebook/"
+  pt:
+    home:
+      name: "home"
+      url: "/index_pt/"
+    projects:
+      name: "projetos"
+      url: "/projects_pt/"
+    post:
+      name: "anotações"
+      url: "/notebook_pt/"
 
 
 
