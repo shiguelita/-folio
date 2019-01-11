@@ -5,9 +5,9 @@
     <nav class="site-nav">
 
       <div class="trigger">
+        <a class="page-link" href="{{ site.baseurl }}/">home</a>
         {% assign pages=site.pages | where:"lang", page.lang %}
         {% for page in site.pages %}
-        
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
@@ -20,7 +20,7 @@
 
 </header>
 
-<div class="wrapper" style="text-align: left; line-height: 1.5em">
+<div class="wrapper" style="text-align: left; line-height: 1.5em; float: bottom">
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
 
