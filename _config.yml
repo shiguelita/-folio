@@ -53,21 +53,22 @@ t:
     home:
       name: "home"
       url: "/"
-    projects:
-      name: "projects"
-      url: "/projects/"
     posts:
       name: "notebook"
       url: "/notebook/"
+    projects:
+      name: "projects"
+      url: "/projects/"    
   pt:
     home:
       name: "home"
       url: "/index_pt.html"
-    projects:
-      name: "projetos"
-      url: "/projects_pt/"
     posts:
       name: "anotações"
       url: "/notebook_pt/"
+    projects:
+      name: "projetos"
+      url: "/projects_pt/"
+   
 
 
