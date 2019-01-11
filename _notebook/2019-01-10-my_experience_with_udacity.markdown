@@ -32,7 +32,7 @@ The program has 3 modules, a final project plus a few extras. The deadline for d
 
 **Term 1 - Supervised Learning**
 
-It was the term that I liked the most, it teaches several algorithms of Supervised Learning, like Decision Tree, SVM, Naives Bayes, Emsemble Methods. The classes are very descriptive, shows the advantages, desvatangens and use cases, with examples of easy understanding and you can train with many exercises. There is a final project in each module, which consists of a Jupyter Noteebok in which you follow the guidelines and implement the codes. The project for this term was *Find Donors for CharityML*, in which we must predict whether a person earns more than $ 50,000 or not, for an NGO to get donors. This project makes you reflect a lot and moreover shows more or less how an analysis should be started and finalized. Once the project is submited, in 24 hours it is reviewed showing what you did right or wrong, if something is missing to make it possible to resubmit and they also give you tips on how to improve.	
+It was the term that I liked the most, it teaches several algorithms of Supervised Learning, like Decision Tree, SVM, Naives Bayes, Emsemble Methods. The classes are very descriptive, shows the advantages, desvatangens and real cases, with examples of easy understanding and you can train with many exercises. There is a final project in each module, which consists of a Jupyter Noteebok in which you follow the guidelines and implement the codes. The project for this term was *Find Donors for CharityML*, in which we must predict whether a person earns more than $ 50,000 or not, for a NGO to get donors. This project makes you reflect a lot and moreover shows more or less how an analysis should be started and finalized. Once the project is submited, in 24 hours it is reviewed showing what you did right or wrong, if something is missing to make it possible to resubmit and they also give you tips on how to improve.	
 
 **Term 2 - Unsupervised Learning**
 
@@ -57,7 +57,7 @@ The above modules are mandatory to get the certificate, but Udacity offers some 
 <br/>
 Here are some tips to follow during the course:
 * Reserve some time each week, do not watch classes with large time spacing  between them
-* When learning about a new algorithm, summarize the advantages, disadvantages, when to use it and use cases. Believe you will need this! I will post mu cheat sheet in this blog.
+* When learning about a new algorithm, summarize the advantages, disadvantages, when to use it and real cases. Believe you will need this! I will post mu cheat sheet in this blog.
 * Whenever you are in doubt about any content, research for more, read articles, blogs, see examples or schedule a monitoring.
 * In projects try to do it alone, even if you are having difficulties do not look at the codes of other students. You can set up monitoring to ask for help, but try to do as much as you can, this will bring you more learning.
 
