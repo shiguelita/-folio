@@ -8,7 +8,7 @@ lang: en
 ref: pokemonTypes
 ---
 
-# A data visualization analysis of Pokémon Types
+# A visualization analysis of Pokémon Types
 
 <br/>
 For my first study I would like to start with something I really like: Pokémon!
@@ -111,7 +111,7 @@ p.legend.padding = 20
 p.legend.margin = 20
 ```
 
-Looking to this chart, I must say, I've been quite impressed with tiny number of primary type of flying, it is the third largest group of Pokémon, we have a lot of them in the skies, but only 4 is primary! That makes me think: How many Flying Pokémon is pure(one-type)?
+Looking to this chart, I must say, I've been quite impressed with tiny number of primary type of flying, it is the third largest group of Pokémon, we have a lot of them in the skies, but only 4 are primary! That makes me think: How many Flying Pokémon is pure(one-type)?
 To know that I've plotted this second chart:
 
 {% include bokeh_post02_one_type_pokemon_count.html %}
@@ -176,7 +176,7 @@ columns=['Total']).T, ignore_index=False)
 finaltable.tail()
 ```
 
-With my data organized, I've used Matplotlib and Seaborn to plot the last chart. We can notice that the largest group of Pokémon with the same two-types are Flying with Normal. It is kind of expected, once Flying has a bigger number of secondary Type, Water has about half number Pokémon with just one type and Normal being the second biggest group of Type, with most of your Pokémon being primary.
+With my data organized, I've used Matplotlib and Seaborn to plot the last chart. We can notice that the largest group of Pokémon with two-types are Normal with Flying. It is kind of expected, once Flying has a bigger number of secondary Type, Water has about half number Pokémon with just one type and Normal being the second biggest group of Type, with most of your Pokémon being primary.
 
 ```python
 #creating heatmap
