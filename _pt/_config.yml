@@ -1,0 +1,52 @@
+# Site settings
+title: Talita Shiguemoto
+email: talita.shiguemoto@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Some of my thoughts and analysis about my interests in data science, machine learning and artificial intelligence
+
+# Link settings
+baseurl: ""
+url: "https://shiguelita.github.io"
+
+
+# Social settings
+social_sites:
+  #twitter: jekyllrb
+  github:  shiguelita
+  #dribbble: jekyll
+  #facebook: jekyll
+  #flickr: jekyll
+  instagram: shiguelita
+  linkedin: talitashiguemoto
+  #pinterest: jekyll
+  #youtube: jekyll
+  #googleplus: +jekyll
+
+# Build settings
+markdown: kramdown
+
+highlighter: rouge
+
+# Pagination
+paginate: 15
+paginate_path: "/home/page:num/"
+
+# Disqus
+disqus_shortname: shiguelita
+
+# Google analytics
+google_analytics: UA-121973887-1
+
+collections:
+  projetos:
+    output: true
+    permalink: /projects/:path/
+  anotações:
+    output: true
+    permalink: /notebook/:path/
+  en:
+    output: true
+    permalink: ../:path/
+
+
+
