@@ -7,19 +7,15 @@
       <div class="trigger">
         <!-- {{ site.title }} instead of blog -->
         <div class="language">
-
-
           {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
           {% for page in pages %} 
             <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> 
           {% endfor %}
         </div>
         {% assign pages=site.pages | where:"lang", page.lang %}
-        {% for page in site.pages %}
-          {% if page.title %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+          {% for menu in site.t[page.lang] %}
+          <a class="page-link" href="{{ menu[1].url }}">{{ menu[1].name }}</a>
+          {% endfor %}
 
       </div>
 
