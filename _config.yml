@@ -48,7 +48,7 @@ t:
     projects:
       name: "projects"
       url: "/projects/"
-    post:
+    notebook:
       name: "notebook"
       url: "/notebook/"
   pt:
@@ -58,7 +58,7 @@ t:
     projects:
       name: "projetos"
       url: "/projects_pt/"
-    post:
+    notebook:
       name: "anotações"
       url: "/notebook_pt/"
 
