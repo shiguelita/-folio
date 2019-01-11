@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /posts_pt/
-title: notebook
+title: anotações
 description: Algumas idéias, dados, códigos e discussões sobre o que estou fazendo
 ref: post
 lang: pt
