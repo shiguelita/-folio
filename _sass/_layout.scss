@@ -25,6 +25,9 @@ color: $theme-color;
     }
 }
 .site-nav {
+.language{
+    float: left;
+}
 float: right;
 line-height: $nav-height;
 .page-link{
@@ -34,9 +37,7 @@ line-height: $base-line-height;
 margin-left: 10px;
         }
     }
-.language{
-    float: left;
-}
+
 @include media-query($on-palm) {
 position: fixed;
 top: 0px;
