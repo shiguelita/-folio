@@ -44,5 +44,9 @@ collections:
   notebook:
     output: true
     permalink: /notebook/:path/
+  pt:
+    output: true
+    permalink: /pt/:path/
+
 
 
