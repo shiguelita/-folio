@@ -48,7 +48,7 @@ The final project is a free theme, Udacity requests a proposal with some data to
 
 **Extra Modules**
 
-Os módulos acimas são obrigatórios para conseguir o certificado, porém a Udacity disponibiliza alguns conteúdos extras como:
+The above modules are mandatory to get the certificate, but Udacity offers some extra content such as:
 * **Support material**: here are classes on basic statistics, libraries Pandas, Numpy and scikit-learn (my tip is to complete this module first)
 * **Evaluation and validation of models**: you'll learn model concepts, how to train them, some evaluation metrics, and how to select a model
 * **Deep Learning**: this is the first module of [Nanodegree in Deep Learning](https://www.udacity.com/course/deep-learning-nanodegree--nd101), following the same concept of Term 1 and 2 of Machine Learning. Very good module! You learn about neural networks with Keras. The project of this module was *Dog-Breed Classifier*.
