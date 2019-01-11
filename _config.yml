@@ -47,20 +47,20 @@ t:
       url: "/"
     projects:
       name: "projects"
-      url: "/projects/:path/"
-    notebook:
+      url: "/projects/"
+    posts:
       name: "notebook"
-      url: "/notebook/:path/"
+      url: "/notebook/"
   pt:
     home:
       name: "home"
-      url: "/index_pt/:path/"
+      url: "/index_pt/"
     projects:
       name: "projetos"
-      url: "/projects_pt/:path/"
-    notebook:
+      url: "/projects_pt/"
+    posts:
       name: "anotações"
-      url: "/notebook_pt/:path/"
+      url: "/notebook_pt/"
 
 
 
