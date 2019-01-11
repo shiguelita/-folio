@@ -26,7 +26,7 @@ Pesquisei os melhores cursos em Ciência de Dados e encontrei a Udacity, com um 
 ### **Impasses**
 <br/>
 Um impasse foi o preço, os cursos de Udacity são um pouco mais caros se comparados a outros cursos online, aqui na época paguei R$ 1999,00, porém eu acreditei que devido as opiniões do curso que li mais o conteúdo do curso, valeria a pena. O outro obstáculo era que eu não conhecia Python, então fiz um curso on-line em português em uma semana, o que me deu subsídio suficiente para começar o Nanodegree.
-O curso para qualquer pessoa interessada era o da Data Science Academy [Python Fundamentos para Análise de Dados](https://www.datascienceacademy.com.br/course?courseid=python-fundamentos). O curso é ótimo para iniciantes e você aprende muito rápido fazendo os exercícios.
+O curso para qualquer pessoa interessada era o da Data Science Academy [Python Fundamentos para Análise de Dados](https://www.datascienceacademy.com.br/course?courseid=python-fundamentos/). O curso é ótimo para iniciantes e você aprende muito rápido fazendo os exercícios.
 
 ### **O Nanodegree**
 <br/>
@@ -38,33 +38,32 @@ Foi o módulo que mais gostei, ensina vários algoritmos de Aprendizado Supervis
 
 **Módulo 2 - Aprendizagem Não Supervisionada**
 
-Here classes are also amazing as the first module, following the same principle. It also covers the concept of **Feature Selection** that I did not have much knowledge of, I learned a lot from this term. The project here was the *Creating Customer Segments*, again using the Jupyter Notebook with the steps it was necessary to separate the customers by segments. It was a little confusing for me because in this case you need to think a lot about Business, however this is essential for anyone doing data analysis, so it was a very useful training.
+Aqui as aulas também são tão incríveis como o primeiro módulo, seguindo o mesmo princípio. Também abrange o conceito de **Feature Selection** que eu não tinha muito conhecimento, aprendi muito com esse cápitulo. O projeto aqui era o *Creating Customer Segments*, novamente usando o Jupyter Notebook com as etapas necessárias para separar os clientes por segmentos. Foi um pouco confuso para mim, porque neste caso você precisa pensar muito sobre o Negócio, no entanto, isso é essencial para qualquer pessoa que faça análise de dados, por isso foi um treinamento muito útil.
 
-**Term 3 - Reinforcement Learning**
+**Módulo 3 - Aprendizagem por Reforço**
 
-This module left a little to be desired, the classes were good to a certain extent, then it was very confusing, the video lessons were not as good as the previous modules and the project was very difficult. I had to research VERY MUCH to get the project *Train a quadcopter how to fly* finished. This was a topic that I do not feel prepared for, I will study more deeply now that I have finished the Nanodegree.
+Este módulo deixou um pouco a desejar, as aulas foram boas até certo ponto, então ficou muito confuso, as vídeo aulas não foram tão boas quanto os módulos anteriores e o projeto foi muito difícil. Eu tive que pesquisar MUITO para finalizar o projeto *Train a quadcopter how to fly*. Este foi um tema que não me sinto preparada, estudarei mais profundamente agora que terminei o Nanodegree.
 
-**Capstone**
+**Projeto Final**
 
-The final project is a free theme, Udacity requests a proposal with some data to be accepted and then the project with all the analyzes. You need to submit a PDF file following a template. My biggest difficulty was finding a dataset and theme, a lot of things went through my head, but in the end I decided to do about Credit Card Fraud Detection, which you can see all the steps [here](https://shiguelita.github.io/projects/2019-01-02-credit_card_fraud_detection/). The project was a huge learning, get the data, how to start the analysis, get a better model than the Benchmark from Kaggle, it was really a wonderful experience.
+O projeto final é um tema livre, a Udacity solicita uma proposta com alguns dados para serem aceitos e depois o projeto com todas as análises. Você precisa enviar um arquivo PDF seguindo um modelo. Minha maior dificuldade foi encontrar um conjunto de dados e o tema, um monte de coisas passou pela minha cabeça, mas no final decidi fazer sobre a Detecção de Fraude de Cartão de Crédito, que você pode ver todos os passos [aqui](https://shiguelita.github.io/projects/2019-01-02-credit_card_fraud_detection_pt/). O projeto foi uma grande aprendizagem, obter os dados, como iniciar a análise, obter um modelo melhor que o Benchmark do Kaggle, foi realmente uma experiência maravilhosa.
 
-**Extra Modules**
+**Módulos Extra**
 
-The above modules are mandatory to get the certificate, but Udacity offers some extra content such as:
-* **Support material**: here are classes on basic statistics, libraries Pandas, Numpy and scikit-learn (my tip is to complete this module first)
-* **Evaluation and validation of models**: you'll learn model concepts, how to train them, some evaluation metrics, and how to select a model
-* **Deep Learning**: this is the first module of [Nanodegree in Deep Learning](https://www.udacity.com/course/deep-learning-nanodegree--nd101), following the same concept of Term 1 and 2 of Machine Learning. Very good module! You learn about neural networks with Keras. The project of this module was *Dog-Breed Classifier*.
+Os módulos acima são obrigatórios para obter o certificado, mas a Udacity oferece algum conteúdo extra, como:
+* **Material de suporte**: aqui há aulas sobre estatísticas básicas, bibliotecas Pandas, Numpy e scikit-learn (minha dica é concluir este módulo primeiro)
+* **Avaliação e validação de modelos**: você aprenderá conceitos de modelo, como treiná-los, algumas métricas de avaliação e como selecionar um modelo
+* **Deep Learning**: este é o primeiro módulo de [Nanodegree em Deep Learning](https://www.udacity.com/course/deep-learning-nanodegree--nd101), seguindo o mesmo conceito dos Módulos 1 e 2 do Aprendizado de Máquina. Ótimo módulo! Você aprende sobre redes neurais com Keras. O projeto deste módulo foi *Dog-Breed Classifier*.
 
-### **Tips**
+### **Dicas**
 <br/>
-Here are some tips to follow during the course:
-* Reserve some time each week, do not watch classes with large time spacing  between them
-* When learning about a new algorithm, summarize the advantages, disadvantages, when to use it and real cases. Believe you will need this! I will post mu cheat sheet in this blog.
-* Whenever you are in doubt about any content, research for more, read articles, blogs, see examples or schedule a monitoring.
-* In projects try to do it alone, even if you are having difficulties do not look at the codes of other students. You can set up monitoring to ask for help, but try to do as much as you can, this will bring you more learning.
 
+Aqui estão algumas dicas para seguir durante o curso:
+* Reserve algum tempo a cada semana, não assista a aulas com grande espaçamento entre elas
+* Ao aprender sobre um novo algoritmo, faça um resumo com as vantagens, desvantagens, quando usá-lo e casos reais. Acredite que você precisará disso! Vou postar mais para frente neste blog minha colinha.
+* Sempre que tiver dúvidas sobre qualquer conteúdo, pesquise mais, leia artigos, blogs, veja exemplos ou agende um monitoramento.
+* Nos projetos tentam fazé-los sozinho, mesmo se você estiver com dificuldades, não olhe nos códigos de outros alunos. Você pode agendar o monitoramento para pedir ajuda, mas tente fazer o máximo que puder, isso lhe trará mais aprendizado.
 
-
-That's it! For me the course was worth every cent invested ^^
+É isso! Para mim o curso valeu cada centavo investido. ^^
 
 

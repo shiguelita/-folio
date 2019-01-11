@@ -59,7 +59,7 @@ The above modules are mandatory to get the certificate, but Udacity offers some 
 <br/>
 Here are some tips to follow during the course:
 * Reserve some time each week, do not watch classes with large time spacing  between them
-* When learning about a new algorithm, summarize the advantages, disadvantages, when to use it and real cases. Believe you will need this! I will post mu cheat sheet in this blog.
+* When learning about a new algorithm, summarize the advantages, disadvantages, when to use it and real cases. Believe you will need this! I will post my cheat sheet in this blog.
 * Whenever you are in doubt about any content, research for more, read articles, blogs, see examples or schedule a monitoring.
 * In projects try to do it alone, even if you are having difficulties do not look at the codes of other students. You can set up monitoring to ask for help, but try to do as much as you can, this will bring you more learning.
 
