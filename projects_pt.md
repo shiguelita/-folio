@@ -1,10 +1,12 @@
 ---
 layout: page
 title: projects
-description: Analysis from start to finish
+description: Análises do começo ao fim
 permalink: /projects/
+ref: projects
+lang: pt
 ---
-
+{% assign projects=site.projects | where:"lang", page.lang %}
 {% for project in site.projects %}
 
 {% if project.redirect %}

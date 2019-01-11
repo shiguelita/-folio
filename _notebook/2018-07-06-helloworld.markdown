@@ -4,6 +4,8 @@ title: Hello World!
 date: 2018-07-06 11:00:00
 comments: true
 author: Talita Shiguemoto
+lang: en
+ref: hello
 ---
 
 I am Talita Shiguemoto and welcome to my blog!
@@ -13,7 +15,7 @@ I hope that with this I can help some people who are looking to develop their kn
 
 A little more about me: I graduated in Mathematics at Metodista University, I work with data analysis since 2015 and currently I am taking graduate studies in Big Data Analysis in FIA University.
 
-Some of my interests are: data science, machine learning, artificial intelligence, games, books, tea, and travel.
+Some of my interests are: data science, machine learning, artificial intelligence, games, sci-fi, books, tea, and travel.
 
 That's it, time to start!
 
