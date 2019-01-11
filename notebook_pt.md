@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /notebook/
+permalink: /notebook_pt/
 title: notebook
 description: Algumas idéias, dados, códigos e discussões sobre o que estou fazendo
 ref: post

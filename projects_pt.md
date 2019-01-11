@@ -2,7 +2,7 @@
 layout: page
 title: projects
 description: Análises do começo ao fim
-permalink: /projects/
+permalink: /projects_pt/
 ref: projects
 lang: pt
 ---
