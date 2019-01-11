@@ -1,6 +1,9 @@
 # Site settings
 title: Talita Shiguemoto
 email: talita.shiguemoto@gmail.com
+description:
+  en: Some of my thoughts and analysis about my interests in data science, machine learning and artificial intelligence
+  pt: Alguns dos meus pensamentos e análises sobre meus interesses em ciência de dados, aprendizado de máquina e inteligência artificial
 index: 
   en:
   pt: index_pt.html
@@ -37,27 +40,13 @@ disqus_shortname: shiguelita
 # Google analytics
 google_analytics: UA-121973887-1
 
-t:
-  en:
-    home:
-      name: "home"
-      url: "/"
-    projects:
-      name: "projects"
-      url: "/projects/"
-    notebook:
-      name: "notebook"
-      url: "/notebook/"
-  pt:
-    home:
-      name: "home"
-      url: "/index_pt/"
-    projects:
-      name: "projetos"
-      url: "/projects_pt/"
-    notebook:
-      name: "anotações"
-      url: "/notebook_pt/"
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  notebook:
+    output: true
+    permalink: /posts/:path/
 
 
 
