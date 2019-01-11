@@ -4,6 +4,8 @@ title: My experience with Udacity Machine Learning Engineer Nanodegree
 date: 2019-01-10 20:00:00
 comments: true
 author: Talita Shiguemoto
+lang: en
+ref: nanodegreeUdacity
 ---
 
 I recently graduated from [Udacity Machine Learning Engineer Nanodegree](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t) and I would like to share my experience I had with the program.

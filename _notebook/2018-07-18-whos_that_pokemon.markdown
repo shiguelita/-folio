@@ -4,6 +4,8 @@ title: Who's that Pokémon?
 date: 2018-07-19 18:30:00
 comments: true
 author: Talita Shiguemoto
+lang: en
+ref: pokemonTypes
 ---
 
 # A data visualization analysis of Pokémon Types
