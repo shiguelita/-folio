@@ -167,25 +167,25 @@ text-align: justify;
 h1 {
 font-size: 30px;
 @include media-query($on-laptop) {
-font-size: 16px;
+font-size: 18px;
         }
     }
 h2 {
 font-size: 22px;
 @include media-query($on-laptop) {
-font-size: 28px;
+font-size: 16px;
         }
     }   
 h3 {
 font-size: 20px;
 @include media-query($on-laptop) {
-font-size: 22px;
+font-size: 14px;
         }
     }
 h4 {
 font-size: 20px;
 @include media-query($on-laptop) {
-font-size: 18px;
+font-size: 12px;
         }
     }
 }
