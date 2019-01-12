@@ -18,7 +18,7 @@
           {% endfor %}
 
           {% assign projects=site.projects | where:"ref", page.ref | sort: 'lang' %}
-          {% for post in posts %} 
+          {% for projects in projects %} 
             <a href="{{ projects.url | prepend: site.baseurl }}" class="{{ projects.lang }}">{{ projects.lang }}</a> 
           {% endfor %}
           
