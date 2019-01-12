@@ -13,7 +13,7 @@ Muitas transações por cartão de crédito são fraudulentas, o objetivo deste 
 
 O primeiro passo será pré-processar os dados para lidarmos com o desbalanceamento que, em outras palavras, é o fato de que normalmente em transações por cartão de crédito a taxa de fraudes é muito menor que a taxa de transações verdadeiras. Portanto, iremos utilizar uma técnica de subamostragem para resolver este impasse. Feito isso, será testado os algoritmos de Métodos de Ensemble (Random Forest, Gradient Boosting, XGBoost),Support Vector Machines e K-Nearest Neighbors, verificando qual deles terá melhor performance e resultados. O modelo final será escolhido embasado por algumas métricas (veja em **Métricas de avaliação**) e terá seus hiperparâmetros otimizados pelo *GridSearch*.
 
-### **Evaluation metrics**
+### **Métricas de avaliação**
 <br/>
 Devido nosso conjunto ser desbalanceado a acurácia não é a melhor métrica para ser usada na avaliação do modelo. Para este estudo utilizaremos principalmente o AUC ROC para verificar a qualidade do algoritmo.
 
