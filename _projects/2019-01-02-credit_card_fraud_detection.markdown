@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: projects
 title: Fraud Detection
 date: 2019-01-03 13:00:00
 author: Talita Shiguemoto

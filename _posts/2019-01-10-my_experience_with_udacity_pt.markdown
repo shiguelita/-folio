@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: projects
 title: Minha experiência com Nanodegree Engenheiro de Aprendizado de Máquina da Udacity
 date: 2019-01-10 20:00:00
 comments: true
