@@ -16,6 +16,11 @@
           {% for post in posts %} 
             <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> 
           {% endfor %}
+
+          {% assign projects=site.projects | where:"ref", page.ref | sort: 'lang' %}
+          {% for post in posts %} 
+            <a href="{{ projects.url | prepend: site.baseurl }}" class="{{ projects.lang }}">{{ projects.lang }}</a> 
+          {% endfor %}
         </div>
         {% assign pages=site.pages | where:"lang", page.lang %}
           {% for menu in site.t[page.lang] %}
