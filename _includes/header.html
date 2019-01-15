@@ -21,7 +21,7 @@
           {% for projects in projects %} 
             <a href="{{ projects.url | prepend: site.baseurl }}" class="{{ projects.lang }}">{{ projects.lang }}</a> 
           {% endfor %}
-          
+
         </div>
         {% assign pages=site.pages | where:"lang", page.lang %}
           {% for menu in site.t[page.lang] %}
@@ -29,7 +29,6 @@
           {% endfor %}
 
       </div>
-
 
     </nav>
 
