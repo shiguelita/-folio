@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Consulta Rápida: Modelos de Aprendizagem de Máquina
-date: 2019-01-15 14:00:00
+date: 2019-01-10 20:00:00
 comments: true
 author: Talita Shiguemoto
 lang: pt
