@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cheat Sheet: Machine Learning Models
-date: 2019-01-15 12:00:00
+date: 2019-01-14 12:00:00
 comments: true
 author: Talita Shiguemoto
 lang: en
@@ -255,7 +255,7 @@ Acronyms used in the concepts below:
 * **Confusion Matrix**: is an array of real values and values predicted by its algorithm, showing how many TP, TN, FP, and FN its model got. As we can see in Figure 1:
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_11.png" width="50%" height="50%" alt="" title="Figure 1 - Confusion Matrix"/>
+<img  class="img-responsive" src="/img/projects/project001_11.png" width="400px" height="320px" alt="" title="Figure 1 - Confusion Matrix"/>
 </div>
 <div class="col three caption">
 	Figure 1 - Confusion Matrix
