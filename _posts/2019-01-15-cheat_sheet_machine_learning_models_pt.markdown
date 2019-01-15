@@ -262,7 +262,7 @@ Siglas usadas nos conceitos abaixo:
 * **Matriz de Confusão**: em inglês Confusion Matrix, é uma matriz de valores reais e valores preditos pelo seu algoritmo, mostrando quantos TP, TN, FP e FN seu modelo obteve. Como podemos ver na Figura 1:
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_11.png" alt="" width="400px" height="320px" title="Figura 1 - Confusion Matrix"/>
+<img  class="img-responsive" src="/img/projects/project001_11.png" alt="" title="Figura 1 - Confusion Matrix"/>
 </div>
 <div class="col three caption">
 	Figura 1 - Confusion Matrix

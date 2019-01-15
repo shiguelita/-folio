@@ -261,7 +261,7 @@ Acronyms used in the concepts below:
 * **Confusion Matrix**: is an array of real values and values predicted by its algorithm, showing how many TP, TN, FP, and FN its model got. As we can see in Figure 1:
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_11.png" width="400px" height="320px" alt="" title="Figure 1 - Confusion Matrix"/>
+<img  class="img-responsive" src="/img/projects/project001_11.png" alt="" title="Figure 1 - Confusion Matrix"/>
 </div>
 <div class="col three caption">
 	Figure 1 - Confusion Matrix
