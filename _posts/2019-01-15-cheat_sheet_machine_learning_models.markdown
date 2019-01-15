@@ -12,7 +12,6 @@ This is a summary of the models and metrics I learned in the Nanodegree Machine 
 
 Remember, this is not a post with details of each models or metrics, just to have a quick reminder, with brief summary of the model, advantages, disadvantages and examples of use cases. I put all the imports in the end, since we usually use more than one in one analysis.
 
-
 * [Supervised Learning](#supervised-learning)
 	* [Naive Bayes](#naive-bayes)
 	* [Decision Trees](#decision-trees)
@@ -253,7 +252,6 @@ Acronyms used in the concepts below:
 * TN: True Negatives, values that were correctly predicted to be negative
 * FN: False Negatives, values that were incorrectly predicted to be negative
 
-
 * **Accuracy**: measures how often the classifier makes the correct prediction. It is the ratio between the number of correct predictions and the total number of predictions (the number of records tested). Mathematically expressed by:
 
 \begin{align}
@@ -418,7 +416,6 @@ The problem of this method is that only one point is analyzed to verify the smal
 	* Sensitive to noise and outilers
 	* It needs greater computational capacity when it has large datasets and many dimensionalities
 
-
 ### **Density Based Spatial Clustering of Application with Noise** {#dbsac}
 <br/>
 
@@ -443,7 +440,6 @@ It checks the distance ε (epsilon) around the points and if there are no other 
 * **Disadvantages**
 	* Border points that can be accessed from two clusters are assigned to the cluster that first encounters it
 	* It faces difficulty in finding clusters of different densities, we can use HDBSCAN in these cases
-
 
 ### **Gaussian Mixture Models** {#gmm}
 <br/>
@@ -477,7 +473,6 @@ It works by the Expectation Maximization algorithm in the following steps:
 	* Sensitive to initialization values
 		* The convergence rate is slow
 	    * It is not good to learn with interactions of features, for example, if you like ice cream of flakes and chocolate, but hate the two flavors together
-
 
 ### **Evaluating Models** {#evaluating-ul}
 <br/>
@@ -541,14 +536,12 @@ Examples of models that are not ** affected by Feature Scaling:
 * **Where can it be used?**
 	* Facial recognition along with SVM
 
-
 ### **Random Projection** {#random-projection}
 <br/>
 
 * **What is it?**
 
 A dimensionality reduction method, mathematically more efficient and perfomatic than PCA for working with a large dimensional data set. Based on the Johnson-Linderstrauss Lemma, the algorithm multiplies the data set by a random matrix, preserving the distances between the points to a large degree, causing the number of dimensions to decrease
-
 
 ### **Independent Component Analysis** {#ica}
 <br/>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Consulta Rápida: Modelos de Machine Learning
+title: Consulta Rápida
 date: 2019-01-15 12:00:00
 comments: true
 author: Talita Shiguemoto
@@ -191,7 +191,6 @@ Estima a probabilidade associada à ocorrência de um determinado evento devido 
     * Sensível a outliers
     * Não perfoma bem com alta dimensionalidade
 
-
 ### **Regressão Logística** {#logistic-regression}
 <br/>
 
@@ -214,7 +213,6 @@ Algoritmo que estima a probabilidade associada à ocorrência de um determinado 
     * Não trabalha bem com outliers
     * Não trabalha bem um grande número de variáveis categóricas
 
-
 ### **Métodos de Ensemble** {#ensemble}
 <br/>
 
@@ -232,7 +230,6 @@ Alguns dos métodos são:
 * **Gradient Boosting**: tenta minimizar o Erro Médio Quadrático (EQM, ou MSE em inglês).até que a soma dos resíduos seja próxima de 0 (ou mínimo) e os valores previstos estejam suficientemente próximos dos valores reais. 
 
 * **XGBoost (Extreme Gradient Boosting)**: é uma implementação avançada do Gradient Boosting, contudo mais rápido e com alto poder preditivo. Possui uma variedade de regularizações que reduzem o overfitting e melhoram o desempenho geral, como penalização inteligente de árvores e um encolhimento proporcional de nós de folha.
-
 
 * **Onde pode ser usado?**
     * Random Florest usado no Kinect para rastreiar movimentos corporais e os recriar no jogo.
@@ -407,7 +404,6 @@ O problema deste método é que somente um ponto é analisado para verificar a m
 * **Onde pode ser usado?**
     * Usando o método de Average Link, foi possível agrupar proteínas produzidas, usado para criar clusters de tipos de fungos, veja na [documentação](https://www.ncbi.nlm.nih.gov/pubmed/22238666)
     * Usando o método Complete Link para desenhar um diagrama de microbioma humano, veja na [documentação](https://www.ncbi.nlm.nih.gov/pubmed/21129376)
-
 
 * **Vantagens**
     * Funciona bem com conjunto de dados dois-crescentes e dois-anéis
