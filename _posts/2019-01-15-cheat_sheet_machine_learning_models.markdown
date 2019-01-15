@@ -5,7 +5,7 @@ date: 2019-01-15 12:00:00
 comments: true
 author: Talita Shiguemoto
 lang: en
-ref: cs_machinelearning
+ref: csMachineLearning
 ---
 
 This is a summary of the models and metrics I learned in the Nanodegree Machine Learning Engineer from Udacity, in which I told my experience [here](https://shiguelita.github.io/posts/2019-01-10-my_experience_with_udacity/). I added some models and libraries that I used at other times. As it is a quick chear sheet, the goal will always be to update this post.
@@ -255,7 +255,7 @@ Acronyms used in the concepts below:
 * **Confusion Matrix**: is an array of real values and values predicted by its algorithm, showing how many TP, TN, FP, and FN its model got. As we can see in Figure 1:
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_11.png" alt="" title="Figure 1 - Confusion Matrix"/>
+<img  class="img-responsive" src="/img/projects/project001_11.png" width="50%" height="50%" alt="" title="Figure 1 - Confusion Matrix"/>
 </div>
 <div class="col three caption">
 	Figure 1 - Confusion Matrix

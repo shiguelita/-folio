@@ -5,7 +5,7 @@ date: 2019-01-15 12:00:00
 comments: true
 author: Talita Shiguemoto
 lang: pt
-ref: cs_machinelearning
+ref: csMachineLearning
 ---
 
 Esse é um resumo dos modelos e métrica que aprendi no Nanodegree Engenheiro de Machine Learning da Udacity, na qual contei minha experiência [aqui](https://shiguelita.github.io/posts/2019-01-10-my_experience_with_udacity_pt/). Acrescentei alguns modelos e bibliotécas que utilizei em outros momentos. Como é uma consulta rápida o objetivo será sempre atualizar este post.
@@ -257,7 +257,7 @@ Siglas usadas nos conceitos abaixo:
 * **Matriz de Confusão**: em inglês Confusion Matrix, é uma matriz de valores reais e valores preditos pelo seu algoritmo, mostrando quantos TP, TN, FP e FN seu modelo obteve. Como podemos ver na Figura 1:
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project001_11.png" alt="" title="Figura 1 - Confusion Matrix"/>
+<img  class="img-responsive" src="/img/projects/project001_11.png" alt="" width="50%" height="50%" title="Figura 1 - Confusion Matrix"/>
 </div>
 <div class="col three caption">
 	Figura 1 - Confusion Matrix
