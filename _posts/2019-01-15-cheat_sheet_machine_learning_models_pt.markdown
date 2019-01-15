@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Consulta Rápida: Modelos de Machine Learning
-date: 2019-01-14 12:00:00
+date: 2019-01-15 12:00:00
 comments: true
 author: Talita Shiguemoto
 lang: pt
@@ -45,9 +45,12 @@ Existem dois tipos de problemas para esse tipo de aprendizagem:
 <br/>
 
 * **O que é?**
+
 É um classificar probabilíticos baseado no *Teorema de Bayes*, criado por Thomas Bayes. Contudo, por ser ingênuo ele pode ter falsos positivos.
+
 **Teorema de Bayes**: probabilidade de um evento ocorrer condicionado por outro.
 *Exemplo*: Se *A* acontecer a probabilidade de *B* acontecer é *XX%*.
+
 **Naive**: entende que todas as ocorrências são independentes, o que pode gerar falsos positivos.
 
 Existem 3 tipos de classificadores de Naives Bayes:
@@ -79,6 +82,7 @@ Existem 3 tipos de classificadores de Naives Bayes:
 <br/>
 
 * **O que é?**
+
 Árvore de Decisão é um diagrama em forma de árvore usado para determinar um curso de ação. Cada ramo da árvore representa uma possível decisão, ocorrência ou reação.
 
 Uma Árvore de Decisão pode ser usada de duas formas:
@@ -107,6 +111,7 @@ Uma Árvore de Decisão pode ser usada de duas formas:
 <br/>
 
 * **O que é?**
+
 Em português *Máquina de Vetores de Suporte* pode ser usado para problemas de classificação e regressão. Ele usa uma técnica chamada de *kernel*  para transformar seus dados e, em seguida, com base nessas transformações, ele encontra um limite ideal entre as saídas possíveis.
 
 * **Onde pode ser usado?**
@@ -135,6 +140,7 @@ Em português *Máquina de Vetores de Suporte* pode ser usado para problemas de 
 <br/>
 
 **O que é?**
+
 Regressão Linear é utilizado para prever valores contínuos de saída (Y) baseado em uma ou mais variáveis preditoras de entrada (X). Ela estabelece uma relação linear com os valores de X conhecidos para prever o valor de Y.
 
 * **Regressão Linear Simples**: Quando temos apenas uma variável de entrada (X)
@@ -166,6 +172,7 @@ Regressão Linear é utilizado para prever valores contínuos de saída (Y) base
 <br/>
 
 * **O que é?**
+
 Estima a probabilidade associada à ocorrência de um determinado evento devido algumas *features*. Os resultados da análise ficam contidos em um intervalo de 0 a 1.
 
 * **Onde pode ser usado?**
@@ -212,6 +219,7 @@ Algoritmo que estima a probabilidade associada à ocorrência de um determinado 
 <br/>
 
 * **O que é?**
+
 Métodos de Ensemble são formas de combinar vários modelos, criando um modelo mais forte e preciso.
 
 Alguns dos métodos são:
@@ -329,8 +337,8 @@ Aprendizagem Não Supervisionadas são modelos de Machine Learnig que possuem po
 <br/>
 
 * **O que é?**
-Um algoritmo que agrupa dados que possuem características similares entre si em um *cluster*. O método K-means tem esse nome porque *K* representa um número, uma vez que é necessário dizer ao algoritmo em quantos clusters deseja a divisão dos dados.
-K-means é mais utilizado em uso geral, com clusters de tamanhos iguais, geometria plana, sem grandes quantidades de clusters. O algoritmo sempre tenta encontrar clusters circulares, esféricos.
+
+Um algoritmo que agrupa dados que possuem características similares entre si em um *cluster*. O método K-means tem esse nome porque *K* representa um número, uma vez que é necessário dizer ao algoritmo em quantos clusters deseja a divisão dos dados. K-means é mais utilizado em uso geral, com clusters de tamanhos iguais, geometria plana, sem grandes quantidades de clusters. O algoritmo sempre tenta encontrar clusters circulares, esféricos.
 
 Ele usa a medida de distância para dizer o quão similiar cada observação é, podendo ser:
    * **Distância Euclidiana**: distância euclidiana entre dois pontos em uma linha reta
@@ -385,6 +393,7 @@ for k in k_values:
 <br/>
 
 * **O que é?**
+
 O resultado deste algoritmo é uma estrutura de agrupamento que nos proporciona uma indicação visual da relação entre os agrupamentos. Ele uni os dados em clusters de acordo com distâncias mínimas, que são calculadas de acordo com cada método:
 
 * **Single Link**: assume que todos os pontos são um cluster e depois os agrupa em clusters de acordo com a distância dos pontos. Depois, quando há um ponto isolado, ele procura os dois pontos mais **próximos** nos dois clusters que é a distância entre os clusters, e e depois une os pontos formando outro cluster. E então escolhemos quantos clusters queremos. **Este método não existe no sklearn**, em vez disso usamos o ***Complete Link***
@@ -416,6 +425,7 @@ O problema deste método é que somente um ponto é analisado para verificar a m
 <br/>
 
 * **O que é?**
+
 O algoritmo agrupa os dados que estão unidos de forma densa, pontos próximos juntos, e nem todos os pontos fazem parte de um cluster, o model nomeia os outros pontos como ruído.
 Ele verifica a distância ε (epsilon) em volta dos pontos e caso não haja outros pontos próximos suficientes, é considerado ruído. Temos que setar os parametros de número mínimo de pontos por cluster e distância ε.
 **Core point (ponto cetral)**: é o ponto que possui o número mínimo de pontos requeridos e identifica um cluster. Um mesmo cluster pode ter vários core points
@@ -486,6 +496,7 @@ Ele funciona pelo algortimo de Maximização da Expectativa, nos seguintes passo
 <br/>
 
 * **O que é?**
+
 Método para transformar as features com intervalos semelhantes para que possam ser compáveis, normalmente entre 0 e 1.
 No Sklearn existe um método que faz isso, o ***MinMaxScaler***, que transforma os dados nessa escala, contundo precisa lembrar que seu array tem que ter números *float* (decimais)
 
@@ -507,6 +518,7 @@ Exemplos de modelos que **não** são afetados por Feature Scaling:
 <br/>
 
 * **O que é?**
+
 * Usado para reduzir a dimensionalidade dos *features* maximizando as variâncias, perdendo a menor quantidade de informação ao projetador os dados
 * PCA é um modelo sistematizado de transformar as *features* de entradas em componentes principais.
 * Esses Componentes Principais ficam disponíveis para se usar no lugar das *features* originais
@@ -532,13 +544,14 @@ Exemplos de modelos que **não** são afetados por Feature Scaling:
 <br/>
 
 * **O que é?**
-Um método de redução de dimensionalidade, matematicamente mais eficaiz e perfomático que PCA para trabalhar com conjunto de dados com grande dimensionalidade 
-Baseado no Lema de Johnson-Linderstrauss, o algortimo multiplica o cojunto de dados por uma matriz aleatória, preservando as distancias entre os pontos em um grau amplo, fazendo com que o número de dimensões diminua
+
+Um método de redução de dimensionalidade, matematicamente mais eficaiz e perfomático que PCA para trabalhar com conjunto de dados com grande dimensionalidade. Baseado no Lema de Johnson-Linderstrauss, o algortimo multiplica o cojunto de dados por uma matriz aleatória, preservando as distancias entre os pontos em um grau amplo, fazendo com que o número de dimensões diminua
 
 ### **Independent Component Analysis** {#ica}
 <br/>
 
 * **O que é?**
+
 ICA assume que os *features* são misturas de fontes independentes, e o algoritmo tenta isolá-las umas das outras.
 Um exemplo conhecido é o "*Problema da festa*", que mostra três pessoas no mesmo salão em locais diferentes, cada uma gravando o som do local. Cada local está tocando algo difente, como piano, violão celo, e uma TV.
 

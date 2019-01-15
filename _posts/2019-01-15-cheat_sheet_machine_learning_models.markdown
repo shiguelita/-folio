@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cheat Sheet: Machine Learning Models
-date: 2019-01-14 12:00:00
+date: 2019-01-15 12:00:00
 comments: true
 author: Talita Shiguemoto
 lang: en
@@ -46,9 +46,11 @@ There are two types of problems for this type of learning:
 <br/>
 
 * **What is it?**
+
 It is a sort probabilíticos based on *Bayes Theorem*, created by Thomas Bayes. However, being naive it may have false positives.
 **Bayes Theorem**: probability of an event occurring conditioning the other.
 *Example*: *A* If the probability of happening *B* is happening *XX%*.
+
 **Naive**: understand that all events are independent, which can generate false positives.
 
 There are 3 types of classifiers Naives Bayes:
@@ -57,29 +59,30 @@ There are 3 types of classifiers Naives Bayes:
 * **Gaussian Naive Bayes**: used when the features are continuous and there is the assumption of the normal distribution.
 
 * **Where can it be used?**
-    * Spam filter
-    * Sentimental Analysis
-    * Profile analysis: a lending profile analysis, checks whether a user is a good payer, pays assiduously, among other variables, to complete the loan if it is profitable for that user
-    * Data Mining: database with various texts to identify literary author or style, based on the historical, such as text structure, language, words used
-    * There is a system that supports average decisions about cardiac disease, [Heart Disease Prediction System](https://pdfs.semanticscholar.org/d32e/e90a5de89093a4fc95f43e0409cb91414726.pdf). It was developed using as a main model the **Naive Bayes**. The model can answer complex queries to diagnose heart disease and thus help health professionals make intelligent clinical decisions than traditional systems of decision support can not
-    * The model Gaussian Naives Bayes was used to predict inhibition of protein activity by small molecules absorption, distribution, metabolism and excretion (ADME), prioritizing hit high throughput screening campaigns and enrichment of high yield coupling of the results
+	* Spam filter
+	* Sentimental Analysis
+	* Profile analysis: a lending profile analysis, checks whether a user is a good payer, pays assiduously, among other variables, to complete the loan if it is profitable for that user
+	* Data Mining: database with various texts to identify literary author or style, based on the historical, such as text structure, language, words used
+	* There is a system that supports average decisions about cardiac disease, [Heart Disease Prediction System](https://pdfs.semanticscholar.org/d32e/e90a5de89093a4fc95f43e0409cb91414726.pdf). It was developed using as a main model the **Naive Bayes**. The model can answer complex queries to diagnose heart disease and thus help health professionals make intelligent clinical decisions than traditional systems of decision support can not
+	 * The model Gaussian Naives Bayes was used to predict inhibition of protein activity by small molecules absorption, distribution, metabolism and excretion (ADME), prioritizing hit high throughput screening campaigns and enrichment of high yield coupling of the results
 
 * **Advantages**
-    * Easy implementation
-    * Can work with categorical data and continuous
-    * It is performative and can be used in real time
-    * No need for a set of training data so large compared to other models
-    * Not to irrelevant features is sensitive
-    * Returns the degree of certainty of the answer
+	* Easy implementation
+	* Can work with categorical data and continuous
+	* It is performative and can be used in real time
+	* No need for a set of training data so large compared to other models
+	* Not to irrelevant features is sensitive
+	* Returns the degree of certainty of the answer
 
-* **Disadvantages**
-    * Because it does not identify the interaction of the data, its dependence may occur false positives
-    * When dealing with phrases there is a problem it separate each word and there is loss of meaning as Chicago Bulls, with a basketball team and interpresta algorithm Chicago as a city and as Bulls as animal
+* **Disadvantages** 
+	* Because it does not identify the interaction of the data, its dependence may occur false positives
+	* When dealing with phrases there is a problem it separate each word and there is loss of meaning as Chicago Bulls, with a basketball team and interpresta algorithm Chicago as a city and as Bulls as animal
 
 ### **Decision Trees** {#decision-trees}
 <br/>
 
 * **What is it?**
+
 Decision tree is a tree-shaped diagram used to determine a course of action. Each node of the tree represents a possible decision, occurrence or reaction.
 
 A Decision Tree can be used in two ways:
@@ -87,53 +90,55 @@ A Decision Tree can be used in two ways:
 * **Regression**: used to predict values ​​when the dependent variable (Y) is continuous.
 
 * **Where can it be used?**
-    * Fraud Detection on credit cards, as can be seen [in this example](https://www.ijcsmc.com/docs/papers/April2015/V4I4201511.pdf)
-    * Recommendation Systems: like products, movies, websites, etc. A real case was [Recommender Systems (RS)](https://subs.emis.de/LNI/Proceedings/Proceedings165/170.pdf), an algorithm created to increase sales and customer satisfaction. attempts to predict how a user will rank items based on their previous ratings and ratings from other users with similar profiles and thus recommend the item for purchase.
+	* Fraud Detection on credit cards, as can be seen [in this example](https://www.ijcsmc.com/docs/papers/April2015/V4I4201511.pdf)
+	* Recommendation Systems: like products, movies, websites, etc. A real case was [Recommender Systems (RS)](https://subs.emis.de/LNI/Proceedings/Proceedings165/170.pdf), an algorithm created to increase sales and customer satisfaction. attempts to predict how a user will rank items based on their previous ratings and ratings from other users with similar profiles and thus recommend the item for purchase.
 
 * **Advantages**
-    * Easy to understand, interpret and visualize
-    * Need little effort to prepare data (no need to normalize data, etc.)
-    * Can be used with categorical and numerical data
-    * No need to worry about outliers or if data is not linearly
-    * Easily read with feature interactions and not parametric
+	* Easy to understand, interpret and visualize
+	* Need little effort to prepare data (no need to normalize data, etc.)
+	* Can be used with categorical and numerical data
+	* No need to worry about outliers or if data is not linearly
+	* Easily read with feature interactions and not parametric
     
 * **Disadvantages**
-    * Does not support online learning, needs to rebuild the tree when it gets new data
-    * It can be easily overfitting, however it can be resolved with Ensemble Methods
-    * The model may become unstable due to the small variation in the data
-    * Stability: small variations in the data can generate many different trees
-    * May be biased if some class is dominant
+	* Does not support online learning, needs to rebuild the tree when it gets new data
+	* It can be easily overfitting, however it can be resolved with Ensemble Methods
+	* The model may become unstable due to the small variation in the data
+	* Stability: small variations in the data can generate many different trees
+	* May be biased if some class is dominant
 
 ### **Support Vector Machines** {#svm}
 <br/>
 
 * **What is it?**
+
 It can be used for classification and regression problems. It uses a technique called *kernel* to transform its data, and then, based on those transformations, it finds an optimal boundary between possible outputs.
 
 * **Where can it be used?**
-    * Facial recognition
-    * Calligraphy Recognition
-    * Protein Structure Forecast
-    * Breast Cancer Diagnostics: experimental results show that linear kernel based on the *bagging* method may be the best choices for a small-scale dataset where the selection of features must be performed at the pre-processing stage of data .For a large-scale dataset, the RBF kernel based on the *boosting* method had better enhancement performance than the other classifiers, see [this example](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0161501&type=printable)
+	* Facial recognition
+	* Calligraphy Recognition
+	* Protein Structure Forecast
+	* Breast Cancer Diagnostics: experimental results show that linear kernel based on the *bagging* method may be the best choices for a small-scale dataset where the selection of features must be performed at the pre-processing stage of data .For a large-scale dataset, the RBF kernel based on the *boosting* method had better enhancement performance than the other classifiers, see [this example](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0161501&type=printable)
     
 * **Advantages**
-    * High accuracy
-    * Can work with non-linear data
-    * Works well with data not yet structured and semi-structured, such as text, images and trees.
-    * With an appropriate kernel function, you can solve complex problems
-    * Works well with high dimensional data
-    * Low risk of overfitting, using the correct kernels
+	* High accuracy
+	* Can work with non-linear data
+	* Works well with data not yet structured and semi-structured, such as text, images and trees
+	* With an appropriate kernel function, you can solve complex problems
+	* Works well with high dimensional data
+	* Low risk of overfitting, using the correct kernels
     
 * **Disadvantages**
-    * Does not provide probability estimates directly
-    * Does not perform well with large training data sets
-    * Difficult to choose a good kernel function
-    * Difficult to understand and interpret the final model, variable weights and individual impact.
+	* Does not provide probability estimates directly
+	* Does not perform well with large training data sets
+	* Difficult to choose a good kernel function
+	* Difficult to understand and interpret the final model, variable weights and individual impact.
 
 ### **Linear Regressions** {#linear-regression}
 <br/>
 
 * **What is it?**
+
 Linear Regression is used to predict the continuous output indices (X). It has a linear relationship with the values ​​of X to predict the value of Y.
 
 * **Simple Linear Regression**: When there is only one input variable (X)
@@ -169,25 +174,26 @@ Linear Regression is used to predict the continuous output indices (X). It has a
 Estimate the probability associated with the occurrence of a given event due to some  *features*. The results of the analysis are contained within a range of 0 to 1.
 
 * **Where can it be used?**
-     * Risk forecast the tax area.
-     * Used to rank if the company is in the solvent or insolvent group of companies.
-     * Determine what characteristics lead companies to adopt the balanced scorecard.
-     * [All examples above mentioned here](https://edisciplinas.usp.br/pluginfile.php/3769787/mod_resource/content/1/09_RegressaoLogistica.pdf)
+	* Risk forecast the tax area
+	* Used to rank if the company is in the solvent or insolvent group of companies
+	* Determine what characteristics lead companies to adopt the balanced scorecard
+	* [All examples above mentioned here](https://edisciplinas.usp.br/pluginfile.php/3769787/mod_resource/content/1/09_RegressaoLogistica.pdf)
     
 * **Advantages**
-     * Provide result in terms of probability
-     * High degree of reliability
-     * It is not necessary to assume multicollinearity
-     * Models can be easily updated with new data
+	* Provide result in terms of probability
+	* High degree of reliability
+	* It is not necessary to assume multicollinearity
+	* Models can be easily updated with new data
   
 * **Disadvantages**
-     * Sensitive to outliers
-     * Does not perfom well with high dimensionality
+	* Sensitive to outliers
+	* Does not perfom well with high dimensionality
 
 ### **Logistic Regression** {#logistic-regression}
 <br/>
 
 * **What is it?**
+
 Algorithm that estimates the probability associated to the occurrence of a certain event due to some features. Its output variable needs to be continuous and discrete inputs.
 
 * **Where can it be used?**
@@ -209,6 +215,7 @@ Algorithm that estimates the probability associated to the occurrence of a certa
 <br/>
 
 * **What is it?**
+
 Ensemble methods are ways to combine multiple models, creating a stronger and more accurate model.
 
 Some of the methods are:
@@ -229,12 +236,12 @@ Some of the methods are:
 
 
 * **Advantages**
-    * Better at avoiding overfitting
-    * Usually has models with stronger predictive power and accuracy than single models
+	* Better at avoiding overfitting
+	* Usually has models with stronger predictive power and accuracy than single models
     
 * **Disadvantages**
-     * Scaling: Generally by training multiple models, can perform poorly with large datasets
-     * Difficult to deploy on real-time platform
+	* Scaling: Generally by training multiple models, can perform poorly with large datasets
+	* Difficult to deploy on real-time platform
 
 ### **Evaluating Models** {#evaluating-sl}
 <br/>
@@ -326,44 +333,44 @@ Unsupervised Learning are Machine Learning models that have little or none histo
 <br/>
 
 * **What is it?**
-An algorithm that groups data that has characteristics similar to each other in a *cluster*. The K-means method has this name because *K* represents a number, since it is necessary to tell the algorithm how many clusters it wants to split the data.
-K-means is most commonly used in general use, with clusters of equal sizes, plane geometry, without large amounts of clusters. The algorithm always tries to find circular, spherical clusters.
+
+An algorithm that groups data that has characteristics similar to each other in a *cluster*. The K-means method has this name because *K* represents a number, since it is necessary to tell the algorithm how many clusters it wants to split the data. K-means is most commonly used in general use, with clusters of equal sizes, plane geometry, without large amounts of clusters. The algorithm always tries to find circular, spherical clusters.
 
 It uses the distance measure to tell how similar each observation is, and can be:
-   * **Euclidean distance**: Euclidean distance between two points in a straight line
-   * **Distance from Manhattan**: sum of the distances between the lines that form 90º between two points, that is, sum of the line y to the point of intersection and line x. These measures are sensitive to the difference of scales between different variables:
-   * **Cosine distance**: measure of the angle between two vectors. If the angle is 0 there is total similarity and if is π there is no relation between the objects.
+	* **Euclidean distance**: Euclidean distance between two points in a straight line
+	* **Distance from Manhattan**: sum of the distances between the lines that form 90º between two points, that is, sum of the line y to the point of intersection and line x. These measures are sensitive to the difference of scales between different variables:
+	* **Cosine distance**: measure of the angle between two vectors. If the angle is 0 there is total similarity and if is π there is no relation between the objects.
 
 * **Where can it be used?**
-    * Academic performance, based on student grades to separate students A, B or C
-    * Diagnostic system
-    * Movie catalog rating
-    * Classification of species of animals or plants
-    * Segmentation of customers according to consumption profiles
+	* Academic performance, based on student grades to separate students A, B or C
+	* Diagnostic system
+	* Movie catalog rating
+	* Classification of species of animals or plants
+	* Segmentation of customers according to consumption profiles
 
 
 * **Advantages**
-    * Easy implementation and interpretation
-    * Good when you already have an idea of ​​the required number of clusters
-    * Good scalability with many variables if k is not so high
+	* Easy implementation and interpretation
+	* Good when you already have an idea of ​​the required number of clusters
+	* Good scalability with many variables if k is not so high
 
 
 * **Disadvantages**
-    * Early seeds have a great impact on the final results due to the local minumm when they are started in not so suitable places. Difficulty that can be bypassed by running the algorithm many times
-    * Difficult to predict the number of clusters (K-Value), you can use * elbow method * to get around this
-    * Sensitive to outliers
-    * Do not mess with missing values
-    * Does not work well with clusters that are not circular or spherical
+	* Early seeds have a great impact on the final results due to the local minumm when they are started in not so suitable places. Difficulty that can be bypassed by running the algorithm many times
+	* Difficult to predict the number of clusters (K-Value), you can use * elbow method * to get around this
+	* Sensitive to outliers
+	* Do not mess with missing values
+	* Does not work well with clusters that are not circular or spherical
     
     
 * **Sklearn Commands**
-    * n_clusters: number of desired clusters, default 8
-    * max_iter: how many maximum interactions between assigning the points and moving the centroid, standard 300
-    * n_init: how many times the algorithm changes the centroids for different clusters, standard 10
+	* n_clusters: number of desired clusters, default 8
+	* max_iter: how many maximum interactions between assigning the points and moving the centroid, standard 300
+	* n_init: how many times the algorithm changes the centroids for different clusters, standard 10
     
     
 * **How to find the number of clusters (k)**
-    * **Elbow Method**: method used to find the number of clusters most suitable for each data set, it plots the upstream values ​​of k versus the total error calculated using this k. Here is a code to find this value:
+	* **Elbow Method**: method used to find the number of clusters most suitable for each data set, it plots the upstream values ​​of k versus the total error calculated using this k. Here is a code to find this value:
 
 ```python
 df = pd.DataFrame(__)
@@ -382,6 +389,7 @@ for k in k_values:
 <br/>
 
 * **What is it?**
+
 The result of this algorithm is a grouping structure that gives us a visual indication of the relationship between clusters. It unified the data into clusters according to minimum distances, which are calculated according to each method:
 
 * **Single Link**: assumes that all points are a cluster and then groups them into clusters according to the distance of the points. Then, when there is an isolated point, it looks for the two ** closest points ** in the two clusters which is the distance between the clusters, and then joins the points forming another cluster. And then we choose how many clusters we want. **This method does not exist in sklearn**, instead we use ***Complete Link***
@@ -393,52 +401,54 @@ The problem of this method is that only one point is analyzed to verify the smal
 
 
 * **Where can it be used?**
-    * Using the Average Link method, it was possible to group produced proteins, used to create clusters of fungi types, see [documentation](https://www.ncbi.nlm.nih.gov/pubmed/22238666)
-    * Using the Complete Link method to draw a human microbiome diagram, see the [documentation](https://www.ncbi.nlm.nih.gov/pubmed/21129376)
+	* Using the Average Link method, it was possible to group produced proteins, used to create clusters of fungi types, see [documentation](https://www.ncbi.nlm.nih.gov/pubmed/22238666)
+	* Using the Complete Link method to draw a human microbiome diagram, see the [documentation](https://www.ncbi.nlm.nih.gov/pubmed/21129376)
 
 
 * **Advantages**
-    * Works well with two-growing data set and two-rings
-    * Easy visualization of each clusters (dendograms)
-    * Especially powerful when the data set contains real hierarchical relationship (EX: evolutionary biology)
-    * Resulting hierarchical representations are very informative
+	* Works well with two-growing data set and two-rings
+	* Easy visualization of each clusters (dendograms)
+	* Especially powerful when the data set contains real hierarchical relationship (EX: evolutionary biology)
+	* Resulting hierarchical representations are very informative
 
 
 * **Disadvantages**
-    * You need to choose which method is most appropriate
-    * Sensitive to noise and outilers
-    * It needs greater computational capacity when it has large datasets and many dimensionalities
+	* You need to choose which method is most appropriate
+	* Sensitive to noise and outilers
+	* It needs greater computational capacity when it has large datasets and many dimensionalities
 
 
 ### **Density Based Spatial Clustering of Application with Noise** {#dbsac}
 <br/>
 
 * **What is it?**
+
 The algorithm groups the data that is dense together, points close together, and not all points are part of a cluster, the model names the other points as noise.
 It checks the distance ε (epsilon) around the points and if there are no other near enough points, it is considered noise. We have to set the parameters of minimum number of points per cluster and distance ε.
 **Core point**: is the point that has the minimum number of points required and identifies a cluster. The same cluster can have multiple core points
 **Border point**: points that do not have the minimum number of required points around, yet are part of a cluster around a Core Point
 
 * **Where can it be used?**
-    * Analyze network traffic, a network administrator can separate groups of traffic types as users of bulk downloads and others. See the [documentation](https://conferences.sigcomm.org/sigcomm/2006/papers/minenet-01.pdf)
-    * Detection of anomalies in temperature data, in which the points named as noises are anomalies, outliers. See the [documentation](https://ieeexplore.ieee.org/document/5946052)
+	* Analyze network traffic, a network administrator can separate groups of traffic types as users of bulk downloads and others. See the [documentation](https://conferences.sigcomm.org/sigcomm/2006/papers/minenet-01.pdf)
+	* Detection of anomalies in temperature data, in which the points named as noises are anomalies, outliers. See the [documentation](https://ieeexplore.ieee.org/document/5946052)
 
 * **Advantages**
-    * Good with data set with noise or outliers
-    * Flexible to work with different forms and constraints of clusters
-    * It is not necessary to specify the number of clusters
-    * Works well with two-growing data set and two-rings
+	* Good with data set with noise or outliers
+	* Flexible to work with different forms and constraints of clusters
+	* It is not necessary to specify the number of clusters
+	* Works well with two-growing data set and two-rings
 
 
 * **Disadvantages**
-    * Border points that can be accessed from two clusters are assigned to the cluster that first encounters it
-    * It faces difficulty in finding clusters of different densities, we can use HDBSCAN in these cases
+	* Border points that can be accessed from two clusters are assigned to the cluster that first encounters it
+	* It faces difficulty in finding clusters of different densities, we can use HDBSCAN in these cases
 
 
 ### **Gaussian Mixture Models** {#gmm}
 <br/>
 
 * **What is it?**
+
 It is a lightweight clustering algorithm in which all data is part of all clusters, yet with different levels of belonging. It does a data distribution, and if it is Gaussian they have a higher clustering level, that is, it mixes the Gaussian distributions to separate the clusters.
 
 It works by the Expectation Maximization algorithm in the following steps:
@@ -449,23 +459,23 @@ It works by the Expectation Maximization algorithm in the following steps:
 
 
 * ** Where can it be used? **
-    * Reading sensor data to find people routines. Ex: As a shift sensor, the algorithm can identify when they are in the office, dining or out. Or, it can differentiate the way of driving that the person used. See the [documentation](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.681.3152&rep=rep1&type=pdf)
-    * Identify speech, signatures, biometrics.
-    * Computer vision, can detect image backgrounds, for example taking people out of a video and leaving just the scenery. See the [documentation](http://www.ai.mit.edu/projects/vsam/Publications/stauffer_cvpr98_track.pdf)
+	* Reading sensor data to find people routines. Ex: As a shift sensor, the algorithm can identify when they are in the office, dining or out. Or, it can differentiate the way of driving that the person used. See the [documentation](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.681.3152&rep=rep1&type=pdf)
+	* Identify speech, signatures, biometrics.
+	* Computer vision, can detect image backgrounds, for example taking people out of a video and leaving just the scenery. See the [documentation](http://www.ai.mit.edu/projects/vsam/Publications/stauffer_cvpr98_track.pdf)
 
 
 * **Advantages**
-    * Needs less training than other models, such as logistic regression
-    * High scalability
-    * Not sensitive to * features * with little importance
-    * Returns the degree of certainty of the answer
-    * Light clustering, which makes samples part of multiple clusters
+	* Needs less training than other models, such as logistic regression
+	* High scalability
+	* Not sensitive to * features * with little importance
+	* Returns the degree of certainty of the answer
+	* Light clustering, which makes samples part of multiple clusters
 
 
 * **Disadvantages**
-    * Sensitive to initialization values
-    * The convergence rate is slow
-    * It is not good to learn with interactions of features, for example, if you like ice cream of flakes and chocolate, but hate the two flavors together
+	* Sensitive to initialization values
+		* The convergence rate is slow
+	    * It is not good to learn with interactions of features, for example, if you like ice cream of flakes and chocolate, but hate the two flavors together
 
 
 ### **Evaluating Models** {#evaluating-ul}
@@ -478,14 +488,15 @@ It works by the Expectation Maximization algorithm in the following steps:
 * **Relative Indices**: indicates which cluster structure is best in some sense
 
 **Validation indices are defined as:**
-    * **Compression**: measure of proximity of the elements in each group
-    * **Separability**: measure of how far the clusters are from each other
+	* **Compression**: measure of proximity of the elements in each group
+	* **Separability**: measure of how far the clusters are from each other
 
 
 ### **Feature Scaling** {#feature-scaling}
 <br/>
 
 * **What is it?**
+
 Method for transforming features with similar ranges so that they can be computable, usually between 0 and 1.
 In Sklearn there is a method that does this, ***MinMaxScaler***, which transforms the data in this scale, but it must remember that your array must have numbers *float* (decimals)
 
@@ -498,15 +509,16 @@ Examples of models that are not ** affected by Feature Scaling:
 * Decision Trees
 
 * **Advantages**
-     * Have a reliable number compared to what you expect on the way out
+	* Have a reliable number compared to what you expect on the way out
     
 * **Disadvantages**
-     * Sensitive to outilers
+	* Sensitive to outilers
 
 ### **Principal Component Analysis** {#pca}
 <br/>
 
 * **What is it?**
+
 * Used to reduce the dimensionality of the features by maximizing the variances, losing the least amount of information to the designer data
 * PCA is a systematized model of transforming the features of inputs into main components.
 * These Main Components are available for use in place of the original features
@@ -519,28 +531,29 @@ Examples of models that are not ** affected by Feature Scaling:
 **Latent variables**: we can not measure directly, but it is represented by other indicators (the measurable ones), generating a theoretical sense. Ex: size is the latent variable and its measurable variables are m² and number of rooms.
 
 * **When to use?**
-    * When we want to see whether latent variables that can be shown in the data patterns
-    * Decrease dimensionality to:
-        * View when we have large dimensionaldiades
-        * Decrease noise
-        * Pre-processing the data
+	* When we want to see whether latent variables that can be shown in the data patterns
+	* Decrease dimensionality to:
+		* View when we have large dimensionaldiades
+		* Decrease noise
+		* Pre-processing the data
                 
 * **Where can it be used?**
-    * Facial recognition along with SVM
+	* Facial recognition along with SVM
 
 
 ### **Random Projection** {#random-projection}
 <br/>
 
 * **What is it?**
-A dimensionality reduction method, mathematically more efficient and perfomatic than PCA for working with a large dimensional data set
-Based on the Johnson-Linderstrauss Lemma, the algorithm multiplies the data set by a random matrix, preserving the distances between the points to a large degree, causing the number of dimensions to decrease
+
+A dimensionality reduction method, mathematically more efficient and perfomatic than PCA for working with a large dimensional data set. Based on the Johnson-Linderstrauss Lemma, the algorithm multiplies the data set by a random matrix, preserving the distances between the points to a large degree, causing the number of dimensions to decrease
 
 
 ### **Independent Component Analysis** {#ica}
 <br/>
 
 * **What is it?**
+
 ICA assumes that features are mixtures of independent sources, and the algorithm tries to isolate them from each other.
 A well-known example is the "*Party Problem*" which shows three people in the same hall in different locations, each recording the sound of the venue. Each venue is playing something different such as piano, cello guitar, and a TV.
 
@@ -548,8 +561,8 @@ All recordings pick up the sounds, but of different intensity for each. Clearing
 The algorithm assumes that the components are statistically **independent** and with a **non-Gaussian distribution**
 
 * **Where can it be used?**
-     * Medical Scanners: Brain mapping, sensors detect electrical or magnetic signals. ICA can be used to find the independent components within the brain.
-     * Magnetic resonance imaging to isolate where each signal from the brain comes from
+	* Medical Scanners: Brain mapping, sensors detect electrical or magnetic signals. ICA can be used to find the independent components within the brain.
+	* Magnetic resonance imaging to isolate where each signal from the brain comes from
 
 
 ### **Importing libraries** {#import}
