@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Cheat Sheet: Machine Learning Models
+title: My experience with Udacity Machine Learning Engineer Nanodegree
 date: 2019-01-10 20:00:00
 comments: true
 author: Talita Shiguemoto
 lang: en
-ref: csML
+ref: csMl
 ---
 
 This is a summary of the models and metrics I learned in the Nanodegree Machine Learning Engineer from Udacity, in which I told my experience [here](https://shiguelita.github.io/posts/2019-01-10-my_experience_with_udacity/). I added some models and libraries that I used at other times. As it is a quick chear sheet, the goal will always be to update this post.

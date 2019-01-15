@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Consulta Rápida: Modelos de Aprendizagem de Máquina
+title: My experience with Udacity Machine Learning Engineer Nanodegree
 date: 2019-01-10 20:00:00
 comments: true
 author: Talita Shiguemoto
 lang: pt
-ref: csML
+ref: csMl
 ---
 
 Esse é um resumo dos modelos e métrica que aprendi no Nanodegree Engenheiro de Machine Learning da Udacity, na qual contei minha experiência [aqui](https://shiguelita.github.io/posts/2019-01-10-my_experience_with_udacity_pt/). Acrescentei alguns modelos e bibliotécas que utilizei em outros momentos. Como é uma consulta rápida o objetivo será sempre atualizar este post.
