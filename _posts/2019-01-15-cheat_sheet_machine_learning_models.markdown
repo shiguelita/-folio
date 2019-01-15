@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My experience with Udacity Machine Learning Engineer Nanodegree
+title: Cheat Sheet: Machine Learning Models
 date: 2019-01-10 20:00:00
 comments: true
 author: Talita Shiguemoto
