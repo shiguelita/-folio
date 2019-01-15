@@ -4,8 +4,8 @@ title: Cheat Sheet: Machine Learning Models
 date: 2019-01-15 12:00:00
 comments: true
 author: Talita Shiguemoto
-lang: en
-ref: csMachineLearning
+lang: pt
+ref: aa
 ---
 
 This is a summary of the models and metrics I learned in the Nanodegree Machine Learning Engineer from Udacity, in which I told my experience [here](https://shiguelita.github.io/posts/2019-01-10-my_experience_with_udacity/). I added some models and libraries that I used at other times. As it is a quick chear sheet, the goal will always be to update this post.
@@ -39,8 +39,8 @@ Remember, this is not a post with details of each models or metrics, just to hav
 Supervised Learning are Machine Learning models that based on historical data, with outputs that we already know as correct, the algorithm is trained to be able to predict new results.
 
 There are two types of problems for this type of learning:
-    * **Regression**: we try to predict quantitative (numerical)
-    * **Classification**: we try to predict qualitative (discrete)
+	* **Regression**: we try to predict quantitative (numerical)
+	* **Classification**: we try to predict qualitative (discrete)
 
 ### **Naive Bayes** {#naive-bayes}
 <br/>
@@ -634,7 +634,6 @@ from time import time
 ```
 
 ## **Bibliography**
-<br/>
 
 Castle, Nikki. 2017. [Supervised vs. Unsupervised Machine Learning](https://www.datascience.com/blog/supervised-and-unsupervised-machine-learning-algorithms)
 
