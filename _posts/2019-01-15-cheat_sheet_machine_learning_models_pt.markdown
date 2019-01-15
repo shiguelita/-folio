@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Consulta Rápida
-date: 2019-01-15 12:00:00
+title: Quem é esse Pokémon?a
+date: 2018-07-19 18:30:00
 comments: true
 author: Talita Shiguemoto
 lang: pt
-ref: csMachineLearning
+ref: pokemonTypeaaa
 ---
 
 Esse é um resumo dos modelos e métrica que aprendi no Nanodegree Engenheiro de Machine Learning da Udacity, na qual contei minha experiência [aqui](https://shiguelita.github.io/posts/2019-01-10-my_experience_with_udacity_pt/). Acrescentei alguns modelos e bibliotécas que utilizei em outros momentos. Como é uma consulta rápida o objetivo será sempre atualizar este post.
