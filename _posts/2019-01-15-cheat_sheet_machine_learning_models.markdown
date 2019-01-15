@@ -45,7 +45,7 @@ There are two types of problems for this type of learning:
 ### **Naive Bayes** {#naive-bayes}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 It is a sort probabilíticos based on *Bayes Theorem*, created by Thomas Bayes. However, being naive it may have false positives.
 **Bayes Theorem**: probability of an event occurring conditioning the other.
@@ -81,7 +81,7 @@ There are 3 types of classifiers Naives Bayes:
 ### **Decision Trees** {#decision-trees}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 Decision tree is a tree-shaped diagram used to determine a course of action. Each node of the tree represents a possible decision, occurrence or reaction.
 
@@ -110,7 +110,7 @@ A Decision Tree can be used in two ways:
 ### **Support Vector Machines** {#svm}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 It can be used for classification and regression problems. It uses a technique called *kernel* to transform its data, and then, based on those transformations, it finds an optimal boundary between possible outputs.
 
@@ -137,7 +137,7 @@ It can be used for classification and regression problems. It uses a technique c
 ### **Linear Regressions** {#linear-regression}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 Linear Regression is used to predict the continuous output indices (X). It has a linear relationship with the values ​​of X to predict the value of Y.
 
@@ -170,7 +170,8 @@ Linear Regression is used to predict the continuous output indices (X). It has a
 ### **K-Nearest Neighbors** {#knn}
 <br/>
 
-* **What is it?**
+**What is it?**
+
 Estimate the probability associated with the occurrence of a given event due to some  *features*. The results of the analysis are contained within a range of 0 to 1.
 
 * **Where can it be used?**
@@ -214,7 +215,7 @@ Algorithm that estimates the probability associated to the occurrence of a certa
 ### **Ensemble Methods** {#ensemble}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 Ensemble methods are ways to combine multiple models, creating a stronger and more accurate model.
 
@@ -332,7 +333,7 @@ Unsupervised Learning are Machine Learning models that have little or none histo
 ### **KMeans** {#kmeans}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 An algorithm that groups data that has characteristics similar to each other in a *cluster*. The K-means method has this name because *K* represents a number, since it is necessary to tell the algorithm how many clusters it wants to split the data. K-means is most commonly used in general use, with clusters of equal sizes, plane geometry, without large amounts of clusters. The algorithm always tries to find circular, spherical clusters.
 
@@ -388,7 +389,7 @@ for k in k_values:
 ### **Hierarchical** {#hierarchical}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 The result of this algorithm is a grouping structure that gives us a visual indication of the relationship between clusters. It unified the data into clusters according to minimum distances, which are calculated according to each method:
 
@@ -421,7 +422,7 @@ The problem of this method is that only one point is analyzed to verify the smal
 ### **Density Based Spatial Clustering of Application with Noise** {#dbsac}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 The algorithm groups the data that is dense together, points close together, and not all points are part of a cluster, the model names the other points as noise.
 It checks the distance ε (epsilon) around the points and if there are no other near enough points, it is considered noise. We have to set the parameters of minimum number of points per cluster and distance ε.
@@ -447,7 +448,7 @@ It checks the distance ε (epsilon) around the points and if there are no other 
 ### **Gaussian Mixture Models** {#gmm}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 It is a lightweight clustering algorithm in which all data is part of all clusters, yet with different levels of belonging. It does a data distribution, and if it is Gaussian they have a higher clustering level, that is, it mixes the Gaussian distributions to separate the clusters.
 
@@ -495,7 +496,7 @@ It works by the Expectation Maximization algorithm in the following steps:
 ### **Feature Scaling** {#feature-scaling}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 Method for transforming features with similar ranges so that they can be computable, usually between 0 and 1.
 In Sklearn there is a method that does this, ***MinMaxScaler***, which transforms the data in this scale, but it must remember that your array must have numbers *float* (decimals)
@@ -517,7 +518,7 @@ Examples of models that are not ** affected by Feature Scaling:
 ### **Principal Component Analysis** {#pca}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 * Used to reduce the dimensionality of the features by maximizing the variances, losing the least amount of information to the designer data
 * PCA is a systematized model of transforming the features of inputs into main components.
@@ -552,7 +553,7 @@ A dimensionality reduction method, mathematically more efficient and perfomatic 
 ### **Independent Component Analysis** {#ica}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 ICA assumes that features are mixtures of independent sources, and the algorithm tries to isolate them from each other.
 A well-known example is the "*Party Problem*" which shows three people in the same hall in different locations, each recording the sound of the venue. Each venue is playing something different such as piano, cello guitar, and a TV.

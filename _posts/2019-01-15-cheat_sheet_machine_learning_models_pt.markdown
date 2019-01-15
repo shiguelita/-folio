@@ -44,7 +44,7 @@ Existem dois tipos de problemas para esse tipo de aprendizagem:
 ### **Naive Bayes** {#naive-bayes}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 É um classificar probabilíticos baseado no *Teorema de Bayes*, criado por Thomas Bayes. Contudo, por ser ingênuo ele pode ter falsos positivos.
 
@@ -81,7 +81,7 @@ Existem 3 tipos de classificadores de Naives Bayes:
 ### **Árvores de Decisão** {#decision-trees}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 Árvore de Decisão é um diagrama em forma de árvore usado para determinar um curso de ação. Cada ramo da árvore representa uma possível decisão, ocorrência ou reação.
 
@@ -110,7 +110,7 @@ Uma Árvore de Decisão pode ser usada de duas formas:
 ### **Support Vector Machines** {#svm}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 Em português *Máquina de Vetores de Suporte* pode ser usado para problemas de classificação e regressão. Ele usa uma técnica chamada de *kernel*  para transformar seus dados e, em seguida, com base nessas transformações, ele encontra um limite ideal entre as saídas possíveis.
 
@@ -171,7 +171,7 @@ Regressão Linear é utilizado para prever valores contínuos de saída (Y) base
 ### **K-Nearest Neighbors** {#knn}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 Estima a probabilidade associada à ocorrência de um determinado evento devido algumas *features*. Os resultados da análise ficam contidos em um intervalo de 0 a 1.
 
@@ -218,7 +218,7 @@ Algoritmo que estima a probabilidade associada à ocorrência de um determinado 
 ### **Métodos de Ensemble** {#ensemble}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 Métodos de Ensemble são formas de combinar vários modelos, criando um modelo mais forte e preciso.
 
@@ -336,7 +336,7 @@ Aprendizagem Não Supervisionadas são modelos de Machine Learnig que possuem po
 ### **KMeans** {#kmeans}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 Um algoritmo que agrupa dados que possuem características similares entre si em um *cluster*. O método K-means tem esse nome porque *K* representa um número, uma vez que é necessário dizer ao algoritmo em quantos clusters deseja a divisão dos dados. K-means é mais utilizado em uso geral, com clusters de tamanhos iguais, geometria plana, sem grandes quantidades de clusters. O algoritmo sempre tenta encontrar clusters circulares, esféricos.
 
@@ -392,7 +392,7 @@ for k in k_values:
 ### **Hierárquico** {#hierarchical}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 O resultado deste algoritmo é uma estrutura de agrupamento que nos proporciona uma indicação visual da relação entre os agrupamentos. Ele uni os dados em clusters de acordo com distâncias mínimas, que são calculadas de acordo com cada método:
 
@@ -424,7 +424,7 @@ O problema deste método é que somente um ponto é analisado para verificar a m
 ### **Density Based Spatial Clustering of Application with Noise** {#dbsac}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 O algoritmo agrupa os dados que estão unidos de forma densa, pontos próximos juntos, e nem todos os pontos fazem parte de um cluster, o model nomeia os outros pontos como ruído.
 Ele verifica a distância ε (epsilon) em volta dos pontos e caso não haja outros pontos próximos suficientes, é considerado ruído. Temos que setar os parametros de número mínimo de pontos por cluster e distância ε.
@@ -449,7 +449,7 @@ Ele verifica a distância ε (epsilon) em volta dos pontos e caso não haja outr
 ### **Modelos de Mistura de Gaussianas** {#gmm}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 Em inglês chamado de *Gaussian Mixture Models*, é um algoritmo de agrupamento leve na qual todo dado é parte de todos os clusters, contudo com níveis diferentes de pertencimento. Ele faz uma distribuição de dados, e se for gaussiana eles tem um nivel de agrupamento maior, ou seja, ele mistura as distribuições gaussianas para separar os clusters.
 
@@ -495,7 +495,7 @@ Ele funciona pelo algortimo de Maximização da Expectativa, nos seguintes passo
 ### **Feature Scaling** {#feature-scaling}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 Método para transformar as features com intervalos semelhantes para que possam ser compáveis, normalmente entre 0 e 1.
 No Sklearn existe um método que faz isso, o ***MinMaxScaler***, que transforma os dados nessa escala, contundo precisa lembrar que seu array tem que ter números *float* (decimais)
@@ -517,7 +517,7 @@ Exemplos de modelos que **não** são afetados por Feature Scaling:
 ### **Principal Component Analysis** {#pca}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 * Usado para reduzir a dimensionalidade dos *features* maximizando as variâncias, perdendo a menor quantidade de informação ao projetador os dados
 * PCA é um modelo sistematizado de transformar as *features* de entradas em componentes principais.
@@ -543,7 +543,7 @@ Exemplos de modelos que **não** são afetados por Feature Scaling:
 ### **Projeções Aleatórias** {#random-projection}
 <br/>
 
-* **O que é?**
+**O que é?**
 
 Um método de redução de dimensionalidade, matematicamente mais eficaiz e perfomático que PCA para trabalhar com conjunto de dados com grande dimensionalidade. Baseado no Lema de Johnson-Linderstrauss, o algortimo multiplica o cojunto de dados por uma matriz aleatória, preservando as distancias entre os pontos em um grau amplo, fazendo com que o número de dimensões diminua
 
