@@ -58,6 +58,7 @@ Existem 3 tipos de classificadores de Naives Bayes:
 * **Multinomial Naive Bayes**: usado com os features são discretos, como palavras ou classificações de 1 a 5. 
 * **Gaussian Naive Bayes**: usado quando os features são contínuos e há a suposição da distribuição normal. 
 
+
 * **Onde pode ser usado?**
     * Filtro de SPAM
     * Análise de Sentimento
@@ -66,6 +67,7 @@ Existem 3 tipos de classificadores de Naives Bayes:
     * Existe um sistema que apoia decisões média a respeito de doenças cardiológicas, o [Heart Disease Prediction System](https://pdfs.semanticscholar.org/d32e/e90a5de89093a4fc95f43e0409cb91414726.pdf)(Sistema de Previsão de Doenças Cardíacas). Ele foi desenvolvido usando como modelo princial o **Naive Bayes**. O modelo consegue responder a consultas complexas para diagnosticar doenças cardíacas e, assim, ajudar   profissionais de saúde tomarem decisões clínicas inteligentes que os sistemas tradicionais de apoio à decisão não podem
     * O modelo de Gaussian Naives Bayes foi utilizado para predição de inibição de atividade protéica por pequenas moléculas de absorção, distribuição, metabolismo e excreção (ADME), priorizando os acertos de campanhas de triagem de alta produtividade e enriquecimento dos resultados do acoplamento de alto rendimento
 
+
 * **Vantagens**
     * Fácil implementação
     * Consegue trabalhar com dados categóricos e continuos
@@ -73,6 +75,7 @@ Existem 3 tipos de classificadores de Naives Bayes:
     * Não necessita de um conjunto de dados de treinamento tão grande comparado a outros modelos
     * Não é sensível a features irrelevantes
     * Retorna o grau de certeza da resposta
+
 
 * **Desvantagens**
     * Devido ele não identificar a interação dos dados, sua dependência, pode ocorrer falsos positivos
@@ -89,9 +92,11 @@ Uma Árvore de Decisão pode ser usada de duas formas:
 * **Classificador**: usado para prever valores quando a variável dependente (Y) é categórica.
 * **Regressão**: usado para prever valores quando a variável dependente (Y) é contínua.
 
+
 * **Onde pode ser usado?**
     * Detecção de Fraude em cartões de crédito, como pode ser visto [nesse exemplo](https://www.ijcsmc.com/docs/papers/April2015/V4I4201511.pdf)
     * Sistemas de Recomendações: como produtos, filmes, sites, etc. Um caso real foi o [Recommender Systems (RS)](https://subs.emis.de/LNI/Proceedings/Proceedings165/170.pdf), um algorítmo criado com objetivo de aumentar as vendas e a satisfação dos clientes, ele tenta prever a classificação que um usuário dará aos itens com base em suas classificações anteriores e nas classificações de outros usuários com perfil semelhante e assim recomenda o item para compra.
+
 
 * **Vantagens**
     * Fácil de entender, interpretar e visualizar
@@ -100,6 +105,7 @@ Uma Árvore de Decisão pode ser usada de duas formas:
     * Não necessita preocupação com outliers ou se os dados não são linearmente
     * Lida facilmente com interações de features e não são paramétricos
     
+
 * **Desvantagens**
     * Não suporta aprendizado online, precisa reconstruir a árvore quando obtiver novos dados
     * Pode facilmente ser sobreajustado (overfitting), contudo pode-se contornar isso com Ensemble Methods
@@ -146,6 +152,7 @@ Regressão Linear é utilizado para prever valores contínuos de saída (Y) base
 * **Regressão Linear Simples**: Quando temos apenas uma variável de entrada (X)
 * **Regressão Linear Múltipla**: Quando temos apenas duas ou mais variáveis de entrada (X)
 
+
 * **Onde pode ser usado?**
     * Prever o salário anual em função do tempo de experiência em uma determinada empresa
     * Prever Vendas vs Valor investido para marketing
@@ -154,14 +161,17 @@ Regressão Linear é utilizado para prever valores contínuos de saída (Y) base
     * Prever Produção vs Quantidade de Exportação e Capacidade
     * Prever Crescimento econômico
     
+
 * **Vantagens**
     * Fácil de entender e explicar
     * Identifica o quanto o modelo consegue explicar os valores observados (R²)
     * Consegue trabalhar com um conjunto de dados pequeno    
     
+
 * **Desvantagens**
     * Necessita que a variável de saída tenha distribuição normal
     * Dificilmente o R² é alto para casos reais    
+
 
 * **Conceitos**
     * SSE (Sum Square Errors): Soma dos Erros Quadrados, quanto mais baixo melhor, usado para comparar outros modelos como métrica de ajuste
@@ -175,18 +185,21 @@ Regressão Linear é utilizado para prever valores contínuos de saída (Y) base
 
 Estima a probabilidade associada à ocorrência de um determinado evento devido algumas *features*. Os resultados da análise ficam contidos em um intervalo de 0 a 1.
 
+
 * **Onde pode ser usado?**
     * Precisão de risco na área tributária.  
     * Utilizado para classificar se a empresa encontra-se no grupo de empresas solvente ou insolvente.
     * Determinar quais características levam as empresas adotarem o *balanced scorecard*.
     * [Todos exemplos acima citados aqui](https://edisciplinas.usp.br/pluginfile.php/3769787/mod_resource/content/1/09_RegressaoLogistica.pdf)
     
+
 * **Vantagens**
     * Fornece resultado em termos de probabilidade
     * Alto grau de confiabilidade
     * Não é necessário supor multicolinearidade
     * Modelos podem ser facilmente atualizados com novos dados
   
+
 * **Desvantagens**
     * Sensível a outliers
     * Não perfoma bem com alta dimensionalidade
@@ -198,16 +211,19 @@ Estima a probabilidade associada à ocorrência de um determinado evento devido 
 
 Algoritmo que estima a probabilidade associada à ocorrência de um determinado evento devido algumas features. Sua variável saída necessita ser contínua e de entradas discretas.
 
+
 * **Onde pode ser usado?**
     * Segmentação de imagem e categorização
 	* Processamento de imagens geográficas
 	* Reconhecimento de caligrafia
 	* Detecção de spam
 
+
 * **Vantagens**
     * Pode ser atualizado com facilidade em dados novos
     * Não precisa se preocupar com a multicolinearidade dos dados
     * Além de ser um classificador também retorna probabilidade, porcentagem do evento poder ocorrer ou não
+
 
 * **Desvantagens**
     * Não trabalha bem com outliers
@@ -224,12 +240,10 @@ Alguns dos métodos são:
 * **Random Florest**: utilizado para construir um modelo baseado em múltiplas Árvores de Decisão durante a fase de treino.
 
 * **AdaBoost**: melhora o modelo por meio dos erros, alterando os pesos.
-
 * **Bagging**: treina em vários subconjuntos, ou seja, separa os dados de treino e os divide aleatoriamente, cada um tendo um *"weak learner"*, então uni os resultados dos *"weak learner"* para criar um modelo mais forte com base nas saídas mais vistas pelos modelos
-
 * **Gradient Boosting**: tenta minimizar o Erro Médio Quadrático (EQM, ou MSE em inglês).até que a soma dos resíduos seja próxima de 0 (ou mínimo) e os valores previstos estejam suficientemente próximos dos valores reais. 
-
 * **XGBoost (Extreme Gradient Boosting)**: é uma implementação avançada do Gradient Boosting, contudo mais rápido e com alto poder preditivo. Possui uma variedade de regularizações que reduzem o overfitting e melhoram o desempenho geral, como penalização inteligente de árvores e um encolhimento proporcional de nós de folha.
+
 
 * **Onde pode ser usado?**
     * Random Florest usado no Kinect para rastreiar movimentos corporais e os recriar no jogo.
@@ -240,6 +254,7 @@ Alguns dos métodos são:
     * Melhor em evitar o overfitting
     * Normalmente tem modelos mais fortes poder preditivo e acuracidade que modelos únicos
     
+
 * **Desvantagens**
     * Escalonamento: geralmente por treinar vários modelos, pode ter um desempenho ruim com grandes conjuntos de dados
     * Difícil de implementar em plataforma de tempo real
@@ -343,6 +358,7 @@ Ele usa a medida de distância para dizer o quão similiar cada observação é,
    * **Distância do Cosseno**: medida do ângulo entre dois vetores. Se o ângulo é 0 existe total similariade e se é π não existe relação entre os objetos.
 
 
+
 * **Onde pode ser usado?**
     * Performance acadêmica, baseado nas notas de estudantes para separar entre estudantes A, B ou C
     * Sistema de diagnóstico
@@ -394,10 +410,13 @@ for k in k_values:
 O resultado deste algoritmo é uma estrutura de agrupamento que nos proporciona uma indicação visual da relação entre os agrupamentos. Ele uni os dados em clusters de acordo com distâncias mínimas, que são calculadas de acordo com cada método:
 
 * **Single Link**: assume que todos os pontos são um cluster e depois os agrupa em clusters de acordo com a distância dos pontos. Depois, quando há um ponto isolado, ele procura os dois pontos mais **próximos** nos dois clusters que é a distância entre os clusters, e e depois une os pontos formando outro cluster. E então escolhemos quantos clusters queremos. **Este método não existe no sklearn**, em vez disso usamos o ***Complete Link***
+
 * **Complete Link**: assume que todos os pontos são um cluster e depois os agrupa em clusters de acordo com a distância dos pontos formando outro cluster. E então, quando há um ponto isolado, ele procura os dois pontos mais **afastados** nos dois clusters que é a distância entre os clusters, e e depois une os pontos. E então escolhemos quantos clusters queremos.
 Para unir outros clusters, ele calcula a distância maior entre os pontos, que vamos nomear de distância X, depois mede a distância X menor entre clusters para uní-los.
 O problema deste método é que somente um ponto é analisado para verificar a menor distância, sem levar em conta os outros dados, que podem estar unidos de forma mais densa, podendo ser outro cluster.
+
 * **Average Link**: verifica a distância entre todos os pontos entre clusters e a média de todas as distâncias é a medida de distância entre os dois clusters.
+
 * **Ward's Link**: método que tenta minimizar a variância ao unir os dois clusters. Ele calcula um ponto central entre dois clusters, depois verifica a distância entre cada ponto e o ponto central, os eleva ao quadrado e soma todas as distâncias. Depois ele calcula um ponto central em cada cluster, e subtrai cada distância entre pontos e ponto central de cada cluster, elevada ao quadrado. **Este é o método padrão do sklean.**
 
 
@@ -430,6 +449,7 @@ Ele verifica a distância ε (epsilon) em volta dos pontos e caso não haja outr
 * **Onde pode ser usado?**
     * Analisar tráfego de rede, um administrador de rede consegue separar por grupos os tipos de tráfegos como usuários de downloads massivos e outros. Veja a [documentação](https://conferences.sigcomm.org/sigcomm/2006/papers/minenet-01.pdf)
     * Detecção de anomalias em dados de temperatura, na qual os pontos nomeados como ruídos são as anomalias, outliers. Veja a  [documentação](https://ieeexplore.ieee.org/document/5946052)
+
 
 * **Vantagens**
     * Bom com conjunto de dados com ruído ou outliers
@@ -504,9 +524,11 @@ Exemplos de modelos que **não** são afetados por Feature Scaling:
 * Regressão Lienar
 * Decision Trees
 
+
 * **Vantagens**
     * Ter um número confiável em relação ao que você espera na saída    
     
+
 * **Desvantagens**
     * Sensível a outilers
 
@@ -526,6 +548,7 @@ Exemplos de modelos que **não** são afetados por Feature Scaling:
 
 **Variáveis Latentes**: não podemos medir diretamente, mas é representada por outros indicadores (as mensuráveis), gerando um sentido teórico. Ex: tamanho é a variável latente e suas variáveis mensuráveis são m² e número de quartos.
 
+
 * **Quando usar?**
     * Quando queremos ver se variáveis latentes que pode ser mostradas nos padrões dos dados
     * Diminuir a dimensionalidade para:
@@ -533,6 +556,7 @@ Exemplos de modelos que **não** são afetados por Feature Scaling:
         * Diminuir os ruídos   
         * Fazer um pré processamento dos dados
                 
+
 * **Onde pode ser usado?**
     * Reconhecimento facial junto com SVM
 
@@ -553,6 +577,7 @@ Um exemplo conhecido é o "*Problema da festa*", que mostra três pessoas no mes
 
 Todas as gravações captam tosdos os sons, mas de intensidade diferente para cada. Conseguir limpar as três gravações para conseguir o som de cada objeto sozinho é o que o ICA faz, sendo esse processo chamado de **Separação cega das fontes**
 O algoritmo assume que os componentes são estatísticamentes **independentes** e com uma **distribuição não-gaussiana**
+
 
 * **Onde pode ser usado?**
     * Scanners Médicos: mapeamento cerebral, sensores detectam sinais elétricos ou magnéticos. ICA pode ser usado para encontrar os componetes independentes dentro do cérebro.

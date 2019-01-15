@@ -65,6 +65,7 @@ There are 3 types of classifiers Naives Bayes:
 	* There is a system that supports average decisions about cardiac disease, [Heart Disease Prediction System](https://pdfs.semanticscholar.org/d32e/e90a5de89093a4fc95f43e0409cb91414726.pdf). It was developed using as a main model the **Naive Bayes**. The model can answer complex queries to diagnose heart disease and thus help health professionals make intelligent clinical decisions than traditional systems of decision support can not
 	 * The model Gaussian Naives Bayes was used to predict inhibition of protein activity by small molecules absorption, distribution, metabolism and excretion (ADME), prioritizing hit high throughput screening campaigns and enrichment of high yield coupling of the results
 
+
 * **Advantages**
 	* Easy implementation
 	* Can work with categorical data and continuous
@@ -72,6 +73,7 @@ There are 3 types of classifiers Naives Bayes:
 	* No need for a set of training data so large compared to other models
 	* Not to irrelevant features is sensitive
 	* Returns the degree of certainty of the answer
+
 
 * **Disadvantages** 
 	* Because it does not identify the interaction of the data, its dependence may occur false positives
@@ -92,6 +94,7 @@ A Decision Tree can be used in two ways:
 	* Fraud Detection on credit cards, as can be seen [in this example](https://www.ijcsmc.com/docs/papers/April2015/V4I4201511.pdf)
 	* Recommendation Systems: like products, movies, websites, etc. A real case was [Recommender Systems (RS)](https://subs.emis.de/LNI/Proceedings/Proceedings165/170.pdf), an algorithm created to increase sales and customer satisfaction. attempts to predict how a user will rank items based on their previous ratings and ratings from other users with similar profiles and thus recommend the item for purchase.
 
+
 * **Advantages**
 	* Easy to understand, interpret and visualize
 	* Need little effort to prepare data (no need to normalize data, etc.)
@@ -99,6 +102,7 @@ A Decision Tree can be used in two ways:
 	* No need to worry about outliers or if data is not linearly
 	* Easily read with feature interactions and not parametric
     
+
 * **Disadvantages**
 	* Does not support online learning, needs to rebuild the tree when it gets new data
 	* It can be easily overfitting, however it can be resolved with Ensemble Methods
@@ -119,6 +123,7 @@ It can be used for classification and regression problems. It uses a technique c
 	* Protein Structure Forecast
 	* Breast Cancer Diagnostics: experimental results show that linear kernel based on the *bagging* method may be the best choices for a small-scale dataset where the selection of features must be performed at the pre-processing stage of data .For a large-scale dataset, the RBF kernel based on the *boosting* method had better enhancement performance than the other classifiers, see [this example](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0161501&type=printable)
     
+
 * **Advantages**
 	* High accuracy
 	* Can work with non-linear data
@@ -127,6 +132,7 @@ It can be used for classification and regression problems. It uses a technique c
 	* Works well with high dimensional data
 	* Low risk of overfitting, using the correct kernels
     
+
 * **Disadvantages**
 	* Does not provide probability estimates directly
 	* Does not perform well with large training data sets
@@ -143,6 +149,7 @@ Linear Regression is used to predict the continuous output indices (X). It has a
 * **Simple Linear Regression**: When there is only one input variable (X)
 * **Multiple Linear Regression**: When there are only two or more input variables (X)
 
+
 * **Can it be used?**
 	* Forecast the annual time depending on the time of experience in a company
 	* Predict Sales x Amount invested for marketing
@@ -151,14 +158,17 @@ Linear Regression is used to predict the continuous output indices (X). It has a
 	* Forecast Production vs. Quantity of Exports and Capacity
 	* Forecast Economic growth
 
+
 * **Advantages**
 	* Easy to understand and explain
 	* Identification of the sensate the model edit textualized values ​​(R²)
 	* Can work with a small dataset
 
+
 * **Disadvantages**
 	* Requires an output variable to do the normal distribution
 	* Hardly R² is high for real cases
+
 
 * **Concepts**
 	* SSE (Sum of Square Errors): Sum of Errors, Squares, Minimum, Used for Score of other models as fit metric
@@ -179,12 +189,14 @@ Estimate the probability associated with the occurrence of a given event due to 
 	* Determine what characteristics lead companies to adopt the balanced scorecard
 	* [All examples above mentioned here](https://edisciplinas.usp.br/pluginfile.php/3769787/mod_resource/content/1/09_RegressaoLogistica.pdf)
     
+
 * **Advantages**
 	* Provide result in terms of probability
 	* High degree of reliability
 	* It is not necessary to assume multicollinearity
 	* Models can be easily updated with new data
   
+
 * **Disadvantages**
 	* Sensitive to outliers
 	* Does not perfom well with high dimensionality
@@ -192,7 +204,7 @@ Estimate the probability associated with the occurrence of a given event due to 
 ### **Logistic Regression** {#logistic-regression}
 <br/>
 
-* **What is it?**
+**What is it?**
 
 Algorithm that estimates the probability associated to the occurrence of a certain event due to some features. Its output variable needs to be continuous and discrete inputs.
 
@@ -202,10 +214,12 @@ Algorithm that estimates the probability associated to the occurrence of a certa
 	* Handwriting recognition
 	* Spam detection
 
+
 * **Advantages**
 	* Logistic models can be updated easily with new data
 	* It is not necessary to worry about multicollinearity of data
     * Besides being a classifier also returns probability, percentage of the event can occur or not
+
 
 * **Disadvantages**
 	* Does not work well with outliers
@@ -220,13 +234,9 @@ Ensemble methods are ways to combine multiple models, creating a stronger and mo
 
 Some of the methods are:
 * **Random Florest**: used to build a model based on multiple Decision Trees during the training phase.
-
 * **AdaBoost**: improves the model by means of the errors, changing the weights.
-
 * **Bagging**: trains into several subsets, ie separates training data and divides them randomly, each having a *weak learner*, then joins the results of the *weak learner* to create a model based on the outputs most viewed by the models
-
 * **Gradient Boosting**: attempts to minimize the Mean Square Error (MSE), so long as the sum of the residuals is close to 0 (or minimum) and the predicted values ​​are close enough to the actual values.
-
 * **XGBoost (Extreme Gradient Boosting)**: is an advanced implementation of Gradient Boosting, yet faster and with high predictive power. It has a variety of regularizations that reduce overfitting and improve overall performance.
 
 
@@ -239,6 +249,7 @@ Some of the methods are:
 	* Better at avoiding overfitting
 	* Usually has models with stronger predictive power and accuracy than single models
     
+
 * **Disadvantages**
 	* Scaling: Generally by training multiple models, can perform poorly with large datasets
 	* Difficult to deploy on real-time platform
@@ -340,6 +351,7 @@ It uses the distance measure to tell how similar each observation is, and can be
 	* **Distance from Manhattan**: sum of the distances between the lines that form 90º between two points, that is, sum of the line y to the point of intersection and line x. These measures are sensitive to the difference of scales between different variables:
 	* **Cosine distance**: measure of the angle between two vectors. If the angle is 0 there is total similarity and if is π there is no relation between the objects.
 
+
 * **Where can it be used?**
 	* Academic performance, based on student grades to separate students A, B or C
 	* Diagnostic system
@@ -392,10 +404,13 @@ for k in k_values:
 The result of this algorithm is a grouping structure that gives us a visual indication of the relationship between clusters. It unified the data into clusters according to minimum distances, which are calculated according to each method:
 
 * **Single Link**: assumes that all points are a cluster and then groups them into clusters according to the distance of the points. Then, when there is an isolated point, it looks for the two ** closest points ** in the two clusters which is the distance between the clusters, and then joins the points forming another cluster. And then we choose how many clusters we want. **This method does not exist in sklearn**, instead we use ***Complete Link***
+
 * **Complete Link**: assumes that all points are a cluster and then group them into clusters according to the distance of the points forming another cluster. And then, when there is an isolated point, it looks for the two most distant points in the two clusters which is the distance between the clusters, and then joins the points. And then we choose how many clusters we want.
 To join other clusters, it calculates the largest distance between the points, which we will name distance X, then measure the smallest distance X between clusters to join them.
 The problem of this method is that only one point is analyzed to verify the smallest distance, without taking into account the other data, which may be more dense, and may be another cluster.
+
 * **Average Link**: checks the distance between all points between clusters and the average of all distances is the distance measure between the two clusters.
+
 * **Ward's Link**: method that attempts to minimize variance by merging the two clusters. It calculates a center point between two clusters, then checks the distance between each point and the center point, raises them squarely and sums all distances. Then it calculates a center point in each cluster, and subtracts each distance between points and center point of each cluster, raised to the square. ** This is the default sklean method. **
 
 
@@ -426,9 +441,11 @@ It checks the distance ε (epsilon) around the points and if there are no other 
 **Core point**: is the point that has the minimum number of points required and identifies a cluster. The same cluster can have multiple core points
 **Border point**: points that do not have the minimum number of required points around, yet are part of a cluster around a Core Point
 
+
 * **Where can it be used?**
 	* Analyze network traffic, a network administrator can separate groups of traffic types as users of bulk downloads and others. See the [documentation](https://conferences.sigcomm.org/sigcomm/2006/papers/minenet-01.pdf)
 	* Detection of anomalies in temperature data, in which the points named as noises are anomalies, outliers. See the [documentation](https://ieeexplore.ieee.org/document/5946052)
+
 
 * **Advantages**
 	* Good with data set with noise or outliers
@@ -477,15 +494,15 @@ It works by the Expectation Maximization algorithm in the following steps:
 ### **Evaluating Models** {#evaluating-ul}
 <br/>
 
-* **External Indices**: used when the original data is labeled. One of its indexes is the Adjusted Rand score, being -1 to 1, the higher the better.
+**External Indices**: used when the original data is labeled. One of its indexes is the Adjusted Rand score, being -1 to 1, the higher the better.
 
-* **Internal Indices**: used to request the adjustment between the data and the structure. One of its indexes is the Silhouette score, being -1 to 1, the higher the better, it is not a good index for DBSCAN, nor is it for clusters defined as two-rings. Good for compact, dense, circular groupings. For DBSCAN it is good to use the DBCV index.
+**Internal Indices**: used to request the adjustment between the data and the structure. One of its indexes is the Silhouette score, being -1 to 1, the higher the better, it is not a good index for DBSCAN, nor is it for clusters defined as two-rings. Good for compact, dense, circular groupings. For DBSCAN it is good to use the DBCV index.
 
-* **Relative Indices**: indicates which cluster structure is best in some sense
+**Relative Indices**: indicates which cluster structure is best in some sense
 
 **Validation indices are defined as:**
-	* **Compression**: measure of proximity of the elements in each group
-	* **Separability**: measure of how far the clusters are from each other
+* **Compression**: measure of proximity of the elements in each group
+* **Separability**: measure of how far the clusters are from each other
 
 
 ### **Feature Scaling** {#feature-scaling}
@@ -504,9 +521,11 @@ Examples of models that are not ** affected by Feature Scaling:
 * Lienar Regression
 * Decision Trees
 
+
 * **Advantages**
 	* Have a reliable number compared to what you expect on the way out
     
+
 * **Disadvantages**
 	* Sensitive to outilers
 
@@ -522,9 +541,12 @@ Examples of models that are not ** affected by Feature Scaling:
 * The Main Components must be perpendicular to each other (90º), which means that they are independent of each other
 * The maximum number of Main Components that can be obtained is equal to the number of inputs of the data set, however it is advisable not to use all, but those with the highest raking
 
+
 **Measurable variables**: can measure directly, such as m², number of rooms, school ranking
 
+
 **Latent variables**: we can not measure directly, but it is represented by other indicators (the measurable ones), generating a theoretical sense. Ex: size is the latent variable and its measurable variables are m² and number of rooms.
+
 
 * **When to use?**
 	* When we want to see whether latent variables that can be shown in the data patterns
@@ -532,7 +554,8 @@ Examples of models that are not ** affected by Feature Scaling:
 		* View when we have large dimensionaldiades
 		* Decrease noise
 		* Pre-processing the data
-                
+            
+    
 * **Where can it be used?**
 	* Facial recognition along with SVM
 
@@ -553,6 +576,7 @@ A well-known example is the "*Party Problem*" which shows three people in the sa
 
 All recordings pick up the sounds, but of different intensity for each. Clearing the three recordings to get the sound of each object alone is what the ICA does, and this process is called **Blind source separation**
 The algorithm assumes that the components are statistically **independent** and with a **non-Gaussian distribution**
+
 
 * **Where can it be used?**
 	* Medical Scanners: Brain mapping, sensors detect electrical or magnetic signals. ICA can be used to find the independent components within the brain.
