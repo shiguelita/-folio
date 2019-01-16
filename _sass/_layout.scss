@@ -157,7 +157,7 @@ font-size: 42px;
 letter-spacing: -1px;
 line-height: 1;
 @include media-query($on-laptop) {
-font-size: 36px;
+font-size: 30px;
     }
 }
 .post-content {
@@ -167,25 +167,25 @@ text-align: justify;
 h1 {
 font-size: 30px;
 @include media-query($on-laptop) {
-font-size: 18px;
+font-size: 26px;
         }
     }
 h2 {
 font-size: 22px;
 @include media-query($on-laptop) {
-font-size: 16px;
+font-size: 20px;
         }
     }   
 h3 {
 font-size: 20px;
 @include media-query($on-laptop) {
-font-size: 14px;
+font-size: 18px;
         }
     }
 h4 {
 font-size: 20px;
 @include media-query($on-laptop) {
-font-size: 12px;
+font-size: 16px;
         }
     }
 }
