@@ -241,8 +241,8 @@ Some of the methods are:
 
 
 * **Where can it be used?**
-    * Random Florest used in Kinect to track body movements and recreate them in-game.
-    * AdaBoosting was used to detect the analysis of baseball player games, see the [documentation.](Https://www.uni-obuda.hu/journal/Markoski_Ivankovic_Ratgeber_Pecev_Glusac_57.pdf)
+* Random Florest used in Kinect to track body movements and recreate them in-game.
+* AdaBoosting was used to detect the analysis of baseball player games, see the [documentation.](Https://www.uni-obuda.hu/journal/Markoski_Ivankovic_Ratgeber_Pecev_Glusac_57.pdf)
 
 
 * **Advantages**
@@ -347,9 +347,9 @@ Unsupervised Learning are Machine Learning models that have little or none histo
 An algorithm that groups data that has characteristics similar to each other in a *cluster*. The K-means method has this name because *K* represents a number, since it is necessary to tell the algorithm how many clusters it wants to split the data. K-means is most commonly used in general use, with clusters of equal sizes, plane geometry, without large amounts of clusters. The algorithm always tries to find circular, spherical clusters.
 
 It uses the distance measure to tell how similar each observation is, and can be:
-	* **Euclidean distance**: Euclidean distance between two points in a straight line
-	* **Distance from Manhattan**: sum of the distances between the lines that form 90º between two points, that is, sum of the line y to the point of intersection and line x. These measures are sensitive to the difference of scales between different variables:
-	* **Cosine distance**: measure of the angle between two vectors. If the angle is 0 there is total similarity and if is π there is no relation between the objects.
+* **Euclidean distance**: Euclidean distance between two points in a straight line
+* **Distance from Manhattan**: sum of the distances between the lines that form 90º between two points, that is, sum of the line y to the point of intersection and line x. These measures are sensitive to the difference of scales between different variables:
+* **Cosine distance**: measure of the angle between two vectors. If the angle is 0 there is total similarity and if is π there is no relation between the objects.
 
 
 * **Where can it be used?**
@@ -472,7 +472,7 @@ It works by the Expectation Maximization algorithm in the following steps:
 * Validate the log-likelihood (log-likelihood) to check if it converges. The higher the number, the more certain we have that the mix model we generate is responsible for creating the data or fitting into the dataset we have
 
 
-* ** Where can it be used? **
+* **Where can it be used?**
 	* Reading sensor data to find people routines. Ex: As a shift sensor, the algorithm can identify when they are in the office, dining or out. Or, it can differentiate the way of driving that the person used. See the [documentation](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.681.3152&rep=rep1&type=pdf)
 	* Identify speech, signatures, biometrics.
 	* Computer vision, can detect image backgrounds, for example taking people out of a video and leaving just the scenery. See the [documentation](http://www.ai.mit.edu/projects/vsam/Publications/stauffer_cvpr98_track.pdf)
@@ -489,7 +489,7 @@ It works by the Expectation Maximization algorithm in the following steps:
 * **Disadvantages**
 	* Sensitive to initialization values
 		* The convergence rate is slow
-	    * It is not good to learn with interactions of features, for example, if you like ice cream of flakes and chocolate, but hate the two flavors together
+		* It is not good to learn with interactions of features, for example, if you like ice cream of flakes and chocolate, but hate the two flavors together
 
 ### **Evaluating Models** {#evaluating-ul}
 <br/>
