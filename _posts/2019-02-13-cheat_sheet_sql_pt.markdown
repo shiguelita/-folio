@@ -189,8 +189,8 @@ WHERE name = 'Darth Bane';
 
 Operadores aritméticos:
 * \* (Multiplicação)
-* + (Adição)
-* - (Subtração)
+* \+ (Adição)
+* \- (Subtração)
 * / (Divisão)
 
 Exemplo: A query abaixo mostra *column1* e uma nova coluna *sum_columns*, este segundo é um resultado de `column2 + column3`
@@ -653,7 +653,7 @@ FROM table_example;
 
 ### Dica
 
-Agregações podem fazer com que sua query demore a rodar, caso use LIMIT na mesma query, a agregação será executada antes e então ele irá limitar o número de linhas. Caso queira usar o LIMIT antes da agregação é necessário usar uma subquery {#subqueries} com LIMIT e depois fazer uma OUTER query com agregação.
+Agregações podem fazer com que sua query demore a rodar, caso use LIMIT na mesma query, a agregação será executada antes e então ele irá limitar o número de linhas. Caso queira usar o LIMIT antes da agregação é necessário usar uma subquery com LIMIT e depois fazer uma OUTER query com agregação.
 
 Exemplo:
 

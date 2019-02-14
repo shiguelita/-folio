@@ -189,8 +189,8 @@ It is possible to create a new temporary column resulting from an arithmetic ope
 
 Arithmetic Operators:
 * \* (Multiplication)
-* + (Addition)
-* - (Subtraction)
+* \+ (Addition)
+* \- (Subtraction)
 * / (Division)
 
 Example: The query below shows *column1* and a new column *sum_columns*, this second is a result from `column2 + column3`
@@ -653,7 +653,7 @@ FROM table_example;
 
 ### Tip
 
-Aggregations can cause your query to slow to run, if you use LIMIT in the same query, the aggregation will run before and then it will limit the number of rows. If you want to use LIMIT before aggregation, you need to use a subquery {#subqueries} with LIMIT and then do an OUTER query with aggregation.
+Aggregations can cause your query to slow to run, if you use LIMIT in the same query, the aggregation will run before and then it will limit the number of rows. If you want to use LIMIT before aggregation, you need to use a subquery with LIMIT and then do an OUTER query with aggregation.
 
 Example:
 
