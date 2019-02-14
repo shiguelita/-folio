@@ -73,12 +73,16 @@ Aqui estão alguns códigos para interagir com tabelas, a sintaxe básica do SQL
 
 **FROM** especifica de qual(is) tabela(s) você deseja selecionar as colunas.
 
-`SELECT column1, column2, column3
-FROM table_example;`
+```SQL
+SELECT column1, column2, column3
+FROM table_example;
+```
 
 Se você quiser selecionar todas as colunas na tabela, use \*
 
-`SELECT * FROM table_example;`
+```SQL
+SELECT * FROM table_example;
+```
 
 ### **DISTINC** {#distinc}
 <br/>
@@ -89,8 +93,10 @@ DISTINCT vem depois da instrução SELECT.
 
 Exemplo: Para retornar as linhas exclusivas em todas as três colunas.
 
-`SELECT DISTINCT column1, column2, column3
-FROM table_example;`
+```SQL
+SELECT DISTINCT column1, column2, column3
+FROM table_example;
+```
 
 ### **LIMIT** {#limit}
 <br/>
@@ -101,9 +107,11 @@ O comando LIMIT é sempre a última parte de uma consulta.
 
 Exemplo: Mostre as primeiras 15 linhas de *table_example* das colunas: *column1, column2, column3*
 
-`SELECT column1, column2, column3
+```SQL
+SELECT column1, column2, column3
 FROM table_example
-LIMIT 15;`
+LIMIT 15;
+```
 
 ### **ORDER BY** {#orderby}
 <br/>
@@ -112,25 +120,30 @@ A instrução ORDER BY classifica nossa **saída** usando os dados em qualquer c
 
 A instrução ORDER BY vem depois das instruções SELECT e FROM, mas antes da instrução LIMIT.
 
-`SELECT column1, column2, column3
+```SQL
+SELECT column1, column2, column3
 FROM table_example
 ORDER BY column1  
-LIMIT 15;`
+LIMIT 15;
+```
 
 Por padrão, ORDER BY classifica em ordem crescente, mas você pode usar DESC após a coluna em sua instrução ORDER BY para classificar em ordem decrescente
 
 Exemplo: primeiro em ASC e segundo em DESC
 
-`SELECT column1, column2, column3
+```SQL
+SELECT column1, column2, column3
 FROM table_example
-ORDER BY column1, column2 DESC;`
+ORDER BY column1, column2 DESC;
+```
 
 Exemplo: primeiro no DESC e segundo no ASC
 
-`SELECT column1, column2, column3
+```SQL
+SELECT column1, column2, column3
 FROM table_example
-ORDER BY column2 DESC, column3;`
-
+ORDER BY column2 DESC, column3;
+```
 
 ### **WHERE** {#where}
 <br/>
@@ -138,30 +151,36 @@ ORDER BY column2 DESC, column3;`
 A instrução WHERE exibe subconjuntos de tabelas com base nas condições, é como filtrar os dados.
 
 Símbolos comuns usados nas declarações WHERE:
-* > (maior)
-* < (meno)
-* >= (maior ou igual)
+* \> (maior)
+* < (menor)
+* \>= (maior ou igual)
 * <= (menor ou igual)
 * = (igual)
 * != (diferente)
 
-`SELECT column1, column2, column3
+```SQL
+SELECT column1, column2, column3
 FROM table_example
-WHERE column1 >= 1000;`
+WHERE column1 >= 1000;
+```
 
 A instrução WHERE BY vem após as instruções SELECT e FROM, mas antes da instrução ORDER BY.
 
-`SELECT column1, column2, column3
+```SQL
+SELECT column1, column2, column3
 FROM table_example
 WHERE column1 <= 1000
 ORDER BY column2 DESC
 LIMIT 10;`
+```
 
 A instrução WHERE também pode ser usada com dados categóricos, usando operadores = ou! =. É necessário usar aspas simples com os dados de texto.
 
-`SELECT column1, name,
+```SQL
+SELECT column1, name,
 FROM table_example
-WHERE name = 'Darth Bane';`
+WHERE name = 'Darth Bane';
+```
 
 ### **Operadores Aritméticos:** {#arithmetic}
 <br/>
@@ -169,20 +188,21 @@ WHERE name = 'Darth Bane';`
 É possível criar uma nova coluna temporária resultante de uma operação aritmética, como adicionar duas colunas. Para dar um nome a esta coluna, é necessário usar a palavra-chave `AS`.
 
 Operadores aritméticos:
-* * (Multiplicação)
+* \* (Multiplicação)
 * + (Adição)
 * - (Subtração)
 * / (Divisão)
 
 Exemplo: A query abaixo mostra *column1* e uma nova coluna *sum_columns*, este segundo é um resultado de `column2 + column3`
 
-`SELECT column1, column2 + column3 AS sum_columns
-FROM table_example;`
+```SQL
+SELECT column1, column2 + column3 AS sum_columns
+FROM table_example;
+```
 
 Ordem de operações
 
 A ordem das operações é a mesma da matemática, às vezes você tem que usar parênteses () para escolher a ordem
-
 
 ### **LIKE** {#like}
 <br/>
@@ -193,9 +213,11 @@ O operador LIKE é sensível a maiúsculas e minúsculas e você tem que usar al
 
 Exemplo: Encontrar todas as linhas que contêm valores que começam com `x` na coluna *name*
 
-`SELECT name
+```SQL
+SELECT name
 FROM table_example
-WHERE name LIKE 'x%';`
+WHERE name LIKE 'x%';
+```
 
 Operadores LIKE:	
 * 'x%' : Encontra todos os valores que começam com "x"
@@ -214,10 +236,11 @@ Operadores LIKE:
 
 Exemplo: Encontra todas as linhas com *Darth Bane* ou *Darth Maul* no *name*
 
-`SELECT name
+```SQL
+SELECT name
 FROM table_example
-WHERE name IN ('Darth Bane', 'Darth Maul');`
-
+WHERE name IN ('Darth Bane', 'Darth Maul');
+```
 
 ### **NOT** {#not}
 <br/>
@@ -226,15 +249,19 @@ WHERE name IN ('Darth Bane', 'Darth Maul');`
 
 Exemplo: Encontra todas as linhas sem *Darth Bane* ou *Darth Maul* no *name* 
 
-`SELECT name
+```SQL
+SELECT name
 FROM table_example
-WHERE name NOT IN ('Darth Bane', 'Darth Maul');`
+WHERE name NOT IN ('Darth Bane', 'Darth Maul');
+```
 
 Exemplo: Encontra todas as linhas que não contêm valores que começam com `x` no *name*
 
-`SELECT name
+```SQL
+SELECT name
 FROM table_example
-WHERE name NOT LIKE 'x%';`
+WHERE name NOT LIKE 'x%';
+```
 
 ### **AND & BETWEEN** {#andbetween}
 <br/>
@@ -243,15 +270,19 @@ Ambos os operadores são usados em uma instrução WHERE para combinar operaçõ
 
 O operador AND para considerar duas ou mais cláusulas lógicas por vez. Você pode vincular tantas declarações quanto você quiser ao mesmo tempo.
 
-`SELECT column1, column2, column3
+```SQL
+SELECT column1, column2, column3
 FROM table_example
-WHERE column1 > 200 AND column2 = 20 AND column3 = 10;`
+WHERE column1 > 200 AND column2 = 20 AND column3 = 10;
+```
 
 Este operador trabalha com todas as operações que vimos até agora, incluindo operadores aritméticos (`+`, `*`, `-`,` / `). As lógicas LIKE, IN e NOT também podem ser vinculadas usando o operador AND.
 
-`SELECT name
+```SQL
+SELECT name
 FROM table_example
-WHERE name NOT LIKE 'X%' AND column4 LIKE '%z';`
+WHERE name NOT LIKE 'X%' AND column4 LIKE '%z';
+```
 
 O operador BETWEEN trabalha com o operador AND, usando a mesma coluna para diferentes partes da nossa declaração AND.
 
@@ -263,15 +294,18 @@ Em vez disso, podemos escrever:
 
 Exemplos:
 
-`SELECT column1, column2, column3
+```SQL
+SELECT column1, column2, column3
 FROM table_example
-WHERE column1 BETWEEN 50 AND 90;`
+WHERE column1 BETWEEN 50 AND 90;
+```
 
-`SELECT name, date_time
+```SQL
+SELECT name, date_time
 FROM table_example
 WHERE name NOT IN ('Darth Bane', 'Darth Maul') AND date_time BETWEEN '2018-01-01' AND '2019-01-01'
-ORDER BY date_time DESC;`
-
+ORDER BY date_time DESC;
+```
 
 ### **OR** {#or}
 <br/>
@@ -280,15 +314,19 @@ O operador OR pode combinar várias instruções em uma instrução WHERE, muito
 
 Exemplos:
 
-`SELECT column1, column2
+```SQL
+SELECT column1, column2
 FROM table_example
-WHERE column1 > 100 OR column2 < 200;`
+WHERE column1 > 100 OR column2 < 200;
+```
 
-`SELECT name, date_time, column6
+```SQL
+SELECT name, date_time, column6
 FROM table_example
 WHERE (name LIKE 'Darth%' OR name LIKE 'Master%') 
 AND (column6 LIKE %xxx% OR column6 LIKE %Xxx%)
-AND (date_time BETWEEN '2018-01-01' AND '2019-01-01');`
+AND (date_time BETWEEN '2018-01-01' AND '2019-01-01');
+```
 
 ## **SQL Joins** {#joins}
 <br/>
@@ -312,28 +350,33 @@ Para os próximos exemplos, usaremos o ERD abaixo:
 
 Exemplo: Para JOIN o *movie* com outra tabela chamada *director* , obtendo todas as colunas, você terá que usar a seguinte consulta. Em ON são as colunas com valores únicos em ambas as tabelas, a chave.
 
-`SELECT *
+```SQL
+SELECT *
 FROM movie
 JOIN director
-ON movie.director_id = director.id;`
+ON movie.director_id = director.id;
+```
 
 Se você deseja obter apenas algumas colunas, você deve incluir na sua instrução SELECT todas as colunas necessárias, escrevendo o nome da tabela antes do ponto final e a coluna do nome (`movie.director id`).
 
 Exemplo:
 
-`SELECT movie.title, movie.date_time,
+```SQL
+SELECT movie.title, movie.date_time,
 director.id, director.age
 FROM movie
 JOIN director
-ON movie.director_id = director.id;`
+ON movie.director_id = director.id;
+```
 
 Exemplo: obtendo todas as informações somente da tabela *movie* :
 
-`SELECT movie.*
+```SQL
+SELECT movie.*
 FROM movie
 JOIN director
-ON movie.director_id = director.id;`
-
+ON movie.director_id = director.id;
+```
 
 **Chave primária (PK)**
 
@@ -355,13 +398,15 @@ Essa mesma lógica pode unir mais de duas tabelas juntas. Veja as três tabelas 
 
 Se quiséssemos juntar todas essas três tabelas, poderíamos usar a mesma lógica. O código abaixo puxa todos os dados de todas as tabelas unidas.
 
-`SELECT movie.title, movie.date_time,
+```SQL
+SELECT movie.title, movie.date_time,
 character.name, actor.name
 FROM movie
 JOIN character
 ON movie.id = character.movie_id
 JOIN actor
-ON character.actor_id = actor.id;`
+ON character.actor_id = actor.id;
+```
 
 Novamente, nosso JOIN possui uma tabela, e ON é um link para que nosso PK seja igual ao FK.
 
@@ -372,14 +417,17 @@ Novamente, nosso JOIN possui uma tabela, e ON é um link para que nosso PK seja 
 
 Exemplo:
 
-`FROM movie AS m
-JOIN character AS c`
+```SQL
+FROM movie AS m
+JOIN character AS c
+```
 
 É possível dar o alias sem usar o `AS`, apenas colocando o nome após um espaço em branco, exemplo:
 
-`FROM movie m
-JOIN character c`
-
+```SQL
+FROM movie m
+JOIN character c
+```
 
 **Aliases para Colunas na Tabela Resultante** 
 
@@ -387,9 +435,11 @@ Também é possível fornecer alias para as colunas na tabela resultante
 
 Exemplo:
 
-`Select c.name character_name, a.name actor_name
+```SQL
+Select c.name character_name, a.name actor_name
 FROM character c
-JOIN actor a`
+JOIN actor a
+```
 
 O resultado vai ser assim:
 
@@ -413,10 +463,12 @@ O INNER JOIN é o mesmo quando estamos usando JOIN, o resultado é os valores co
 
 A sintaxe para o INNER é:
 
-`SELECT movie.title, director.name
+```SQL
+SELECT movie.title, director.name
 FROM movie
 INNER JOIN director
-ON movie.director_id = director.id;`
+ON movie.director_id = director.id;
+```
 
 ## **OUTER Joins**
 <br/>
@@ -438,10 +490,12 @@ LEFT JOIN obtém todos os dados existentes nas duas tabelas, bem como todas as l
 
 Exemplo:
 
-`SELECT movie.title, director.name
+```SQL
+SELECT movie.title, director.name
 FROM movie
 LEFT JOIN director
-ON movie.director_id = director.id;`
+ON movie.director_id = director.id
+```
 
 ### **RIGHT Joins** {#right}
 <br/>
@@ -458,10 +512,12 @@ RIGHT JOIN obtém todos os dados que existem em ambas as tabelas, assim como tod
 
 Exemplo:
 
-`SELECT movie.title, director.name
+```SQL
+SELECT movie.title, director.name
 FROM movie
 RIGHT JOIN director
-ON movie.director_id = director.id;`
+ON movie.director_id = director.id;
+```
 
 ### **UNION** {#union}
 <br/>
@@ -513,22 +569,25 @@ FROM movies2
 
 Exemplo: Crie correspondências entre as tabelas apenas para o diretor com mais de 50 anos. O filtro ocorre antes do JOIN.
 
-`SELECT movie.title, director.name
+```SQL
+SELECT movie.title, director.name
 FROM movie
 LEFT JOIN director
 ON movie.director_id = director.id
 AND director.age > 50
-ORDER BY director.age;`
+ORDER BY director.age;
+```
 
 Exemplo: Crie correspondências entre as tabelas apenas para o diretor com mais de 50 anos. O filtro ocorre depois do JOIN.
 
-`SELECT movie.title, director.name
+```SQL
+SELECT movie.title, director.name
 FROM movie
 LEFT JOIN director
 ON movie.director_id = director.id
 WHERE director.age > 50
-ORDER BY director.age;`
-
+ORDER BY director.age;
+```
 
 ## **SQL Agregação** {#aggregations}
 <br/>
@@ -542,17 +601,21 @@ Para verificar quantos NULLs estão em sua coluna, você escreve para usar `IS N
 
 Exemplo:
 
-`SELECT movie.title, movie.budget
+```SQL
+SELECT movie.title, movie.budget
 FROM movie
-WHERE movie.date_time IS NULL`
+WHERE movie.date_time IS NULL
+```
 
 Para verificar quantos não NULLs estão em sua coluna, você escreve para usar `IS NOT NULL` com` WHERE`
 
 Exemplo:
 
-`SELECT movie.title, movie.budget
+```SQL
+SELECT movie.title, movie.budget
 FROM movie
-WHERE movie.date_time IS NOT NULL`
+WHERE movie.date_time IS NOT NULL
+```
 
 ### **COUNT()** {#count}
 <br/>
@@ -561,24 +624,32 @@ A função COUNT() conta todos os valores não NULL, em outras palavras, em uma 
 
 Exemplo:
 
-`SELECT COUNT(*)
-FROM movie;`
+```SQL
+SELECT COUNT(*)
+FROM movie;
+```
 
-`SELECT COUNT(date_time)
-FROM movie;`
+```SQL
+SELECT COUNT(date_time)
+FROM movie;
+```
 
 ### **SUM()** {#sum}
 <br/>
 
 A função SUM() retorna a soma total de uma coluna numérica. Esta função só funciona em colunas numéricas.
 
-`SELECT SUM(budget) AS total_budget
-FROM movie; `
+```SQL
+SELECT SUM(budget) AS total_budget
+FROM movie; 
+```
 
 Exemplo: é possível usar um agregado e um operador matemático
 
-`SELECT SUM(column1)/SUM(column2) 
-FROM table_example; `
+```SQL
+SELECT SUM(column1)/SUM(column2) 
+FROM table_example; 
+```
 
 ### Dica
 
@@ -586,10 +657,12 @@ Agregações podem fazer com que sua query demore a rodar, caso use LIMIT na mes
 
 Exemplo:
 
-`SELECT title, 
+```SQL
+SELECT title, 
 	SUM(budget) AS total_budget
 FROM ( SELECT * FROM movie LIMIT 100) sub
-GROUP BY 1; `
+GROUP BY 1; 
+```
 
 ### **AVG()** {#avg}
 <br/>
@@ -598,8 +671,10 @@ A função AVG() retorna o valor médio de uma coluna numérica. Esta função s
 
 Exemplo:
 
-`SELECT AVG(budget) AS average_budget
-FROM movie; `
+```SQL
+SELECT AVG(budget) AS average_budget
+FROM movie; 
+```
 
 ### **MIN()** {#min}
 <br/>
@@ -608,9 +683,10 @@ A função MIN() retorna o mínimo da coluna. Esta função trabalha com diferen
 
 Exemplo:
 
-`SELECT MIN(budget) AS min_budget
-FROM movie; `
-
+```SQL
+SELECT MIN(budget) AS min_budget
+FROM movie; 
+```
 
 ### **MAX()** {#max}
 <br/>
@@ -619,8 +695,10 @@ A função MAX() retorna o máximo da coluna. Esta função trabalha com diferen
 
 Exemplo:
 
-`SELECT MAX(budget) AS min_budget
-FROM movie; `
+```SQL
+SELECT MAX(budget) AS min_budget
+FROM movie;
+```
 
 ### **GROUP BY** {#groupby}
 <br/>
@@ -629,17 +707,20 @@ O GROUP BY agrega subconjuntos dos dados. Se você quiser somar o *budget* por *
 
 Exemplo:
 
-`SELECT SUM(budget) AS sum_budget
+```SQL
+SELECT SUM(budget) AS sum_budget
 FROM movie
-GROUP BY director_id; `
+GROUP BY director_id;
+```
 
 Todas as colunas na instrução SELECT sem um agregador (como exemplo: `SUM`,` AVG`, `COUNT`) devem estar na cláusula GROUP BY.
 
 Exemplo:
-
-`SELECT director_id, SUM(budget) AS sum_budget
+```SQL
+SELECT director_id, SUM(budget) AS sum_budget
 FROM movie
-GROUP BY director_id; `
+GROUP BY director_id;
+```
 
 O GROUP BY sempre vai entre WHERE e ORDER BY.
 
@@ -649,10 +730,12 @@ Se você quiser classificar os resultados, é possível usar ORDER BY e as orden
 
 Exemplo:
 
-`SELECT SUM(budget) AS sum_budget
+```SQL
+SELECT SUM(budget) AS sum_budget
 FROM movie
 GROUP BY director_id, title
-ORDER BY title, director_id ; `
+ORDER BY title, director_id;
+```
 
 ### **HAVING** {#having}
 <br/>
@@ -663,15 +746,18 @@ Ter sempre vai entre GROUP BY e ORDER BY.
 
 Exemplo:
 
-`SELECT director_id, SUM(budget) AS sum_budget
+```SQL
+SELECT director_id, SUM(budget) AS sum_budget
 FROM movie
 GROUP BY director_id
-HAVING budget > 3000; `
+HAVING budget > 3000;
+ORDER BY title, director_id;
+```
 
 ### **DATE_TRUNC** {#datetrunc}
 <br/>
 
-DATE_TRUNC() permite que você trunque sua data para uma parte específica de sua coluna de data e hora. É usado com dois parâmetros: `DATE_TRUNC ('time unit', nome da coluna)`
+DATE_TRUNC() permite que você trunque sua data para uma parte específica de sua coluna de data e hora. É usado com dois parâmetros: DATE\_TRUNC('*unidade_tempo*', *nome_coluna*)
 
 Algumas unidades de tempo, veja mais [aqui](https://mode.com/blog/date-trunc-sql-timestamp-function-count-on):
 * hour (hora)
@@ -685,19 +771,23 @@ Algumas unidades de tempo, veja mais [aqui](https://mode.com/blog/date-trunc-sql
 
 Exemplo:
 
-`SELECT DATE_TRUNC('year', date_time) year,  SUM(budget) total_budget
+```SQL
+SELECT DATE_TRUNC('year', date_time) year,  SUM(budget) total_budget
 FROM movie
 GROUP BY DATE_ TRUNC ('year', date_time)
-ORDER BY total_budget DESC;`
+ORDER BY total_budget DESC;
+```
 
 Você pode referenciar as colunas em sua instrução select nas cláusulas GROUP BY e ORDER BY com números que seguem a ordem em que aparecem na instrução select.
 
 Exemplo:
 
-`SELECT DATE_TRUNC('year', date_time) year,  SUM(budget) total_budget
+```SQL
+SELECT DATE_TRUNC('year', date_time) year,  SUM(budget) total_budget
 FROM movie
 GROUP BY 1
 ORDER BY 2 DESC;`
+```
 
 GROUP BY 1: este 1 refere-se ao ano a partir da data, uma vez que é a primeira das colunas incluídas no comando SELECT
 
@@ -710,9 +800,11 @@ DATE_PART é usado para obter uma parte específica de uma data, mas puxar mês 
 
 Exemplo:
 
-`SELECT DATE_PART('year', date_time) year, SUM(budget) total_budget
+```SQL
+SELECT DATE_PART('year', date_time) year, SUM(budget) total_budget
 FROM movie
-GROUP BY 1;`
+GROUP BY 1;
+```
 
 Algumas unidades de tempo (todas as unidades de DATE_TRUNC também podem ser usadas):
 * dow (Dia da semana como domingo (0) a sábado (6))
@@ -726,18 +818,21 @@ A instrução CASE é uma lista de condicionais que retorna os possíveis result
 
 Por exemplo, se você tiver as colunas *house*, *apples* e *dogs* e quiser dividir o número de *appleS* por *dogs* GROUP BY *house*, escreva a seguinte query:
 
-`SELECT house, SUM(apples)/SUM(dogs) AS apples_per_dogs
+```SQL
+SELECT house, SUM(apples)/SUM(dogs) AS apples_per_dogs
 FROM table_dogs
-GROUP BY house;` 
-
+GROUP BY house;
+```
 Se qualquer *house* não tiver um cachorro (dog = 0), você não poderá dividir e aparecerá um erro.
 
 Em vez disso, você pode usar a instrução CASE para resolver esse problema.
 
-`SELECT house, CASE WHEN SUM(dogs) = 0 OR SUM(dogs) IS NULL THEN 0
+```SQL
+SELECT house, CASE WHEN SUM(dogs) = 0 OR SUM(dogs) IS NULL THEN 0
 ELSE SUM(apples)/SUM(dogs) END AS apples_per_dogs
 FROM table_dogs
-GROUP BY house;` 
+GROUP BY house;
+```
 
 Agora, a primeira parte da instrução (`CASE WHEN SUM (dogs) = 0 OU SUM (cachorros) IS NULL THEN 0`) irá escrever 0 para qualquer um desses valores de divisão por zero, que causaram o erro, e a outra parte (`ELSE SUM (apples) / SUM (cachorros) END AS apples_per_dogs`) calculará a divisão normalmente.
 
@@ -745,7 +840,7 @@ A instrução CASE sempre entra na cláusula SELECT.
 
 CASE deve incluir: WHEN, THEN e END. O ELSE é um componente opcional para detectar casos que não atenderam a nenhuma das outras condições anteriores do CASE.
 
-Você pode fazer qualquer instrução condicional usando qualquer operador condicional (WHERE, LIKE, AND, OR) entre WHEN e THEN.
+Você pode fazer qualquer instrução condicional usando qualquer operador condicional (`WHERE`, `LIKE`, `AND`, `OR`) entre WHEN e THEN.
 
 Você pode incluir várias instruções WHEN, bem como uma instrução ELSE novamente, para lidar com qualquer condição não endereçada.
 
@@ -759,11 +854,13 @@ A **Subquery** é consulta dentro de outra consulta, isto é, quando você preci
 
 Exemplo: para obter todos os filmes com orçamento abaixo do orçamento médio de todos os filmes, você precisa criar uma consulta para calcular a média e criar outra consulta para obter todos os resultados abaixo dessa média:
 
-`SELECT * 
+```SQL
+SELECT * 
 FROM movie
 WHERE  budget <
 (SELECT AVG(budget)
-FROM movie);`
+FROM movie);
+```
 
 É possível fazer mais de uma subconsulta juntos.
 
@@ -771,31 +868,37 @@ Exemplo: Para calcular uma mediana de uma tabela com um número par de linhas, v
 
 Vamos supor que a table *table_dogs* tenha 10 linhas e você queira saber qual é a mediana das maçãs, você precisa ordenar a coluna *apples* e obter as 6 primeiras linhas
 
-`FROM (SELECT apples
-      FROM table_dogs
-      ORDER BY apples
-      LIMIT 6) `
-
-Então você tem que pegar as últimas duas linhas, ordenando novamente, mas em DESC e LIMIT e 2. Note que você já tem uma subconsulta.
-
-`(SELECT *
+```SQL
 FROM (SELECT apples
       FROM table_dogs
       ORDER BY apples
-      LIMIT 6) AS sub
-ORDER BY apples DESC
-LIMIT 2)`
+      LIMIT 6) 
+```
 
-Finalmente, você tem que calcular a média dessas duas linhas, resultando nesta consulta:
+Então você tem que pegar as últimas duas linhas, ordenando novamente, mas em DESC e LIMIT e 2. Note que você já tem uma subconsulta.
 
-`SELECT AVG(apples) FROM 
+```SQL
 (SELECT *
 FROM (SELECT apples
       FROM table_dogs
       ORDER BY apples
       LIMIT 6) AS sub
 ORDER BY apples DESC
-LIMIT 2) AS Table2;`
+LIMIT 2)
+```
+
+Finalmente, você tem que calcular a média dessas duas linhas, resultando nesta consulta:
+
+```SQL
+SELECT AVG(apples) FROM 
+(SELECT *
+FROM (SELECT apples
+      FROM table_dogs
+      ORDER BY apples
+      LIMIT 6) AS sub
+ORDER BY apples DESC
+LIMIT 2) AS Table2;
+```
 
 ### **Subqueries com JOIN** {#subjoin}
 <br/>
@@ -850,17 +953,21 @@ A instrução WITH vem antes da consulta, SELECT
 
 Exemplo: veja a consulta abaixo
 
-`SELECT * 
+```SQL
+SELECT * 
 FROM movie
 WHERE  budget <
 (SELECT AVG(budget)
-FROM movie);`
+FROM movie);
+```
 
 Para facilitar a leitura, vamos usar WITH, colocando a subconsulta como:
 
-`WITH avg_budget AS (
+```SQL
+WITH avg_budget AS (
 SELECT AVG(budget)
-FROM movie) `
+FROM movie) 
+```
 
 Então você pode escrever a consulta final:
 
@@ -1000,7 +1107,7 @@ FROM director;
 ### **CONCAT** {#concat}
 <br/>
 
-CONCAT combina colunas juntas. A sintaxe é CONCAT (*first_column*, *second_column*) ou você pode usar o piping `||`: *first_column* || *second_column*.
+CONCAT combina colunas juntas. A sintaxe é CONCAT (*first_column*, *second_column*) ou você pode usar o piping `||`: *first_column* \|\| *second_column*.
 
 É possível concatenar caracteres com as colunas, como exemplo: CONCAT (*first_column*, '', *second_column*)
 
@@ -1101,7 +1208,7 @@ Output:
 | 1208 | 180,000,000 | 4 |
 | 1208 | 175,000,000 | 5 |
 
-### **WINDOW** {#}
+### **WINDOW** {#window}
 <br/>
 
 WINDOW nos permite agrupar todas as funções da janela com a mesma consulta, usando o mesmo alias. WINDOW vem depois da instrução FROM.
@@ -1120,8 +1227,6 @@ WINDOW main_window AS (PARTITION BY director_id ORDER BY DATE_TRUNC('month', dat
 
 ### **LAG & LEAD** {#lagandlead}
 <br/>
-
-### LAG
 
 A função LAG retorna o valor de uma linha anterior para a linha atual na tabela.
 
@@ -1155,15 +1260,15 @@ ORDER BY 1;
 ```
 O ORDER BY vem no final porque a diferença tem que ser por mês.
 
-### LEAD
-
 LEAD retorna o valor da linha após a linha atual na tabela.
 
 Exemplo: semelhante ao exemplo anterior, para calcular a diferença entre o orçamento a seguir e o atual, basta usar a função LEAD - *sum_budget*, como:
 
 `LEAD(sum_budget) OVER (ORDER BY sum_budget) AS lead_difference - sum_budget`
 
-Sendo a função LEAD apenas: `LEAD(sum_budget) OVER (ORDER BY sum_budget) AS lead_difference`
+Sendo a função LEAD apenas: 
+
+`LEAD(sum_budget) OVER (ORDER BY sum_budget) AS lead_difference`
 
 ```SQL
 SELECT month, sum_budget,
