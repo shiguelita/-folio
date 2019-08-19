@@ -532,33 +532,22 @@ A **Tabela 15** mostra o resultado do teste de Razão de Chances, na qual se pod
 ### **Bibliografia**
 <br/>
 
-Braga, Antonio Padua & Castro, Cristiano Leite de. 2011. Aprendizado Supervisionado com conjunto de dados desbalanceados
+BAUER, David F. Constructing confidence sets using rank statistics. Journal of the American Statistical Association 67, 687–690. 1972. 
 
-Castle, Nikki. 2017. Supervised vs. Unsupervised Machine Learning
+COLOSIMO. Enrico A. Princípios de Bioestatística - Medidas de efeito: Risco Relativo e Razao de Chances. Universidade Federal de Minas Gerais UFMG. 2006.
 
-Chen, Edwin. Choosing a Machine Learning Classifier
+FORBES. How AI Can Help Redesign The Employee Experience. 2018. Disponível em: <https://www.forbes.com/sites/insights-intelai/2018/11/29/how-ai-can-help-redesign-the-employee-experience/#6293c9c4b34b>. Acesso em: 01 de agosto de 2019.
 
-Donges, Niklas. 2018. The Random Forest Algorithm 
+LAERD, Statistics. Mann-Whitney U Test using SPSS Statistics. 2013. Disponível em: <https://statistics.laerd.com/spss-tutorials/mann-whitney-u-test-using-spss-statistics.php>. Acesso em: 01 de agosto de 2019.
 
-Google Developers. 2018. Classification: Precision and Recall
+MCHUGH, Mary L.The Chi-square test of independence. Rev. Biochemia Medica, Califórnia, v. 23, n. 2, p. 143-149,abri-jun. 2013.
 
-Google Developers. 2018. Classification: ROC and AUC 
+MILENOVIC, Zivorad M. Application of Mann-Whitney U Test in research of Professional Training of Primary School Teachers. Faculty of Education. Leposavic, 2011.
 
-Barella, Victor Hugo. 2015. Técnicas para o problema de dados desbalanceados em classificação hierárquica
+PINO, Francisco Alberto. A QUESTÃO DA NÃO NORMALIDADE: uma revisão. Rev. de Economia Agrícola, São Paulo, v. 61, n. 2, p. 17-33, jul.-dez. 2014
 
-Portella, Letícia.2018. Machine Learning Models - My Cheat List
-
-Sachanm Lalit, 2015. Logistic Regression vs Decision Trees vs SVM: Part II
-
-Statinfer, 2017. SVM : Advantages Disadvantages and Applications
-
-Simplilean. 2018. KNN Algorithm
-
-Singh, Aishwarya. 2018. A Comprehensive Guide to Ensemble Learning 
-
-Souza, Jocelyn D’. 2018.  Let’s learn about AUC ROC Curve! 
 
 ### **PS:**
-Este é o meu projeto de conclusão para Nanodegree em Engenheiro de Aprendizado de Máquina da Udacity, por favor me avise se tiver alguma dúvida ou sugestão. Todo o código que você encontrá no meu Github [aqui.](https://github.com/shiguelita/credit_card_fraud_detection). 
+Todo o código que você encontrá no meu Github [aqui.](https://github.com/shiguelita/IBM_HR_analysis). 
 
 Obrigada! Até! ^^
