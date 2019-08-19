@@ -419,7 +419,7 @@ Nas outras duas categorias de satisfação, com o trabalho (JobSatisfaction) e c
 
 
 <div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project002_30.png" alt="" title="EGráfico 15 - Média de satisfação entre Rotatividade"/>
+<img  class="img-responsive" src="/img/projects/project002_30.png" alt="" title="Gráfico 15 - Média de satisfação entre Rotatividade"/>
 </div>
 <div class="col three caption">
 	Gráfico 15 - Média de satisfação entre Rotatividade
@@ -509,14 +509,6 @@ A **Tabela 15** mostra o resultado do teste de Razão de Chances, na qual se pod
 </div>
 <div class="col three caption">
 	Tabela 15 - Resultados Razão de Chances
-</div>
-<br/>
-
-<div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project002_3.png" alt="" title="Equação Shapiro-Wilk"/>
-</div>
-<div class="col three caption">
-	Equação Shapiro-Wilk
 </div>
 <br/>
 
