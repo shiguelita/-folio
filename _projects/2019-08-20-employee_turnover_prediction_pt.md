@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevendo a rotatividade dos funcionários
-date: 2019-08-20 13:00:00
+date: 2019-08-19 15:00:00
 author: Talita Shiguemoto
 description: (PARTE 1) Análise exploratória e modelagem estatística
 comments: true
