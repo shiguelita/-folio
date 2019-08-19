@@ -95,7 +95,7 @@ Por meio da análise descritiva de todos as variáveis quantitativas, visto na *
 3. As variáveis “DailyRate”, “DistanceFromHome“, “MonthlyRate”, “NumCompaniesWorked” e  “PercentSalaryHike” estão com um coeficiente de variação acima de 25%, sendo as features com maior variabilidade, em uma futura análise iremos verificar se esta variação se mantem entre as pessoas com “Attrition” positivo e negativo.
 
 <div style="display: flex; justify-content: center;">
-<img class="img-responsive" src="/img/projects/project002_02.png" alt="" title="Tabela 1. Estatística descritiva"/>
+<img class="img-responsive" src="/img/projects/project002_02_pt.png" alt="" title="Tabela 1. Estatística descritiva"/>
 </div>
 <div class="col three caption">
 	Tabela 1. Estatística descritiva
@@ -274,10 +274,10 @@ Por meio da análise exploratória dos dados, visto no Capítulo 4, cinco hipót
 O presente capítulo apresentará o teste não paramétrico de Mann-Whitney U para as hipóteses 1, 2, 3 e 4 e o teste do Qui-quadrado de Pearson e Razão de Chances para a hipótese 5.
 
 #### **Análise da normalidade das distribuições**
-
+<br/>
 Para escolher qual método estatístico seria utilizado, foi necessário em primeiro lugar verificar a distribuição dos dados, se a suposição de normalidade era verdade. Para isso os passos seguidos foram como sugere do autor Pino (2014):
 
-> > “Para verificar se a distribuição é normal, a primeira coisa a fazer é um gráfico de frequências das observações, para examinar se existem assimetrias. Ao se desconfiar da existência de não normalidade, o passo seguinte é testar a hipótese nula de que a distribuição das observações é normal, contra a hipótese alternativa de que não o é. Chama-se teste de aderência (ou de ajustamento) o problema de testar a hipótese de que uma dada amostra provém de uma população com uma função densidade específica.” 
+> “Para verificar se a distribuição é normal, a primeira coisa a fazer é um gráfico de frequências das observações, para examinar se existem assimetrias. Ao se desconfiar da existência de não normalidade, o passo seguinte é testar a hipótese nula de que a distribuição das observações é normal, contra a hipótese alternativa de que não o é. Chama-se teste de aderência (ou de ajustamento) o problema de testar a hipótese de que uma dada amostra provém de uma população com uma função densidade específica.” 
 
 Como podemos analisar no **Gráfico 9** e no **Gráfico 10**, as variáveis dependentes deste estudo não possuem uma distribuição normal, sendo que no primeiro gráfico, todas as features são ordinais, enquanto no gráfico seguinte os histogramas possuem um formato assimétrico positivo. 
 
@@ -331,14 +331,6 @@ sendo que se o valor mínimo apresentado for 0, c será igual a 1, caso contrár
 
 Mesmo após a transformação, quando plotados os histogramas, de acordo com o **Gráfico 11** e Gráfico **12**, os dados não apresentam normalidade em sua distribuição
 
-<div style="display: flex; justify-content: center;">
-<img  class="img-responsive" src="/img/projects/project002_22.png" alt="" title="Equação Shapiro-Wilk"/>
-</div>
-<div class="col three caption">
-	Equação Shapiro-Wilk
-</div>
-<br/>
-
 
 <div style="display: flex; justify-content: center;">
 <img  class="img-responsive" src="/img/projects/project002_23.png" alt="" title="Gráfico 11 - Histograma variáveis de satisfação em log"/>
@@ -370,7 +362,7 @@ Os resultados do teste de Shapiro-Wilk para as 6 variáveis transformadas em log
 <br/>
 
 #### **Mann-Whitney U teste**
-
+<br/>
 O teste de Mann-Whitnet U de acordo com Milenovic (2011) é uma técnica estatística não paramétrica, usada para analisar se existe diferença entre as medianas de duas amostras independentes, para quando a distribuição da variável resposta não é normal, que invalida o uso do teste T de Student.
 Para poder aplicar o teste de Mann-Whitnet U existem quatro pressuposições que precisam ser atendidas, que segundo Laerd (2013) são:
 1. A variável dependente precisa ser ordinal ou contínua;
@@ -461,8 +453,7 @@ No **Gráfico 16** é possível notar que o grupo de rotatividade positiva mora 
 <br/>
 
 #### **Teste Qui-Quadrado de Pearson e Razão de Chances**
-
-
+<br/>
 O teste Qui-Quadrado de Pearson é um teste não paramétrico que segundo a autora McHugh (2013), é um dos mais poderosos testes de hipóteses para duas variáveis qualitativas, que se utiliza uma tabela de contingência. As pressuposições do teste Qui-Quadrado de Pearson que necessitam ser atendidas, que segundo McHugh (2013) são:
 1. As variáveis dependentes e independentes precisam ser qualitativas;
 2. As observações precisam ser independentes entre os grupos, bem como os tais grupos precisam ser independentes entre si;
@@ -530,7 +521,6 @@ A **Tabela 15** mostra o resultado do teste de Razão de Chances, na qual se pod
 <br/>
 
 ### **Bibliografia**
-<br/>
 
 BAUER, David F. Constructing confidence sets using rank statistics. Journal of the American Statistical Association 67, 687–690. 1972. 
 
