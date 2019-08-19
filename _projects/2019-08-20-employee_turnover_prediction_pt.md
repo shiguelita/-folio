@@ -24,7 +24,7 @@ A segunda parte será a criação do modelo de machine learning para prever os c
 O conjunto de dados é referente a informações fictícias de rotatividade de funcionários criado pelos cientistas de dados da IBM, composto por 1.470 observações e 35 variáveis. Os dados podem ser obtidos no [Kaggle](https://github.com/shiguelita/IBM_HR_analysis).
 
 #### **Variáveis qualitativas**
-
+<br/>
 **Nominais**
 
 - Attrition: demonstra se colaborador saiu da empresa por espontânea vontade. 
@@ -51,7 +51,7 @@ O conjunto de dados é referente a informações fictícias de rotatividade de f
 - WorkLifeBalance: nível de equilíbrio entre a vida pessoal e no trabalho.
 
 #### **Variáveis quantitativas**
-
+<br/>
 **Contínuas**
 
 - Dailyrate: valor da diária paga.
@@ -78,7 +78,6 @@ O conjunto de dados é referente a informações fictícias de rotatividade de f
 
 ### **Análise Exploratória dos Dados (EDA)**
 <br/>
-
 O primeiro item verificado foi se existia algum missing value no conjunto de dados. Como podemos ver na **Gráfico 1**, não existe nenhuma feature com a presença de missing values.
 
 <div style="display: flex; justify-content: center;">
@@ -91,7 +90,7 @@ O primeiro item verificado foi se existia algum missing value no conjunto de dad
 
 Por meio da análise descritiva de todos as variáveis quantitativas, visto na **Tabela 1**, pode-se concluir que:
 1. Não há nenhum menor de idade na base de dados, visto que a idade mínima é 18 anos;
-2. As variáveis “EmployeeCount” e “StandardHours” tem um desvio padrão de 0, em outras palavras, não há nenhuma variação, todas as observações destas features são iguais (1 e 80 respectivamente), assim podemos retirar estas variáveis das análises.
+2. As variáveis “EmployeeCount” e “StandardHours” tem um desvio padrão de 0, em outras palavras, não há nenhuma variação, todas as observações destas features são iguais (1 e 80 respectivamente), assim podemos retirar estas variáveis das análises;
 3. As variáveis “DailyRate”, “DistanceFromHome“, “MonthlyRate”, “NumCompaniesWorked” e  “PercentSalaryHike” estão com um coeficiente de variação acima de 25%, sendo as features com maior variabilidade, em uma futura análise iremos verificar se esta variação se mantem entre as pessoas com “Attrition” positivo e negativo.
 
 <div style="display: flex; justify-content: center;">
@@ -260,6 +259,7 @@ A **Tabela 8** apresenta dados relacionados aos indivíduos como pessoas. O prim
 </div>
 <br/>
 
+<br/>
 
 ### **Modelagem Estatística**
 <br/>
@@ -324,7 +324,7 @@ Os resultados do teste de Shapiro-Wilk para as 6 variáveis podem ser vistos na 
 Como todas as variáveis analisadas são positivas, a transformação escolhida foi a logarítmica, sendo sua equação:
 
 \begin{align}
-\dot{Y} & = 	{log⁡〖(x+c)}
+\dot{Y} & = 	{log⁡(x+c)}
 \end{align}
 
 sendo que se o valor mínimo apresentado for 0, c será igual a 1, caso contrário, c = 0.
@@ -460,9 +460,11 @@ O teste Qui-Quadrado de Pearson é um teste não paramétrico que segundo a auto
 3. Todas as células da tabela de contingência precisam ter uma contagem mínima de 1;
 4. Todas as células esperadas precisam ter uma contagem mínima de 5;
 	* Caso esta pressuposição não for atendida, pode ser usado o teste de Fishers.
+
 A última hipótese a ser testada é se os funcionários que fazem hora extra têm maior chance de se desligarem da empresa. Sendo as hipóteses:
 - Ho : a chance de a rotatividade ser positiva por fazer hora extra é igual a chance da rotatividade negativa
 - Ha : a chance de a rotatividade ser positiva por fazer hora extra é diferente da chance da rotatividade negativa
+
 Ambas as variáveis são nominais, ambas possuindo o valor Sim (Yes) e Não (No), o que atende a suposição número 1. Todos os grupos como observações deles são independentes, atendendo a pressuposição 2.  A terceira suposição é atendida na **Tabela 12**, na qual nenhuma célula possui valor menor que 1.
 
 
@@ -514,19 +516,19 @@ A **Tabela 15** mostra o resultado do teste de Razão de Chances, na qual se pod
 
 ### **Bibliografia**
 
-BAUER, David F. Constructing confidence sets using rank statistics. Journal of the American Statistical Association 67, 687–690. 1972. 
+BAUER, David F. **Constructing confidence sets using rank statistics**. Journal of the American Statistical Association 67, 687–690. 1972. 
 
-COLOSIMO. Enrico A. Princípios de Bioestatística - Medidas de efeito: Risco Relativo e Razao de Chances. Universidade Federal de Minas Gerais UFMG. 2006.
+COLOSIMO. Enrico A. P**rincípios de Bioestatística - Medidas de efeito: Risco Relativo e Razao de Chances**. Universidade Federal de Minas Gerais UFMG. 2006.
 
-FORBES. How AI Can Help Redesign The Employee Experience. 2018. Disponível em: <https://www.forbes.com/sites/insights-intelai/2018/11/29/how-ai-can-help-redesign-the-employee-experience/#6293c9c4b34b>. Acesso em: 01 de agosto de 2019.
+FORBES. **How AI Can Help Redesign The Employee Experience**. 2018. Disponível em: <https://www.forbes.com/sites/insights-intelai/2018/11/29/how-ai-can-help-redesign-the-employee-experience/#6293c9c4b34b>. Acesso em: 01 de agosto de 2019.
 
-LAERD, Statistics. Mann-Whitney U Test using SPSS Statistics. 2013. Disponível em: <https://statistics.laerd.com/spss-tutorials/mann-whitney-u-test-using-spss-statistics.php>. Acesso em: 01 de agosto de 2019.
+LAERD, Statistics. **Mann-Whitney U Test using SPSS Statistics**. 2013. Disponível em: <https://statistics.laerd.com/spss-tutorials/mann-whitney-u-test-using-spss-statistics.php>. Acesso em: 01 de agosto de 2019.
 
-MCHUGH, Mary L.The Chi-square test of independence. Rev. Biochemia Medica, Califórnia, v. 23, n. 2, p. 143-149,abri-jun. 2013.
+MCHUGH, Mary L. **The Chi-square test of independence**. Rev. Biochemia Medica, Califórnia, v. 23, n. 2, p. 143-149,abri-jun. 2013.
 
-MILENOVIC, Zivorad M. Application of Mann-Whitney U Test in research of Professional Training of Primary School Teachers. Faculty of Education. Leposavic, 2011.
+MILENOVIC, Zivorad M. **Application of Mann-Whitney U Test in research of Professional Training of Primary School Teachers**. Faculty of Education. Leposavic, 2011.
 
-PINO, Francisco Alberto. A QUESTÃO DA NÃO NORMALIDADE: uma revisão. Rev. de Economia Agrícola, São Paulo, v. 61, n. 2, p. 17-33, jul.-dez. 2014
+PINO, Francisco Alberto. **A QUESTÃO DA NÃO NORMALIDADE: uma revisão**. Rev. de Economia Agrícola, São Paulo, v. 61, n. 2, p. 17-33, jul.-dez. 2014
 
 
 ### **PS:**
