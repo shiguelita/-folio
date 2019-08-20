@@ -11,7 +11,7 @@ lang: pt
 
 Segundo o site da Forbes (2018) em uma pesquisa realizada pela BambooHR nos Estados Unidos da América, 17% dos trabalhadores deixam o emprego nos primeiros seis meses de contratação dizem que um “um sorriso de um colega de trabalho poderia ter feito toda a diferença” (Forbes, 2018), outros 23% dizem que uma comunicação mais efetiva com o gerente poderia ter mudado a decisão de sair da empresa e mais 21% culpam um treinamento ineficiente. 
 
-O objetivo deste projeto é analisar estatísticamente quais são as possíveis razões do desligamento espontâneio e criar um algoritmo para detectar quais profissionais podem ter a rotatividade positiva. Com tais informações uma empresa tem a possibilidade de entender as razões dos índices de desligamento, sendo possível então criar ações para prevenir os casos por ela indesejados.
+O objetivo deste projeto é analisar estatisticamente quais são as possíveis razões do desligamento espontâneo e criar um algoritmo para detectar quais profissionais podem ter a rotatividade positiva. Com tais informações uma empresa tem a possibilidade de entender as razões dos índices de desligamento, sendo possível então criar ações para prevenir os casos por ela indesejados.
 
 Este projeto será divido em duas partes, sendo esta primeira referente a análise exploratórias dos dados, na qual será levantada hipóteses que serão testadas estatísticamente. Todo procedimento será feito na linguagem R.
 
